@@ -62,41 +62,36 @@ $slides = array(
 ?>
 
 <section class="mm-hero" id="mmSlider" aria-label="<?php esc_attr_e( 'Highlights', 'mmbuss' ); ?>">
-	<div class="mm-wrap">
-		<div class="mm-slides">
-			<?php foreach ( $slides as $i => $s ) : ?>
-			<div class="mm-slide<?php echo 0 === $i ? ' active' : ''; ?>">
-				<div class="mm-slide-grid">
-					<div>
-						<p class="mm-slide-badge"><?php echo esc_html( $s['badge'] ); ?></p>
-						<h1 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h1>
-						<p class="mm-slide-text"><?php echo esc_html( $s['text'] ); ?></p>
-						<p class="mm-slide-actions">
-							<a class="<?php echo esc_attr( $s['cta1'][2] ); ?>" href="<?php echo esc_url( $s['cta1'][1] ); ?>"><?php echo esc_html( $s['cta1'][0] ); ?> <span aria-hidden="true">&rarr;</span></a>
-							<a class="<?php echo esc_attr( $s['cta2'][2] ); ?>" href="<?php echo esc_url( $s['cta2'][1] ); ?>"><?php echo esc_html( $s['cta2'][0] ); ?></a>
-						</p>
-					</div>
-					<div class="mm-slide-visual">
-						<div class="mm-slide-photo"><img src="<?php echo esc_url( $s['img'] ); ?>" alt="" loading="<?php echo 0 === $i ? 'eager' : 'lazy'; ?>"></div>
-						<span class="mm-chip mm-chip-gold mm-chip-1"><?php echo esc_html( $s['chip1'] ); ?></span>
-						<span class="mm-chip mm-chip-2"><?php echo esc_html( $s['chip2'] ); ?></span>
-						<span class="mm-chip mm-chip-dark mm-chip-3"><?php echo esc_html( $s['chip3'] ); ?></span>
-						<span class="mm-chip-star" aria-hidden="true">&#10022;</span>
-						<?php if ( $s['float'] ) : ?>
-						<div class="mm-float-card" aria-hidden="true">
-							<small>Structured Growth <b>&#8599; +24.8%</b></small>
-							<strong>$128k</strong>
-							<div class="mm-float-bar">
-								<i style="height:30%"></i><i style="height:45%"></i><i style="height:38%"></i><i style="height:60%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:100%"></i>
-							</div>
-						</div>
-						<?php endif; ?>
-					</div>
+	<div class="mm-slides">
+		<?php foreach ( $slides as $i => $s ) : ?>
+		<div class="mm-slide<?php echo 0 === $i ? ' active' : ''; ?>" style="background-image:url('<?php echo esc_url( $s['img'] ); ?>')">
+			<div class="mm-wrap mm-slide-content">
+				<p class="mm-slide-badge"><?php echo esc_html( $s['badge'] ); ?></p>
+				<h1 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h1>
+				<p class="mm-slide-text"><?php echo esc_html( $s['text'] ); ?></p>
+				<p class="mm-slide-actions">
+					<a class="<?php echo esc_attr( $s['cta1'][2] ); ?>" href="<?php echo esc_url( $s['cta1'][1] ); ?>"><?php echo esc_html( $s['cta1'][0] ); ?> <span aria-hidden="true">&rarr;</span></a>
+					<a class="<?php echo esc_attr( $s['cta2'][2] ); ?>" href="<?php echo esc_url( $s['cta2'][1] ); ?>"><?php echo esc_html( $s['cta2'][0] ); ?></a>
+				</p>
+			</div>
+			<span class="mm-chip mm-chip-gold mm-chip-1"><?php echo esc_html( $s['chip1'] ); ?></span>
+			<span class="mm-chip mm-chip-2"><?php echo esc_html( $s['chip2'] ); ?></span>
+			<span class="mm-chip mm-chip-dark mm-chip-3"><?php echo esc_html( $s['chip3'] ); ?></span>
+			<span class="mm-chip-star" aria-hidden="true">&#10022;</span>
+			<?php if ( $s['float'] ) : ?>
+			<div class="mm-float-card" aria-hidden="true">
+				<small>Structured Growth <b>&#8599; +24.8%</b></small>
+				<strong>$128k</strong>
+				<div class="mm-float-bar">
+					<i style="height:30%"></i><i style="height:45%"></i><i style="height:38%"></i><i style="height:60%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:100%"></i>
 				</div>
 			</div>
-			<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
+		<?php endforeach; ?>
+	</div>
 
+	<div class="mm-wrap">
 		<div class="mm-hero-foot">
 			<div class="mm-hero-stats">
 				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Core service pillars', 'mmbuss' ); ?></span></div>
