@@ -6,24 +6,30 @@
  */
 
 get_header();
+$uri = get_template_directory_uri();
 
 while ( have_posts() ) :
 	the_post();
+	get_template_part(
+		'template-parts/page',
+		'banner',
+		array(
+			'title' => get_the_title(),
+			'sub'   => get_the_date(),
+			'img'   => $uri . '/assets/images/hero-1.jpg',
+		)
+	);
 	?>
-	<article id="post-<?php the_ID(); ?>" <?php post_class( 'mmbuss-single' ); ?>>
-		<div class="mmbuss-wrap">
-			<h1 class="mmbuss-page-title"><?php the_title(); ?></h1>
-			<p class="mmbuss-post-meta"><?php echo esc_html( get_the_date() ); ?></p>
-			<div class="mmbuss-page-body">
-				<?php the_content(); ?>
-			</div>
+	<div class="mm-content">
+		<div class="mm-wrap mm-prose">
+			<?php the_content(); ?>
 			<?php
 			if ( comments_open() || get_comments_number() ) {
 				comments_template();
 			}
 			?>
 		</div>
-	</article>
+	</div>
 	<?php
 endwhile;
 

@@ -3,8 +3,8 @@
  * Conditional dynamic-content section.
  *
  * Prints the live DB page content (shortcodes like Contact Form 7, pasted
- * text, slider shortcodes) in a centered container — only when the page
- * actually has content. Baked-in template design always renders above it.
+ * text) in a centered container — only when the page actually has content.
+ * Baked-in template design always renders above it.
  *
  * @package MMBuss
  */
@@ -18,8 +18,8 @@ while ( have_posts() ) :
 	$content = trim( get_the_content() );
 	if ( '' !== $content ) :
 		?>
-		<section class="mmbuss-dynamic">
-			<div class="mmbuss-wrap mmbuss-dynamic-inner">
+		<section class="mm-dynamic">
+			<div class="mm-wrap mm-dynamic-inner">
 				<?php the_content(); ?>
 			</div>
 		</section>
