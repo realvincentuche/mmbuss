@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'wp-content/themes/mmbuss/**'
+      - '.github/workflows/deploy-cpanel.yml'
 
 jobs:
   deploy:
