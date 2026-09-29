@@ -1,0 +1,189 @@
+/* MMBuss main stylesheet — classic theme, no frameworks. */
+
+:root {
+	--mmbuss-ink: #14181d;
+	--mmbuss-muted: #5b6470;
+	--mmbuss-accent: #d8232a;
+	--mmbuss-bg: #ffffff;
+	--mmbuss-soft: #f5f6f8;
+	--mmbuss-wrap: 1120px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	color: var(--mmbuss-ink);
+	background: var(--mmbuss-bg);
+	line-height: 1.6;
+}
+
+.mmbuss-wrap {
+	max-width: var(--mmbuss-wrap);
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Header */
+.mmbuss-header {
+	border-bottom: 1px solid #e6e8ec;
+	background: #fff;
+}
+
+.mmbuss-header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 68px;
+}
+
+.mmbuss-brand {
+	font-size: 1.35rem;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	color: var(--mmbuss-ink);
+	text-decoration: none;
+}
+
+.mmbuss-nav ul {
+	display: flex;
+	gap: 22px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.mmbuss-nav a {
+	color: var(--mmbuss-ink);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.mmbuss-nav a:hover {
+	color: var(--mmbuss-accent);
+}
+
+/* Hero */
+.mmbuss-hero {
+	background: var(--mmbuss-ink);
+	color: #fff;
+	text-align: center;
+	padding: 96px 0;
+}
+
+.mmbuss-eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.22em;
+	font-size: 0.8rem;
+	color: #c9d1da;
+	margin: 0 0 12px;
+}
+
+.mmbuss-hero-title {
+	font-size: clamp(2.6rem, 6vw, 4.5rem);
+	line-height: 1.05;
+	margin: 0 0 14px;
+}
+
+.mmbuss-hero-text {
+	color: #c9d1da;
+	font-size: 1.15rem;
+	margin: 0 0 28px;
+}
+
+.mmbuss-btn {
+	display: inline-block;
+	background: var(--mmbuss-accent);
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 13px 30px;
+	border-radius: 999px;
+}
+
+.mmbuss-btn:hover {
+	filter: brightness(1.08);
+}
+
+/* Dynamic live-content section */
+.mmbuss-dynamic {
+	background: var(--mmbuss-soft);
+	padding: 48px 0;
+}
+
+.mmbuss-dynamic-inner {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Pages / blog */
+.mmbuss-page,
+.mmbuss-blog,
+.mmbuss-single {
+	padding: 48px 0 64px;
+}
+
+.mmbuss-page-title {
+	margin: 0 0 18px;
+	font-size: 2rem;
+}
+
+.mmbuss-post {
+	border-top: 1px solid #e6e8ec;
+	padding: 22px 0;
+}
+
+.mmbuss-post-title {
+	margin: 0 0 6px;
+	font-size: 1.4rem;
+}
+
+.mmbuss-post-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.mmbuss-post-meta {
+	color: var(--mmbuss-muted);
+	margin: 0 0 10px;
+}
+
+/* Footer */
+.mmbuss-footer {
+	border-top: 1px solid #e6e8ec;
+	padding: 28px 0;
+	color: var(--mmbuss-muted);
+	font-size: 0.92rem;
+}
+
+.mmbuss-footer-nav ul {
+	display: flex;
+	gap: 18px;
+	list-style: none;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.mmbuss-footer-nav a {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media (max-width: 640px) {
+	.mmbuss-header-inner {
+		flex-direction: column;
+		gap: 10px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	.mmbuss-hero {
+		padding: 64px 0;
+	}
+}
