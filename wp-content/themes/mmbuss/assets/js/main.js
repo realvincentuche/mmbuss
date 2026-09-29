@@ -1,4 +1,4 @@
-/* Mastermind — preloader, sticky header, mobile nav, slider, reveal, counters. */
+/* Mastermind — preloader, sticky header, offcanvas, slider, reveal, counters, FAQ, totop. */
 (function () {
 	'use strict';
 
@@ -9,36 +9,44 @@
 			setTimeout(function () { pre.classList.add('done'); }, 350);
 		}
 	});
-	// Safety: never trap the user behind the preloader.
 	setTimeout(function () {
 		var pre = document.getElementById('mmPreloader');
 		if (pre) { pre.classList.add('done'); }
 	}, 3500);
 
-	// Sticky header shadow.
+	// Sticky header + back-to-top.
 	var header = document.getElementById('mmHeader');
+	var totop = document.getElementById('mmToTop');
 	function onScroll() {
-		if (!header) { return; }
-		header.classList.toggle('is-sticky', window.scrollY > 8);
+		var y = window.scrollY || 0;
+		if (header) { header.classList.toggle('is-sticky', y > 8); }
+		if (totop) { totop.classList.toggle('show', y > 700); }
 	}
 	window.addEventListener('scroll', onScroll, { passive: true });
 	onScroll();
-
-	// Mobile nav.
-	var toggle = document.getElementById('mmNavToggle');
-	var nav = document.getElementById('mmNav');
-	if (toggle && nav) {
-		toggle.addEventListener('click', function () {
-			var open = nav.classList.toggle('open');
-			toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-		});
-		nav.addEventListener('click', function (e) {
-			if (e.target.tagName === 'A') {
-				nav.classList.remove('open');
-				toggle.setAttribute('aria-expanded', 'false');
-			}
+	if (totop) {
+		totop.addEventListener('click', function () {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
 		});
 	}
+
+	// Offcanvas menu.
+	var burger = document.getElementById('mmBurger');
+	var panel = document.getElementById('mmOffcanvas');
+	var overlay = document.getElementById('mmOffcanvasOverlay');
+	var closeBtn = document.getElementById('mmOffcanvasClose');
+	function setMenu(open) {
+		if (panel) { panel.classList.toggle('open', open); }
+		if (overlay) { overlay.classList.toggle('open', open); }
+		if (burger) { burger.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+		document.body.style.overflow = open ? 'hidden' : '';
+	}
+	if (burger) { burger.addEventListener('click', function () { setMenu(true); }); }
+	if (closeBtn) { closeBtn.addEventListener('click', function () { setMenu(false); }); }
+	if (overlay) { overlay.addEventListener('click', function () { setMenu(false); }); }
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape') { setMenu(false); }
+	});
 
 	// Hero slider.
 	var slider = document.getElementById('mmSlider');
@@ -68,12 +76,35 @@
 		}
 		function restart() {
 			if (timer) { clearInterval(timer); }
-			timer = setInterval(function () { go(current + 1); }, 6000);
+			timer = setInterval(function () { go(current + 1); }, 6500);
 		}
 		if (prev) { prev.addEventListener('click', function () { go(current - 1); restart(); }); }
 		if (next) { next.addEventListener('click', function () { go(current + 1); restart(); }); }
 		restart();
 	}
+
+	// FAQ accordion.
+	document.querySelectorAll('.mm-faq-item').forEach(function (item) {
+		var q = item.querySelector('.mm-faq-q');
+		var a = item.querySelector('.mm-faq-a');
+		if (!q || !a) { return; }
+		q.addEventListener('click', function () {
+			var open = item.classList.contains('open');
+			document.querySelectorAll('.mm-faq-item.open').forEach(function (other) {
+				other.classList.remove('open');
+				var oa = other.querySelector('.mm-faq-a');
+				if (oa) { oa.style.maxHeight = null; }
+			});
+			if (!open) {
+				item.classList.add('open');
+				a.style.maxHeight = a.scrollHeight + 'px';
+			}
+		});
+		// First item open by default.
+		if (item.classList.contains('open')) {
+			a.style.maxHeight = a.scrollHeight + 'px';
+		}
+	});
 
 	// Reveal on scroll.
 	var revealEls = document.querySelectorAll('.reveal');

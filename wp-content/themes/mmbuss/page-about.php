@@ -33,19 +33,19 @@ get_template_part(
 	</div>
 </section>
 
-<section class="mm-section mm-section-soft">
+<section class="mm-section-tight">
 	<div class="mm-wrap">
 		<div class="mm-grid-2">
 			<article class="mm-card reveal">
 				<div class="mm-card-body">
-					<span class="mm-card-num"><?php esc_html_e( 'MISSION', 'mmbuss' ); ?></span>
+					<span class="mm-svc-num"><?php esc_html_e( 'MISSION', 'mmbuss' ); ?></span>
 					<h3><?php esc_html_e( 'Strategic clarity for global competition', 'mmbuss' ); ?></h3>
 					<p><?php esc_html_e( 'To equip businesses with the strategic clarity, operational frameworks, and management expertise required to compete confidently on a global scale.', 'mmbuss' ); ?></p>
 				</div>
 			</article>
 			<article class="mm-card reveal">
 				<div class="mm-card-body">
-					<span class="mm-card-num"><?php esc_html_e( 'VISION', 'mmbuss' ); ?></span>
+					<span class="mm-svc-num"><?php esc_html_e( 'VISION', 'mmbuss' ); ?></span>
 					<h3><?php esc_html_e( 'A trusted global name', 'mmbuss' ); ?></h3>
 					<p><?php esc_html_e( 'To be a trusted global name in business management and consulting — recognized for practical solutions, measurable impact, and unwavering integrity.', 'mmbuss' ); ?></p>
 				</div>
@@ -54,17 +54,17 @@ get_template_part(
 	</div>
 </section>
 
-<section class="mm-section mm-section-navy">
-	<div class="mm-wrap">
+<section class="mm-section-tight">
+	<div class="mm-panel-dark">
 		<div class="reveal">
-			<p class="mm-kicker"><?php esc_html_e( 'Our Approach', 'mmbuss' ); ?></p>
-			<h2 class="mm-section-title"><?php esc_html_e( 'Diagnose. Design. Deploy. Sustain.', 'mmbuss' ); ?></h2>
+			<p class="mm-kicker mm-kicker-dark"><?php esc_html_e( 'Our Approach', 'mmbuss' ); ?></p>
+			<h2 class="mm-section-title" style="color:#fff;"><?php esc_html_e( 'Diagnose. Design. Deploy. Sustain.', 'mmbuss' ); ?></h2>
 		</div>
 		<div class="mm-steps">
-			<div class="mm-step reveal"><span class="mm-step-num">01</span><h3><?php esc_html_e( 'Diagnose', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We assess your current operations, structure, and strategy to identify gaps and opportunities.', 'mmbuss' ); ?></p></div>
-			<div class="mm-step reveal"><span class="mm-step-num">02</span><h3><?php esc_html_e( 'Design', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We build tailored frameworks, systems, and strategic roadmaps aligned with your objectives.', 'mmbuss' ); ?></p></div>
-			<div class="mm-step reveal"><span class="mm-step-num">03</span><h3><?php esc_html_e( 'Deploy', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We support implementation, ensuring solutions are adopted, not just delivered.', 'mmbuss' ); ?></p></div>
-			<div class="mm-step reveal"><span class="mm-step-num">04</span><h3><?php esc_html_e( 'Sustain', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We provide ongoing oversight and advisory support to ensure long-term results.', 'mmbuss' ); ?></p></div>
+			<div class="mm-step reveal"><div class="mm-step-top"><span class="mm-step-num">01</span><span class="mm-step-goto" aria-hidden="true">&#8599;</span></div><h3><?php esc_html_e( 'Diagnose', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We assess your current operations, structure, and strategy to identify gaps and opportunities.', 'mmbuss' ); ?></p></div>
+			<div class="mm-step reveal"><div class="mm-step-top"><span class="mm-step-num">02</span><span class="mm-step-goto" aria-hidden="true">&#8599;</span></div><h3><?php esc_html_e( 'Design', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We build tailored frameworks, systems, and strategic roadmaps aligned with your objectives.', 'mmbuss' ); ?></p></div>
+			<div class="mm-step reveal"><div class="mm-step-top"><span class="mm-step-num">03</span><span class="mm-step-goto" aria-hidden="true">&#8599;</span></div><h3><?php esc_html_e( 'Deploy', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We support implementation, ensuring solutions are adopted, not just delivered.', 'mmbuss' ); ?></p></div>
+			<div class="mm-step reveal"><div class="mm-step-top"><span class="mm-step-num">04</span><span class="mm-step-goto" aria-hidden="true">&#8599;</span></div><h3><?php esc_html_e( 'Sustain', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We provide ongoing oversight and advisory support to ensure long-term results.', 'mmbuss' ); ?></p></div>
 		</div>
 	</div>
 </section>

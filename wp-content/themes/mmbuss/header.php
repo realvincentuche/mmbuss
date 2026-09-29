@@ -16,22 +16,9 @@
 	</div>
 </div>
 
-<div class="mm-topbar">
-	<div class="mm-wrap mm-topbar-inner">
-		<span class="mm-topbar-item"><?php echo esc_html( mmbuss_contact( 'office' ) ); ?></span>
-		<span class="mm-topbar-sep" aria-hidden="true"></span>
-		<a class="mm-topbar-item" href="mailto:<?php echo esc_attr( mmbuss_contact( 'email' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'email' ) ); ?></a>
-		<span class="mm-topbar-sep" aria-hidden="true"></span>
-		<a class="mm-topbar-item" href="<?php echo esc_attr( mmbuss_contact( 'phone_href' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'phone' ) ); ?></a>
-	</div>
-</div>
-
 <header class="mm-header" id="mmHeader">
 	<div class="mm-wrap mm-header-inner">
 		<a class="mm-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Mastermind home', 'mmbuss' ); ?>">Mastermind<span class="mm-dot">.</span></a>
-		<button class="mm-nav-toggle" id="mmNavToggle" aria-label="<?php esc_attr_e( 'Toggle menu', 'mmbuss' ); ?>" aria-expanded="false">
-			<span></span><span></span><span></span>
-		</button>
 		<nav class="mm-nav" id="mmNav" aria-label="<?php esc_attr_e( 'Primary', 'mmbuss' ); ?>">
 			<?php
 			wp_nav_menu(
@@ -42,9 +29,39 @@
 				)
 			);
 			?>
-			<a class="mm-btn mm-btn-sm mm-nav-cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?></a>
 		</nav>
+		<div class="mm-header-actions">
+			<a class="mm-btn mm-btn-gold mm-btn-sm mm-nav-cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+			<button class="mm-burger" id="mmBurger" aria-label="<?php esc_attr_e( 'Open menu', 'mmbuss' ); ?>" aria-expanded="false" aria-controls="mmOffcanvas">
+				<span></span><span></span><span></span>
+			</button>
+		</div>
 	</div>
 </header>
+
+<div class="mm-offcanvas-overlay" id="mmOffcanvasOverlay"></div>
+<aside class="mm-offcanvas" id="mmOffcanvas" aria-label="<?php esc_attr_e( 'Site menu', 'mmbuss' ); ?>">
+	<button class="mm-offcanvas-close" id="mmOffcanvasClose" aria-label="<?php esc_attr_e( 'Close menu', 'mmbuss' ); ?>">&times;</button>
+	<a class="mm-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Mastermind<span class="mm-dot">.</span></a>
+	<nav aria-label="<?php esc_attr_e( 'Offcanvas', 'mmbuss' ); ?>">
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'primary',
+				'container'      => false,
+				'fallback_cb'    => 'mmbuss_menu_fallback',
+			)
+		);
+		?>
+	</nav>
+	<div class="mm-offcanvas-contact">
+		<p class="mm-offcanvas-label"><?php esc_html_e( 'Get in Touch', 'mmbuss' ); ?></p>
+		<p><a href="mailto:<?php echo esc_attr( mmbuss_contact( 'email' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'email' ) ); ?></a></p>
+		<p><a href="<?php echo esc_attr( mmbuss_contact( 'phone_href' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'phone' ) ); ?></a></p>
+		<p><?php esc_html_e( 'Toll Free: ', 'mmbuss' ); ?><?php echo esc_html( mmbuss_contact( 'tollfree' ) ); ?></p>
+		<p><?php echo esc_html( mmbuss_contact( 'office' ) ); ?></p>
+		<p><a class="mm-btn mm-btn-gold mm-btn-sm" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a></p>
+	</div>
+</aside>
 
 <main id="content" class="mm-main">

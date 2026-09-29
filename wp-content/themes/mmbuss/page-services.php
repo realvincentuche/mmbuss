@@ -30,7 +30,7 @@ get_template_part(
 			<article class="mm-card reveal">
 				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-2.jpg' ); ?>" alt="<?php esc_attr_e( 'Business management', 'mmbuss' ); ?>" loading="lazy"></div>
 				<div class="mm-card-body">
-					<span class="mm-card-num">/ 01</span>
+					<span class="mm-svc-num">/ 01</span>
 					<h3><?php esc_html_e( 'Business Management', 'mmbuss' ); ?></h3>
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Organizational structuring and governance', 'mmbuss' ); ?></li>
@@ -45,7 +45,7 @@ get_template_part(
 			<article class="mm-card reveal">
 				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/about-section.jpg' ); ?>" alt="<?php esc_attr_e( 'Consulting', 'mmbuss' ); ?>" loading="lazy"></div>
 				<div class="mm-card-body">
-					<span class="mm-card-num">/ 02</span>
+					<span class="mm-svc-num">/ 02</span>
 					<h3><?php esc_html_e( 'Consulting', 'mmbuss' ); ?></h3>
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Business strategy and growth planning', 'mmbuss' ); ?></li>
@@ -60,7 +60,7 @@ get_template_part(
 			<article class="mm-card reveal">
 				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/services-banner.jpg' ); ?>" alt="<?php esc_attr_e( 'Operational solutions', 'mmbuss' ); ?>" loading="lazy"></div>
 				<div class="mm-card-body">
-					<span class="mm-card-num">/ 03</span>
+					<span class="mm-svc-num">/ 03</span>
 					<h3><?php esc_html_e( 'Operational Solutions', 'mmbuss' ); ?></h3>
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Operations audits and process re-engineering', 'mmbuss' ); ?></li>
@@ -75,7 +75,7 @@ get_template_part(
 			<article class="mm-card reveal">
 				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-4.jpg' ); ?>" alt="<?php esc_attr_e( 'Supply of goods and services', 'mmbuss' ); ?>" loading="lazy"></div>
 				<div class="mm-card-body">
-					<span class="mm-card-num">/ 04</span>
+					<span class="mm-svc-num">/ 04</span>
 					<h3><?php esc_html_e( 'Supply of Goods and Services', 'mmbuss' ); ?></h3>
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Procurement and sourcing of goods, materials, and equipment', 'mmbuss' ); ?></li>
