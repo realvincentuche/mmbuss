@@ -1379,6 +1379,7 @@ html { scroll-padding-top: 92px; }
 @media (max-width: 640px) {
 	.mm-slide-title .hl { padding-right: .7rem; padding-left: .7rem; }
 	.mm-slider-controls { right: 20px; bottom: 16px; padding: 10px 12px; }
+	.mm-slide-content { padding-bottom: 60px; }
 }
 
 @media (min-width: 641px) and (max-width: 980px) {
