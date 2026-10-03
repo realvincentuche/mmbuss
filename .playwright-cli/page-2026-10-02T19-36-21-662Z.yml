@@ -1,0 +1,222 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]: Mastermind.
+  - banner [ref=f1e7]:
+    - generic [ref=f1e8]:
+      - link "Mastermind home" [ref=f1e9] [cursor=pointer]:
+        - /url: https://mmbuss.test/
+        - text: Mastermind.
+      - button "Open menu" [ref=f1e11] [cursor=pointer]
+  - complementary "Site menu" [ref=f1e15]:
+    - button "Close menu" [ref=f1e16] [cursor=pointer]: ×
+    - link "Mastermind." [ref=f1e17] [cursor=pointer]:
+      - /url: https://mmbuss.test/
+    - navigation "Offcanvas" [ref=f1e18]:
+      - list [ref=f1e19]:
+        - listitem [ref=f1e20]:
+          - link "Home" [ref=f1e21] [cursor=pointer]:
+            - /url: https://mmbuss.test/
+        - listitem [ref=f1e22]:
+          - link "About" [ref=f1e23] [cursor=pointer]:
+            - /url: https://mmbuss.test/about/
+        - listitem [ref=f1e24]:
+          - link "Services" [ref=f1e25] [cursor=pointer]:
+            - /url: https://mmbuss.test/services/
+        - listitem [ref=f1e26]:
+          - link "Industries" [ref=f1e27] [cursor=pointer]:
+            - /url: https://mmbuss.test/industries/
+        - listitem [ref=f1e28]:
+          - link "Contact" [ref=f1e29] [cursor=pointer]:
+            - /url: https://mmbuss.test/contact/
+    - generic [ref=f1e30]:
+      - paragraph [ref=f1e31]: Get in Touch
+      - paragraph [ref=f1e32]:
+        - link "info@mmbuss.com" [ref=f1e33] [cursor=pointer]:
+          - /url: mailto:info@mmbuss.com
+      - paragraph [ref=f1e34]:
+        - link "941 557 7219" [ref=f1e35] [cursor=pointer]:
+          - /url: tel:+19415577219
+      - paragraph [ref=f1e36]: "Toll Free: 1 888 830 3007"
+      - paragraph [ref=f1e37]: Pennsylvania, USA
+      - paragraph [ref=f1e38]:
+        - link "Get a Proposal" [ref=f1e39] [cursor=pointer]:
+          - /url: https://mmbuss.test/contact/
+          - text: Get a Proposal
+          - generic [aria-hidden] [ref=f1e40]: →
+  - main [ref=f1e41]:
+    - generic [ref=f1e44]:
+      - paragraph [ref=f1e45]:
+        - link "Home" [ref=f1e46] [cursor=pointer]:
+          - /url: https://mmbuss.test/
+        - text: ›About Us
+      - heading "About Us" [level=1] [ref=f1e47]
+      - paragraph [ref=f1e48]: Every organization has untapped potential waiting to be structured, streamlined, and scaled.
+    - generic [ref=f1e50]:
+      - generic [ref=f1e51]:
+        - paragraph [ref=f1e52]: Who We Are
+        - heading "International expertise, practical solutions" [level=2] [ref=f1e53]
+        - paragraph [ref=f1e54]: "Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled."
+        - paragraph [ref=f1e55]: We work at the intersection of strategy and execution — helping business owners, executives, and institutions solve complex operational challenges, professionalize their management systems, and position themselves for sustainable growth in competitive markets.
+      - img "Mastermind strategy session" [ref=f1e57]
+    - generic [ref=f1e60]:
+      - article [ref=f1e61]:
+        - generic [ref=f1e62]:
+          - text: MISSION
+          - heading "Strategic clarity for global competition" [level=3] [ref=f1e63]
+          - paragraph [ref=f1e64]: To equip businesses with the strategic clarity, operational frameworks, and management expertise required to compete confidently on a global scale.
+      - article [ref=f1e65]:
+        - generic [ref=f1e66]:
+          - text: VISION
+          - heading "A trusted global name" [level=3] [ref=f1e67]
+          - paragraph [ref=f1e68]: To be a trusted global name in business management and consulting — recognized for practical solutions, measurable impact, and unwavering integrity.
+    - generic [ref=f1e70]:
+      - generic [ref=f1e71]:
+        - paragraph [ref=f1e72]: Our Approach
+        - heading "Diagnose. Design. Deploy. Sustain." [level=2] [ref=f1e73]
+      - generic [ref=f1e74]:
+        - generic [ref=f1e75]:
+          - generic [ref=f1e76]:
+            - generic [ref=f1e77]: "01"
+            - generic [aria-hidden] [ref=f1e78]: ↗
+          - heading "Diagnose" [level=3] [ref=f1e79]
+          - paragraph [ref=f1e80]: We assess your current operations, structure, and strategy to identify gaps and opportunities.
+        - generic [ref=f1e81]:
+          - generic [ref=f1e82]:
+            - generic [ref=f1e83]: "02"
+            - generic [aria-hidden] [ref=f1e84]: ↗
+          - heading "Design" [level=3] [ref=f1e85]
+          - paragraph [ref=f1e86]: We build tailored frameworks, systems, and strategic roadmaps aligned with your objectives.
+        - generic [ref=f1e87]:
+          - generic [ref=f1e88]:
+            - generic [ref=f1e89]: "03"
+            - generic [aria-hidden] [ref=f1e90]: ↗
+          - heading "Deploy" [level=3] [ref=f1e91]
+          - paragraph [ref=f1e92]: We support implementation, ensuring solutions are adopted, not just delivered.
+        - generic [ref=f1e93]:
+          - generic [ref=f1e94]:
+            - generic [ref=f1e95]: "04"
+            - generic [aria-hidden] [ref=f1e96]: ↗
+          - heading "Sustain" [level=3] [ref=f1e97]
+          - paragraph [ref=f1e98]: We provide ongoing oversight and advisory support to ensure long-term results.
+    - generic [ref=f1e100]:
+      - generic [ref=f1e101]:
+        - paragraph [ref=f1e102]: Why Mastermind Business Systems LLC
+        - heading "Built for organizations that outgrow average" [level=2] [ref=f1e103]
+      - generic [ref=f1e104]:
+        - article [ref=f1e105]:
+          - generic [ref=f1e106]:
+            - heading "Global Perspective, Local Precision" [level=3] [ref=f1e107]
+            - paragraph [ref=f1e108]: Our approach blends international best practices with a sharp understanding of local market realities.
+        - article [ref=f1e109]:
+          - generic [ref=f1e110]:
+            - heading "Results-Driven Methodology" [level=3] [ref=f1e111]
+            - paragraph [ref=f1e112]: "We measure our success by your outcomes: stronger operations, clearer strategy, and sustainable growth."
+        - article [ref=f1e113]:
+          - generic [ref=f1e114]:
+            - heading "Cross-Industry Expertise" [level=3] [ref=f1e115]
+            - paragraph [ref=f1e116]: Our team brings experience across diverse sectors, allowing us to bring fresh perspective and proven frameworks to every engagement.
+        - article [ref=f1e117]:
+          - generic [ref=f1e118]:
+            - heading "Partnership, Not Just Advisory" [level=3] [ref=f1e119]
+            - paragraph [ref=f1e120]: We stay engaged beyond the recommendation stage, supporting execution and long-term sustainability.
+  - generic [ref=f1e122]:
+    - generic [ref=f1e124]:
+      - generic [ref=f1e125]:
+        - text: Let's talk
+        - generic [ref=f1e126]: ✦
+        - text: Let's talk
+        - generic [ref=f1e127]: ✦
+        - text: Let's talk
+        - generic [ref=f1e128]: ✦
+        - text: Let's talk
+        - generic [ref=f1e129]: ✦
+        - text: Let's talk
+        - generic [ref=f1e130]: ✦
+        - text: Let's talk
+        - generic [ref=f1e131]: ✦
+      - generic [ref=f1e132]:
+        - text: Let's talk
+        - generic [ref=f1e133]: ✦
+        - text: Let's talk
+        - generic [ref=f1e134]: ✦
+        - text: Let's talk
+        - generic [ref=f1e135]: ✦
+        - text: Let's talk
+        - generic [ref=f1e136]: ✦
+        - text: Let's talk
+        - generic [ref=f1e137]: ✦
+        - text: Let's talk
+        - generic [ref=f1e138]: ✦
+    - generic [ref=f1e139]:
+      - paragraph [ref=f1e140]: Ready to grow?
+      - heading "Let's Build Something Structured" [level=2] [ref=f1e141]
+      - paragraph [ref=f1e142]: Whether you're launching a new venture, restructuring an existing one, or scaling into new markets, Mastermind Business Systems LLC brings the strategic insight and operational discipline to help you get there.
+      - generic [ref=f1e143]:
+        - link "Start a Conversation" [ref=f1e144] [cursor=pointer]:
+          - /url: https://mmbuss.test/contact/
+          - text: Start a Conversation
+          - generic [aria-hidden] [ref=f1e145]: →
+        - link "Explore Services" [ref=f1e146] [cursor=pointer]:
+          - /url: https://mmbuss.test/services/
+  - contentinfo [ref=f1e147]:
+    - generic [ref=f1e148]:
+      - generic [ref=f1e149]:
+        - link "Mastermind." [ref=f1e150] [cursor=pointer]:
+          - /url: https://mmbuss.test/
+        - paragraph [ref=f1e151]: A global business management and consulting firm dedicated to transforming how organizations operate, compete, and grow.
+        - paragraph [ref=f1e152]: Structured Strategy. Sustainable Growth.
+        - generic "Social links" [ref=f1e153]:
+          - link "LinkedIn" [ref=f1e154] [cursor=pointer]:
+            - /url: "#"
+            - text: in
+          - link "X" [ref=f1e155] [cursor=pointer]:
+            - /url: "#"
+            - text: x
+          - link "Facebook" [ref=f1e156] [cursor=pointer]:
+            - /url: "#"
+            - text: f
+          - link "Instagram" [ref=f1e157] [cursor=pointer]:
+            - /url: "#"
+            - text: ig
+      - generic [ref=f1e158]:
+        - heading "Company" [level=3] [ref=f1e159]
+        - list [ref=f1e160]:
+          - listitem [ref=f1e161]:
+            - link "About Us" [ref=f1e162] [cursor=pointer]:
+              - /url: https://mmbuss.test/about/
+          - listitem [ref=f1e163]:
+            - link "Industries" [ref=f1e164] [cursor=pointer]:
+              - /url: https://mmbuss.test/industries/
+          - listitem [ref=f1e165]:
+            - link "Contact" [ref=f1e166] [cursor=pointer]:
+              - /url: https://mmbuss.test/contact/
+      - generic [ref=f1e167]:
+        - heading "Services" [level=3] [ref=f1e168]
+        - list [ref=f1e169]:
+          - listitem [ref=f1e170]:
+            - link "Business Management" [ref=f1e171] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/business-management/
+          - listitem [ref=f1e172]:
+            - link "Consulting" [ref=f1e173] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/consulting/
+          - listitem [ref=f1e174]:
+            - link "Operational Solutions" [ref=f1e175] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/operational-solutions/
+          - listitem [ref=f1e176]:
+            - link "Supply of Goods and Services" [ref=f1e177] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/supply-of-goods-and-services/
+      - generic [ref=f1e178]:
+        - heading "Get in Touch" [level=3] [ref=f1e179]
+        - list [ref=f1e180]:
+          - listitem [ref=f1e181]:
+            - link "info@mmbuss.com" [ref=f1e182] [cursor=pointer]:
+              - /url: mailto:info@mmbuss.com
+          - listitem [ref=f1e183]:
+            - link "941 557 7219" [ref=f1e184] [cursor=pointer]:
+              - /url: tel:+19415577219
+          - listitem [ref=f1e185]: "Toll Free: 1 888 830 3007"
+          - listitem [ref=f1e186]: Pennsylvania, USA
+          - listitem [ref=f1e187]: www.mmbuss.com
+    - paragraph [aria-hidden] [ref=f1e189]: mastermind
+    - generic [ref=f1e191]:
+      - paragraph [ref=f1e192]: © 2026 Mastermind Business Systems LLC. All rights reserved.
+      - navigation "Footer"

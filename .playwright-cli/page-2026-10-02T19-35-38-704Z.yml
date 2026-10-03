@@ -1,0 +1,474 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Mastermind home" [ref=e4] [cursor=pointer]:
+        - /url: https://mmbuss.test/
+        - text: Mastermind.
+      - button "Open menu" [expanded] [active] [ref=e20] [cursor=pointer]
+  - complementary "Site menu" [ref=e24]:
+    - button "Close menu" [ref=e25] [cursor=pointer]: ×
+    - link "Mastermind." [ref=e26] [cursor=pointer]:
+      - /url: https://mmbuss.test/
+    - navigation "Offcanvas" [ref=e27]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link "Home" [ref=e30] [cursor=pointer]:
+            - /url: https://mmbuss.test/
+        - listitem [ref=e31]:
+          - link "About" [ref=e32] [cursor=pointer]:
+            - /url: https://mmbuss.test/about/
+        - listitem [ref=e33]:
+          - link "Services" [ref=e34] [cursor=pointer]:
+            - /url: https://mmbuss.test/services/
+        - listitem [ref=e35]:
+          - link "Industries" [ref=e36] [cursor=pointer]:
+            - /url: https://mmbuss.test/industries/
+        - listitem [ref=e37]:
+          - link "Contact" [ref=e38] [cursor=pointer]:
+            - /url: https://mmbuss.test/contact/
+    - generic [ref=e39]:
+      - paragraph [ref=e40]: Get in Touch
+      - paragraph [ref=e41]:
+        - link "info@mmbuss.com" [ref=e42] [cursor=pointer]:
+          - /url: mailto:info@mmbuss.com
+      - paragraph [ref=e43]:
+        - link "941 557 7219" [ref=e44] [cursor=pointer]:
+          - /url: tel:+19415577219
+      - paragraph [ref=e45]: "Toll Free: 1 888 830 3007"
+      - paragraph [ref=e46]: Pennsylvania, USA
+      - paragraph [ref=e47]:
+        - link "Get a Proposal" [ref=e48] [cursor=pointer]:
+          - /url: https://mmbuss.test/contact/
+          - text: Get a Proposal
+          - generic [aria-hidden] [ref=e49]: →
+  - main [ref=e50]:
+    - region "Highlights" [ref=e51]:
+      - generic [ref=e426]:
+        - generic [ref=e427]:
+          - paragraph [ref=e428]: Strategy that executes
+          - heading "Smarter Structures. Sharper Strategy." [level=1] [ref=e429]
+          - paragraph [ref=e430]: We partner with businesses across industries and borders to design smarter structures, sharpen strategy, and build operational systems that scale.
+          - paragraph [ref=e431]:
+            - link "How We Work" [ref=e432] [cursor=pointer]:
+              - /url: https://mmbuss.test/about/
+              - text: How We Work
+              - generic [aria-hidden] [ref=e433]: →
+            - link "Our Services" [ref=e434] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/
+        - generic [aria-hidden] [ref=e435]: ✦
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - strong [ref=e79]: "4"
+              - text: Core service pillars
+            - generic [ref=e80]:
+              - strong [ref=e81]: "6"
+              - text: Industries served
+            - generic [ref=e82]:
+              - strong [ref=e83]: "4"
+              - text: Step proven approach
+          - generic [ref=e84]:
+            - tablist "Slides" [ref=e85]:
+              - button "Go to slide 1" [ref=e86] [cursor=pointer]
+              - button "Go to slide 2" [ref=e87] [cursor=pointer]
+              - button "Go to slide 3" [ref=e88] [cursor=pointer]
+              - button "Go to slide 4" [ref=e89] [cursor=pointer]
+            - button "Previous slide" [ref=e90] [cursor=pointer]: ←
+            - button "Next slide" [ref=e91] [cursor=pointer]: →
+        - generic [ref=e92]:
+          - img "Mastermind team at work" [ref=e93]
+          - paragraph [ref=e94]: Trusted by organizations across 6 industries
+    - generic [ref=e96]:
+      - paragraph [ref=e97]: Structured for teams at
+      - generic [aria-hidden] [ref=e98]:
+        - generic [ref=e99]:
+          - text: Startups
+          - generic [ref=e100]: ✦
+        - generic [ref=e101]:
+          - text: Corporate
+          - generic [ref=e102]: ✦
+        - generic [ref=e103]:
+          - text: Logistics
+          - generic [ref=e104]: ✦
+        - generic [ref=e105]:
+          - text: Real Estate
+          - generic [ref=e106]: ✦
+        - generic [ref=e107]:
+          - text: Finance
+          - generic [ref=e108]: ✦
+        - generic [ref=e109]:
+          - text: Nonprofit
+          - generic [ref=e110]: ✦
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - paragraph [ref=e115]: Our Services
+          - heading "Everything your organization needs to operate and grow" [level=2] [ref=e116]
+        - generic [ref=e117]:
+          - paragraph [ref=e118]: Four disciplines, one accountable partner. Every engagement is built around outcomes you can measure.
+          - link "All Services" [ref=e119] [cursor=pointer]:
+            - /url: https://mmbuss.test/services/
+            - text: All Services
+            - generic [aria-hidden] [ref=e120]: →
+      - generic [ref=e121]:
+        - article [ref=e122]:
+          - generic [ref=e123]:
+            - generic [aria-hidden] [ref=e124]: ☷
+            - generic [ref=e125]: / 01
+          - heading "Business Management" [level=3] [ref=e126]
+          - paragraph [ref=e127]: Structuring, governance, and performance systems that professionalize how you run.
+          - generic [ref=e128]:
+            - generic [ref=e129]: Governance
+            - generic [ref=e130]: Performance
+            - generic [ref=e131]: Leadership
+          - link "Learn More" [ref=e132] [cursor=pointer]:
+            - /url: https://mmbuss.test/services/business-management/
+            - text: Learn More
+            - generic [aria-hidden] [ref=e133]: →
+        - article [ref=e134]:
+          - generic [ref=e135]:
+            - generic [aria-hidden] [ref=e136]: ◉
+            - generic [ref=e137]: / 02
+          - heading "Consulting" [level=3] [ref=e138]
+          - paragraph [ref=e139]: Growth planning, market entry, feasibility, and executive-level advisory.
+          - generic [ref=e140]:
+            - generic [ref=e141]: Strategy
+            - generic [ref=e142]: Expansion
+            - generic [ref=e143]: Advisory
+          - link "Learn More" [ref=e144] [cursor=pointer]:
+            - /url: https://mmbuss.test/services/consulting/
+            - text: Learn More
+            - generic [aria-hidden] [ref=e145]: →
+        - article [ref=e146]:
+          - generic [ref=e147]:
+            - generic [aria-hidden] [ref=e148]: ⚙
+            - generic [ref=e149]: / 03
+          - heading "Operational Solutions" [level=3] [ref=e150]
+          - paragraph [ref=e151]: Audits, re-engineering, SOPs, and automation guidance that cut waste.
+          - generic [ref=e152]:
+            - generic [ref=e153]: SOPs
+            - generic [ref=e154]: Automation
+            - generic [ref=e155]: Efficiency
+          - link "Learn More" [ref=e156] [cursor=pointer]:
+            - /url: https://mmbuss.test/services/operational-solutions/
+            - text: Learn More
+            - generic [aria-hidden] [ref=e157]: →
+        - article [ref=e158]:
+          - generic [ref=e159]:
+            - generic [aria-hidden] [ref=e160]: ☒
+            - generic [ref=e161]: / 04
+          - heading "Supply of Goods and Services" [level=3] [ref=e162]
+          - paragraph [ref=e163]: Sourcing, procurement, fulfillment, and trade logistics you can rely on.
+          - generic [ref=e164]:
+            - generic [ref=e165]: Sourcing
+            - generic [ref=e166]: Fulfillment
+            - generic [ref=e167]: Trade
+          - link "Learn More" [ref=e168] [cursor=pointer]:
+            - /url: https://mmbuss.test/services/supply-of-goods-and-services/
+            - text: Learn More
+            - generic [aria-hidden] [ref=e169]: →
+    - generic [ref=e171]:
+      - generic:
+        - img "Mastermind consultants at work"
+        - generic [ref=e172]:
+          - text: ★★★★★
+          - generic [ref=e173]: Practical solutions. Measurable impact. Unwavering integrity.
+      - generic [ref=e174]:
+        - paragraph [ref=e175]: Who We Are
+        - heading "A partner, not just an advisor" [level=2] [ref=e176]
+        - paragraph [ref=e177]: "Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled."
+        - list [ref=e178]:
+          - listitem [ref=e179]: ✓ Global Perspective, Local Precision
+          - listitem [ref=e180]: ✓ Results-Driven Methodology
+          - listitem [ref=e181]: ✓ Cross-Industry Expertise
+          - listitem [ref=e182]: ✓ Partnership, Not Just Advisory
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - strong [ref=e185]: "4"
+            - text: Service pillars
+          - generic [ref=e186]:
+            - strong [ref=e187]: "6"
+            - text: Industries served
+          - generic [ref=e188]:
+            - strong [ref=e189]: "4"
+            - text: Step proven approach
+        - link "More About Us" [ref=e190] [cursor=pointer]:
+          - /url: https://mmbuss.test/about/
+          - text: More About Us
+          - generic [aria-hidden] [ref=e191]: →
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - text: Strategy
+        - generic [ref=e196]: ✦
+        - text: Structure
+        - generic [ref=e197]: ✦
+        - text: Operations
+        - generic [ref=e198]: ✦
+        - text: Supply
+        - generic [ref=e199]: ✦
+        - text: Growth
+        - generic [ref=e200]: ✦
+        - text: Strategy
+        - generic [ref=e201]: ✦
+        - text: Structure
+        - generic [ref=e202]: ✦
+        - text: Operations
+        - generic [ref=e203]: ✦
+        - text: Supply
+        - generic [ref=e204]: ✦
+        - text: Growth
+        - generic [ref=e205]: ✦
+      - generic [ref=e206]:
+        - text: Strategy
+        - generic [ref=e207]: ✦
+        - text: Structure
+        - generic [ref=e208]: ✦
+        - text: Operations
+        - generic [ref=e209]: ✦
+        - text: Supply
+        - generic [ref=e210]: ✦
+        - text: Growth
+        - generic [ref=e211]: ✦
+        - text: Strategy
+        - generic [ref=e212]: ✦
+        - text: Structure
+        - generic [ref=e213]: ✦
+        - text: Operations
+        - generic [ref=e214]: ✦
+        - text: Supply
+        - generic [ref=e215]: ✦
+        - text: Growth
+        - generic [ref=e216]: ✦
+    - generic [ref=e218]:
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - paragraph [ref=e221]: Industries
+          - heading "Cross-industry expertise, applied precisely" [level=2] [ref=e222]
+        - generic [ref=e223]:
+          - paragraph [ref=e224]: Fresh perspective and proven frameworks for every engagement.
+          - link "All Industries" [ref=e225] [cursor=pointer]:
+            - /url: https://mmbuss.test/industries/
+            - text: All Industries
+            - generic [aria-hidden] [ref=e226]: →
+      - generic [ref=e227]:
+        - article [ref=e228]:
+          - generic [ref=e229]:
+            - img "Startup team collaborating" [ref=e230]
+            - generic [ref=e231]: Startups
+          - generic [ref=e232]:
+            - paragraph [ref=e233]: Emerging Enterprises
+            - heading "Startups and Emerging Enterprises" [level=3] [ref=e234]
+            - paragraph [ref=e235]: Direction, structure, and strategy for ventures finding their footing.
+        - article [ref=e236]:
+          - generic [ref=e237]:
+            - img "Corporate headquarters" [ref=e238]
+            - generic [ref=e239]: Corporate
+          - generic [ref=e240]:
+            - paragraph [ref=e241]: Institutions
+            - heading "Corporate and Institutional Clients" [level=3] [ref=e242]
+            - paragraph [ref=e243]: Governance and performance systems for established organizations.
+        - article [ref=e244]:
+          - generic [ref=e245]:
+            - img "Logistics operations" [ref=e246]
+            - generic [ref=e247]: Logistics
+          - generic [ref=e248]:
+            - paragraph [ref=e249]: Trade & Supply Chain
+            - heading "Trade, Logistics, and Supply Chain" [level=3] [ref=e250]
+            - paragraph [ref=e251]: Optimization across sourcing, movement, and fulfillment.
+    - generic [ref=e253]:
+      - generic [ref=e254]:
+        - paragraph [ref=e255]: Our Approach
+        - generic [ref=e256]:
+          - heading "From diagnosis to sustained results in four steps" [level=2] [ref=e257]
+          - paragraph [ref=e258]: A proven operating rhythm — so you always know what we are doing, why, and what it returned.
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - generic [ref=e261]:
+            - generic [ref=e262]: "01"
+            - generic [aria-hidden] [ref=e263]: ↗
+          - heading "Diagnose" [level=3] [ref=e264]
+          - paragraph [ref=e265]: We assess your current operations, structure, and strategy to identify gaps and opportunities.
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - generic [ref=e268]: "02"
+            - generic [aria-hidden] [ref=e269]: ↗
+          - heading "Design" [level=3] [ref=e270]
+          - paragraph [ref=e271]: We build tailored frameworks, systems, and strategic roadmaps aligned with your objectives.
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - generic [ref=e274]: "03"
+            - generic [aria-hidden] [ref=e275]: ↗
+          - heading "Deploy" [level=3] [ref=e276]
+          - paragraph [ref=e277]: We support implementation, ensuring solutions are adopted, not just delivered.
+        - generic [ref=e278]:
+          - generic [ref=e279]:
+            - generic [ref=e280]: "04"
+            - generic [aria-hidden] [ref=e281]: ↗
+          - heading "Sustain" [level=3] [ref=e282]
+          - paragraph [ref=e283]: We provide ongoing oversight and advisory support to ensure long-term results.
+    - generic [ref=e285]:
+      - generic [ref=e286]:
+        - paragraph [ref=e287]: Why Mastermind
+        - heading "Built for organizations that outgrow average" [level=2] [ref=e288]
+        - paragraph [ref=e289]: We measure our success by your outcomes — stronger operations, clearer strategy, and sustainable growth.
+        - generic [ref=e290]:
+          - generic [ref=e291]:
+            - generic [aria-hidden] [ref=e292]: ◎
+            - generic [ref=e293]:
+              - heading "Global Perspective, Local Precision" [level=3] [ref=e294]
+              - paragraph [ref=e295]: Our approach blends international best practices with a sharp understanding of local market realities.
+          - generic [ref=e296]:
+            - generic [aria-hidden] [ref=e297]: ⎈
+            - generic [ref=e298]:
+              - heading "Results-Driven Methodology" [level=3] [ref=e299]
+              - paragraph [ref=e300]: "We measure our success by your outcomes: stronger operations, clearer strategy, and sustainable growth."
+          - generic [ref=e301]:
+            - generic [aria-hidden] [ref=e302]: ☷
+            - generic [ref=e303]:
+              - heading "Cross-Industry Expertise" [level=3] [ref=e304]
+              - paragraph [ref=e305]: Our team brings experience across diverse sectors, allowing us to bring fresh perspective and proven frameworks to every engagement.
+          - generic [ref=e306]:
+            - generic [aria-hidden] [ref=e307]: ✦
+            - generic [ref=e308]:
+              - heading "Partnership, Not Just Advisory" [level=3] [ref=e309]
+              - paragraph [ref=e310]: We stay engaged beyond the recommendation stage, supporting execution and long-term sustainability.
+      - generic:
+        - img "Mastermind partner meeting"
+        - generic [ref=e311]:
+          - text: ★★★★★
+          - generic [ref=e312]: Structured Strategy. Sustainable Growth.
+    - generic [ref=e314]:
+      - generic [ref=e315]:
+        - paragraph [ref=e316]: FAQ
+        - heading "Questions before we start" [level=2] [ref=e317]
+        - paragraph [ref=e318]: The things every executive asks us on the first call — answered upfront, no sales fluff.
+        - generic [ref=e319]:
+          - generic [aria-hidden] [ref=e320]: ❞
+          - generic [ref=e321]:
+            - paragraph [ref=e322]: Still not sure? Ask us directly
+            - link "info@mmbuss.com" [ref=e323] [cursor=pointer]:
+              - /url: mailto:info@mmbuss.com
+      - generic [ref=e324]:
+        - generic [ref=e325]:
+          - button "What does an engagement with Mastermind look like?" [ref=e326] [cursor=pointer]:
+            - text: What does an engagement with Mastermind look like?
+            - generic [aria-hidden] [ref=e327]: +
+          - paragraph [ref=e329]: We start by diagnosing your operations, structure, and strategy — then design tailored frameworks, support deployment, and sustain results with ongoing oversight.
+        - generic [ref=e330]:
+          - button "Do you work with startups or only established companies?" [ref=e331] [cursor=pointer]:
+            - text: Do you work with startups or only established companies?
+            - generic [aria-hidden] [ref=e332]: +
+          - paragraph [ref=e333]: Both. From startups seeking direction to established enterprises pursuing transformation, we tailor every engagement to where you are and where you are headed.
+        - generic [ref=e334]:
+          - button "Can you supply goods as well as advisory services?" [ref=e335] [cursor=pointer]:
+            - text: Can you supply goods as well as advisory services?
+            - generic [aria-hidden] [ref=e336]: +
+          - paragraph [ref=e337]: Yes. We procure and source goods, materials, and equipment — and supply and distribute to corporate, government, and institutional clients, including import/export facilitation.
+        - generic [ref=e338]:
+          - button "How do we start?" [ref=e339] [cursor=pointer]:
+            - text: How do we start?
+            - generic [aria-hidden] [ref=e340]: +
+          - paragraph [ref=e341]: Send a message through the contact page or email info@mmbuss.com with your company name, industry, and the challenge you want solved. We respond to every serious enquiry.
+  - generic [ref=e343]:
+    - generic [ref=e345]:
+      - generic [ref=e346]:
+        - text: Let's talk
+        - generic [ref=e347]: ✦
+        - text: Let's talk
+        - generic [ref=e348]: ✦
+        - text: Let's talk
+        - generic [ref=e349]: ✦
+        - text: Let's talk
+        - generic [ref=e350]: ✦
+        - text: Let's talk
+        - generic [ref=e351]: ✦
+        - text: Let's talk
+        - generic [ref=e352]: ✦
+      - generic [ref=e353]:
+        - text: Let's talk
+        - generic [ref=e354]: ✦
+        - text: Let's talk
+        - generic [ref=e355]: ✦
+        - text: Let's talk
+        - generic [ref=e356]: ✦
+        - text: Let's talk
+        - generic [ref=e357]: ✦
+        - text: Let's talk
+        - generic [ref=e358]: ✦
+        - text: Let's talk
+        - generic [ref=e359]: ✦
+    - generic [ref=e360]:
+      - paragraph [ref=e362]: Ready to grow?
+      - heading "Let's Build Something Structured" [level=2] [ref=e363]
+      - paragraph [ref=e364]: Whether you're launching a new venture, restructuring an existing one, or scaling into new markets, Mastermind Business Systems LLC brings the strategic insight and operational discipline to help you get there.
+      - generic [ref=e365]:
+        - link "Start a Conversation" [ref=e366] [cursor=pointer]:
+          - /url: https://mmbuss.test/contact/
+          - text: Start a Conversation
+          - generic [aria-hidden] [ref=e367]: →
+        - link "Explore Services" [ref=e368] [cursor=pointer]:
+          - /url: https://mmbuss.test/services/
+  - contentinfo [ref=e369]:
+    - generic [ref=e370]:
+      - generic [ref=e371]:
+        - link "Mastermind." [ref=e372] [cursor=pointer]:
+          - /url: https://mmbuss.test/
+        - paragraph [ref=e373]: A global business management and consulting firm dedicated to transforming how organizations operate, compete, and grow.
+        - paragraph [ref=e374]: Structured Strategy. Sustainable Growth.
+        - generic "Social links" [ref=e375]:
+          - link "LinkedIn" [ref=e376] [cursor=pointer]:
+            - /url: "#"
+            - text: in
+          - link "X" [ref=e377] [cursor=pointer]:
+            - /url: "#"
+            - text: x
+          - link "Facebook" [ref=e378] [cursor=pointer]:
+            - /url: "#"
+            - text: f
+          - link "Instagram" [ref=e379] [cursor=pointer]:
+            - /url: "#"
+            - text: ig
+      - generic [ref=e380]:
+        - heading "Company" [level=3] [ref=e381]
+        - list [ref=e382]:
+          - listitem [ref=e383]:
+            - link "About Us" [ref=e384] [cursor=pointer]:
+              - /url: https://mmbuss.test/about/
+          - listitem [ref=e385]:
+            - link "Industries" [ref=e386] [cursor=pointer]:
+              - /url: https://mmbuss.test/industries/
+          - listitem [ref=e387]:
+            - link "Contact" [ref=e388] [cursor=pointer]:
+              - /url: https://mmbuss.test/contact/
+      - generic [ref=e389]:
+        - heading "Services" [level=3] [ref=e390]
+        - list [ref=e391]:
+          - listitem [ref=e392]:
+            - link "Business Management" [ref=e393] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/business-management/
+          - listitem [ref=e394]:
+            - link "Consulting" [ref=e395] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/consulting/
+          - listitem [ref=e396]:
+            - link "Operational Solutions" [ref=e397] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/operational-solutions/
+          - listitem [ref=e398]:
+            - link "Supply of Goods and Services" [ref=e399] [cursor=pointer]:
+              - /url: https://mmbuss.test/services/supply-of-goods-and-services/
+      - generic [ref=e400]:
+        - heading "Get in Touch" [level=3] [ref=e401]
+        - list [ref=e402]:
+          - listitem [ref=e403]:
+            - link "info@mmbuss.com" [ref=e404] [cursor=pointer]:
+              - /url: mailto:info@mmbuss.com
+          - listitem [ref=e405]:
+            - link "941 557 7219" [ref=e406] [cursor=pointer]:
+              - /url: tel:+19415577219
+          - listitem [ref=e407]: "Toll Free: 1 888 830 3007"
+          - listitem [ref=e408]: Pennsylvania, USA
+          - listitem [ref=e409]: www.mmbuss.com
+    - paragraph [aria-hidden] [ref=e411]: mastermind
+    - generic [ref=e413]:
+      - paragraph [ref=e414]: © 2026 Mastermind Business Systems LLC. All rights reserved.
+      - navigation "Footer"
