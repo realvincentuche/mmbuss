@@ -11,7 +11,6 @@ get_header();
 $uri = get_template_directory_uri();
 $slides = array(
 	array(
-		'badge' => 'Business Management — Consulting — Operational Solutions',
 		'title' => 'Better <span class="mm-outline">Business.</span><br><span class="hl">Built to Grow.</span>',
 		'text'  => 'Mastermind Business Systems LLC is a global business management and consulting firm dedicated to transforming how organizations operate, compete, and grow.',
 		'img'   => $uri . '/assets/images/home-slide-business-district.jpg',
@@ -19,7 +18,6 @@ $slides = array(
 		'cta2'  => array( 'Explore Services', home_url( '/services/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
-		'badge' => 'Strategy that executes',
 		'title' => 'Smart <span class="hl">Systems.</span><br><span class="mm-outline">Clear Strategy.</span>',
 		'text'  => 'We partner with businesses across industries and borders to design smarter structures, sharpen strategy, and build operational systems that scale.',
 		'img'   => $uri . '/assets/images/home-slide-strategy-team.jpg',
@@ -28,14 +26,13 @@ $slides = array(
 	),
 	array(
 		'badge' => 'From ambition to results',
-		'title' => 'From Plans to <span class="mm-outline">Progress.</span><br><span class="hl">Results That Last.</span>',
+		'title' => 'Plans Into <span class="mm-outline">Progress.</span><br><span class="hl">Results That Last.</span>',
 		'text'  => 'From startups seeking direction to established enterprises pursuing transformation, we deliver the expertise, discipline, and insight needed to turn ambition into measurable results.',
 		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
 		'cta1'  => array( 'Why Mastermind', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
 		'cta2'  => array( 'Industries We Serve', home_url( '/industries/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
-		'badge' => 'Operations, supply and scale',
 		'title' => 'Operations That <span class="mm-outline">Scale</span> <span class="hl">With You.</span>',
 		'text'  => 'Operations audits, process re-engineering, SOP development, and supply of goods and services — built for sustainable growth in competitive markets.',
 		'img'   => $uri . '/assets/images/home-slide-logistics.jpg',
@@ -50,7 +47,6 @@ $slides = array(
 		<?php foreach ( $slides as $i => $s ) : ?>
 		<div class="mm-slide<?php echo 0 === $i ? ' active' : ''; ?>" role="group" aria-roledescription="slide" aria-label="<?php echo esc_attr( sprintf( __( '%1$d of %2$d', 'mmbuss' ), $i + 1, count( $slides ) ) ); ?>" aria-hidden="<?php echo 0 === $i ? 'false' : 'true'; ?>"<?php echo 0 === $i ? '' : ' inert'; ?> style="background-image:url('<?php echo esc_url( $s['img'] ); ?>')">
 			<div class="mm-wrap mm-slide-content">
-				<p class="mm-slide-badge"><?php echo esc_html( $s['badge'] ); ?></p>
 				<h2 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h2>
 				<p class="mm-slide-text"><?php echo esc_html( $s['text'] ); ?></p>
 				<p class="mm-slide-actions">
