@@ -1328,7 +1328,10 @@ html { scroll-padding-top: 92px; }
 }
 .mm-slide-title { color: #fff; }
 .mm-slide-text { color: rgba(255,255,255,.88); }
-.mm-outline { -webkit-text-stroke-color: #fff; }
+.mm-slide-title .mm-outline {
+	color: #fff;
+	-webkit-text-stroke: 0;
+}
 .mm-slide-actions .mm-btn-outline { color: #fff; border-color: rgba(255,255,255,.72); }
 .mm-slide-actions .mm-btn-outline:hover { color: var(--mm-navy); background: #fff; border-color: #fff; }
 
