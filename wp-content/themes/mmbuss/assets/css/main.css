@@ -1330,7 +1330,7 @@ html { scroll-padding-top: 92px; }
 		background: linear-gradient(0deg, rgba(3,6,11,.96) 0%, rgba(3,6,11,.9) 48%, rgba(3,6,11,.48) 76%, rgba(3,6,11,.16) 100%);
 	}
 	.mm-slide { min-height: min(540px, calc(100svh - 12px)); }
-	.mm-slide-content { padding-top: 148px; padding-bottom: 34px; }
+	.mm-slide-content { padding-top: 115px; padding-bottom: 34px; }
 }
 
 .mm-slide-title .hl {
