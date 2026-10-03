@@ -1095,7 +1095,7 @@ html { scroll-padding-top: 92px; }
 .mm-card-body { padding: 25px 26px 28px; }
 .mm-card-body h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: -.03em; text-wrap: balance; }
 .mm-card-list li { line-height: 1.5; }
-.mm-split { gap: clamp(42px, 8vw, 110px); }
+.mm-split { gap: clamp(42px, 8vw, 60px); }
 .mm-split-media > img { border-radius: var(--mm-radius-lg); box-shadow: none; }
 .mm-split-numbers { gap: clamp(22px, 4vw, 56px); }
 .mm-split-numbers strong { font-variant-numeric: tabular-nums; }
