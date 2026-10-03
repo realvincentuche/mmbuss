@@ -261,9 +261,9 @@ a { color: var(--mm-navy-2); }
 	color: #fff;
 	transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
-.mm-btn .mm-arrow-icon { transition: transform 0.2s ease; }
+.mm-btn .ph-arrow-right { transition: transform 0.2s ease; }
 .mm-btn:hover { transform: translateY(-2px); box-shadow: var(--mm-shadow); }
-.mm-btn:hover .mm-arrow-icon { transform: translateX(4px); }
+.mm-btn:hover .ph-arrow-right { transform: translateX(4px); }
 .mm-btn-gold { background: var(--mm-gold); border-color: var(--mm-gold); color: var(--mm-navy-3); }
 .mm-btn-gold:hover { background: var(--mm-navy); border-color: var(--mm-navy); color: #fff; }
 .mm-btn-outline { background: transparent; color: var(--mm-navy); }
@@ -280,15 +280,6 @@ a { color: var(--mm-navy-2); }
 	gap: 8px;
 }
 .mm-text-link:hover { color: var(--mm-gold); }
-.mm-arrow-icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	flex: 0 0 auto;
-	font-weight: normal;
-	font-style: normal;
-	line-height: 1;
-}
 
 /* ---------- Kickers, highlights ---------- */
 .mm-kicker {
@@ -1284,13 +1275,12 @@ html { scroll-padding-top: 92px; }
 	box-shadow: none;
 }
 .mm-header .mm-nav-cta:hover { background: var(--mm-gold); border-color: var(--mm-gold); color: #0B0B10; }
-.mm-btn .mm-arrow-icon,
-.mm-nav-cta .mm-arrow-icon {
+.mm-btn .ph-arrow-right {
 	font-size: 1.6rem;
 	font-weight: normal;
 	line-height: 1;
 }
-.mm-nav-cta .mm-arrow-icon { font-size: 1.9rem; }
+.mm-nav-cta .ph-arrow-right { font-size: 1.9rem; }
 .mm-header .mm-burger { border-color: rgba(255,255,255,.28); }
 .mm-header .mm-burger span { background: #fff; }
 .mm-header .mm-burger:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.55); }
@@ -1383,8 +1373,8 @@ html { scroll-padding-top: 92px; }
 }
 .mm-slider-dot { min-width: 24px; }
 .mm-slider-dot.active { min-width: 42px; }
-.mm-header .mm-nav-cta .mm-arrow-icon { transition: transform .2s ease; }
-.mm-header .mm-nav-cta:hover .mm-arrow-icon { transform: translateX(5px); }
+.mm-header .mm-nav-cta .ph-arrow-right { transition: transform .2s ease; }
+.mm-header .mm-nav-cta:hover .ph-arrow-right { transform: translateX(5px); }
 
 @media (max-width: 640px) {
 	.mm-slide-title .hl { padding-right: .7rem; padding-left: .7rem; }

@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'MMBUSS_VERSION', '0.3.4' );
+define( 'MMBUSS_VERSION', '0.3.5' );
 
 /**
  * Theme setup: menus, title tag, thumbnails, HTML5, feed links.
@@ -58,16 +58,9 @@ function mmbuss_assets() {
 	);
 
 	wp_enqueue_style(
-		'mmbuss-phosphor-fill',
-		get_template_directory_uri() . '/assets/css/phosphor-icon-fill.css',
-		array(),
-		MMBUSS_VERSION
-	);
-
-	wp_enqueue_style(
 		'mmbuss-main',
 		get_template_directory_uri() . '/assets/css/main.css',
-		array( 'mmbuss-style', 'mmbuss-fonts', 'mmbuss-phosphor', 'mmbuss-phosphor-fill' ),
+		array( 'mmbuss-style', 'mmbuss-fonts', 'mmbuss-phosphor' ),
 		MMBUSS_VERSION
 	);
 

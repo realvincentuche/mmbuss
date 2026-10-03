@@ -30,7 +30,7 @@
 			?>
 		</nav>
 		<div class="mm-header-actions">
-			<a class="mm-btn mm-btn-gold mm-btn-sm mm-nav-cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?> <i class="ph-fill ph-arrow-right mm-arrow-icon" aria-hidden="true"></i></a>
+			<a class="mm-btn mm-btn-gold mm-btn-sm mm-nav-cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
 			<button class="mm-burger" id="mmBurger" aria-label="<?php esc_attr_e( 'Open menu', 'mmbuss' ); ?>" aria-expanded="false" aria-controls="mmOffcanvas">
 				<span></span><span></span><span></span>
 			</button>
@@ -59,7 +59,7 @@
 		<p><a href="<?php echo esc_attr( mmbuss_contact( 'phone_href' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'phone' ) ); ?></a></p>
 		<p><?php esc_html_e( 'Toll Free: ', 'mmbuss' ); ?><?php echo esc_html( mmbuss_contact( 'tollfree' ) ); ?></p>
 		<p><?php echo esc_html( mmbuss_contact( 'office' ) ); ?></p>
-		<p><a class="mm-btn mm-btn-gold mm-btn-sm" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?> <i class="ph-fill ph-arrow-right mm-arrow-icon" aria-hidden="true"></i></a></p>
+		<p><a class="mm-btn mm-btn-gold mm-btn-sm" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
 	</div>
 </aside>
 
