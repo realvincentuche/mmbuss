@@ -1276,11 +1276,11 @@ html { scroll-padding-top: 92px; }
 }
 .mm-header .mm-nav-cta:hover { background: var(--mm-gold); border-color: var(--mm-gold); color: #0B0B10; }
 .mm-btn .ph-arrow-right {
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	font-weight: normal;
 	line-height: 1;
 }
-.mm-nav-cta .ph-arrow-right { font-size: 1.9rem; }
+.mm-nav-cta .ph-arrow-right { font-size: 1.3rem; }
 .mm-header .mm-burger { border-color: rgba(255,255,255,.28); }
 .mm-header .mm-burger span { background: #fff; }
 .mm-header .mm-burger:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.55); }
