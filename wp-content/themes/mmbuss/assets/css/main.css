@@ -967,7 +967,7 @@ a { color: var(--mm-navy-2); }
 	.mm-offcanvas { width: 100vw; }
 }
 
-/* ---------- Editorial polish: Marrky-inspired, MMBuss identity ---------- */
+/* ---------- Theme refinements and responsive overrides ---------- */
 :root {
 	--mm-wrap: 1280px;
 	--mm-radius: 18px;
@@ -981,30 +981,20 @@ html { scroll-padding-top: 92px; }
 	outline-offset: 4px;
 }
 
-.mm-header-inner { min-height: 84px; }
 .mm-brand { font-size: 1.8rem; }
 .mm-nav ul { gap: clamp(18px, 2.2vw, 34px); }
 .mm-nav a { font-size: 0.94rem; }
 
-.mm-hero { padding: 22px 22px 0; }
 .mm-slides {
-	border-radius: var(--mm-radius-lg);
 	overflow: hidden;
 	background: var(--mm-navy-3);
 }
 .mm-slide {
-	min-height: min(720px, 76vw);
 	min-height: clamp(560px, 68vw, 760px);
-	background-position: center 42%;
-}
-.mm-slide::before {
-	background: linear-gradient(90deg, rgba(246,244,238,.97) 0%, rgba(246,244,238,.88) 46%, rgba(246,244,238,.42) 76%, rgba(246,244,238,.18) 100%);
 }
 .mm-slide-content {
 	width: min(100%, 1280px);
 	max-width: 1280px;
-	padding-top: clamp(92px, 11vw, 154px);
-	padding-bottom: clamp(104px, 12vw, 164px);
 }
 .mm-slide-title {
 	max-width: 900px;
@@ -1135,9 +1125,6 @@ html { scroll-padding-top: 92px; }
 .mm-footer { margin-top: clamp(60px, 8vw, 104px); }
 
 @media (max-width: 900px) {
-	.mm-hero { padding: 14px 14px 0; }
-	.mm-slide { min-height: 620px; }
-	.mm-slide-content { padding-top: 104px; padding-bottom: 132px; }
 	.mm-hero-foot { align-items: flex-start; }
 	.mm-hero-stats { gap: 26px; }
 	.mm-section-head-split { grid-template-columns: 1fr; gap: 24px; }
@@ -1147,11 +1134,6 @@ html { scroll-padding-top: 92px; }
 @media (max-width: 640px) {
 	.mm-header-inner { min-height: 68px; }
 	.mm-brand { font-size: 1.55rem; }
-	.mm-hero { padding: 8px 8px 0; }
-	.mm-slides { border-radius: 18px; }
-	.mm-slide { min-height: 670px; min-height: min(760px, calc(100svh - 84px)); align-items: flex-end; background-position: 62% center; }
-	.mm-slide::before { background: linear-gradient(0deg, rgba(246,244,238,.99) 0%, rgba(246,244,238,.96) 43%, rgba(246,244,238,.55) 75%, rgba(246,244,238,.18) 100%); }
-	.mm-slide-content { padding: 210px 20px 34px; }
 	.mm-slide-title { font-size: clamp(2.75rem, 12vw, 4rem); line-height: .98; margin-bottom: 16px; }
 	.mm-slide-text { font-size: 1rem; line-height: 1.55; margin-bottom: 22px; }
 	.mm-slide-actions { gap: 9px; }
