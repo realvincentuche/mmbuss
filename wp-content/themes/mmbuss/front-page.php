@@ -77,6 +77,32 @@ $slides = array(
 	</div>
 </section>
 
+<section class="mm-section-tight">
+	<div class="mm-wrap mm-split">
+		<div class="mm-split-media reveal">
+			<img src="<?php echo esc_url( $uri . '/assets/images/about-section.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind consultants at work', 'mmbuss' ); ?>" loading="lazy">
+			<div class="mm-badge"><span class="mm-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small><?php esc_html_e( 'Practical solutions. Measurable impact. Unwavering integrity.', 'mmbuss' ); ?></small></div>
+		</div>
+		<div class="reveal">
+			<p class="mm-kicker"><?php esc_html_e( 'Who We Are', 'mmbuss' ); ?></p>
+			<h2 class="mm-section-title"><?php esc_html_e( 'A partner, not just', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'an advisor', 'mmbuss' ); ?></span></h2>
+			<p><?php esc_html_e( 'Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled.', 'mmbuss' ); ?></p>
+			<ul class="mm-checks">
+				<li><?php esc_html_e( 'Global Perspective, Local Precision', 'mmbuss' ); ?></li>
+				<li><?php esc_html_e( 'Results-Driven Methodology', 'mmbuss' ); ?></li>
+				<li><?php esc_html_e( 'Cross-Industry Expertise', 'mmbuss' ); ?></li>
+				<li><?php esc_html_e( 'Partnership, Not Just Advisory', 'mmbuss' ); ?></li>
+			</ul>
+			<div class="mm-split-numbers">
+				<div><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Service pillars', 'mmbuss' ); ?></span></div>
+				<div><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
+				<div><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
+			</div>
+			<a class="mm-btn" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More About Us', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</section>
+
 <section class="mm-logos">
 	<div class="mm-wrap">
 		<p class="mm-logos-label"><?php esc_html_e( 'Built for the realities of', 'mmbuss' ); ?></p>
@@ -148,31 +174,7 @@ $slides = array(
 	</div>
 </section>
 
-<section class="mm-section-tight">
-	<div class="mm-wrap mm-split">
-		<div class="mm-split-media reveal">
-			<img src="<?php echo esc_url( $uri . '/assets/images/about-section.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind consultants at work', 'mmbuss' ); ?>" loading="lazy">
-			<div class="mm-badge"><span class="mm-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small><?php esc_html_e( 'Practical solutions. Measurable impact. Unwavering integrity.', 'mmbuss' ); ?></small></div>
-		</div>
-		<div class="reveal">
-			<p class="mm-kicker"><?php esc_html_e( 'Who We Are', 'mmbuss' ); ?></p>
-			<h2 class="mm-section-title"><?php esc_html_e( 'A partner, not just', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'an advisor', 'mmbuss' ); ?></span></h2>
-			<p><?php esc_html_e( 'Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled.', 'mmbuss' ); ?></p>
-			<ul class="mm-checks">
-				<li><?php esc_html_e( 'Global Perspective, Local Precision', 'mmbuss' ); ?></li>
-				<li><?php esc_html_e( 'Results-Driven Methodology', 'mmbuss' ); ?></li>
-				<li><?php esc_html_e( 'Cross-Industry Expertise', 'mmbuss' ); ?></li>
-				<li><?php esc_html_e( 'Partnership, Not Just Advisory', 'mmbuss' ); ?></li>
-			</ul>
-			<div class="mm-split-numbers">
-				<div><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Service pillars', 'mmbuss' ); ?></span></div>
-				<div><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
-				<div><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
-			</div>
-			<a class="mm-btn" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More About Us', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-		</div>
-	</div>
-</section>
+
 
 <div class="mm-marquee-tilt" aria-hidden="true">
 	<div class="mm-marquee">
