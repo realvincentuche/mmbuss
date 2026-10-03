@@ -56,10 +56,9 @@ $slides = array(
 			</div>
 		</div>
 		<?php endforeach; ?>
-	</div>
-
 	<div class="mm-slider-controls">
 		<div class="mm-slider-dots" role="group" aria-label="<?php esc_attr_e( 'Choose a slide', 'mmbuss' ); ?>"></div>
+	</div>
 	</div>
 
 	<div class="mm-wrap">

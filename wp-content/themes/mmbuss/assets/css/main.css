@@ -1370,7 +1370,7 @@ html { scroll-padding-top: 92px; }
 	background: rgba(3,6,11,.48);
 	backdrop-filter: blur(10px);
 }
-.mm-hero { isolation: isolate; }
+.mm-slides { isolation: isolate; }
 .mm-slider-dots { gap: 9px; margin: 0; }
 .mm-slider-dot { background: rgba(255,255,255,.5); }
 .mm-slider-dot.active { background: var(--mm-gold-2); }
