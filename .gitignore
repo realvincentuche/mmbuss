@@ -28,6 +28,7 @@
 # --- Throwaway local helper scripts ---
 /mm-*.php
 /.playwright-cli/
+/output/
 
 # --- OS / editor ---
 .DS_Store

@@ -64,48 +64,24 @@ $slides = array(
 
 </section>
 
-<section class="mm-section-tight">
-	<div class="mm-wrap mm-split">
-		<div class="mm-split-media reveal">
-			<!-- Photo by Vitaly Gariev via Unsplash, used under the Unsplash License. -->
-			<img src="<?php echo esc_url( $uri . '/assets/images/about-team-portrait.jpg' ); ?>" alt="<?php esc_attr_e( 'Business consultants collaborating around a meeting table', 'mmbuss' ); ?>" loading="lazy">
-			<div class="mm-badge"><span class="mm-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small><?php esc_html_e( 'Practical solutions. Measurable impact. Unwavering integrity.', 'mmbuss' ); ?></small></div>
-		</div>
-		<div class="reveal">
+<section class="mm-section-tight mm-about-section">
+	<div class="mm-wrap mm-split mm-about">
+		<div class="mm-about-copy reveal">
 			<p class="mm-kicker"><?php esc_html_e( 'Who We Are', 'mmbuss' ); ?></p>
 			<h2 class="mm-section-title"><?php esc_html_e( 'A partner, not just', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'an advisor', 'mmbuss' ); ?></span></h2>
-			<p><?php esc_html_e( 'Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled.', 'mmbuss' ); ?></p>
-			<ul class="mm-checks">
-				<li><?php esc_html_e( 'Global Perspective, Local Precision', 'mmbuss' ); ?></li>
-				<li><?php esc_html_e( 'Results-Driven Methodology', 'mmbuss' ); ?></li>
-				<li><?php esc_html_e( 'Cross-Industry Expertise', 'mmbuss' ); ?></li>
-				<li><?php esc_html_e( 'Partnership, Not Just Advisory', 'mmbuss' ); ?></li>
+			<p class="mm-about-intro"><?php esc_html_e( 'We combine business strategy, operational improvement, and sourcing in one partnership. Our team stays involved as plans become day-to-day work.', 'mmbuss' ); ?></p>
+			<ul class="mm-about-principles">
+				<li><strong><?php esc_html_e( 'Strategy that reaches execution', 'mmbuss' ); ?></strong><span><?php esc_html_e( 'We help put plans into the systems and routines teams use every day.', 'mmbuss' ); ?></span></li>
+				<li><strong><?php esc_html_e( 'Advice and delivery together', 'mmbuss' ); ?></strong><span><?php esc_html_e( 'Consulting, operations, and sourcing connect in one engagement.', 'mmbuss' ); ?></span></li>
 			</ul>
-			<div class="mm-split-numbers">
-				<div><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Service pillars', 'mmbuss' ); ?></span></div>
-				<div><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
-				<div><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
-			</div>
 			<a class="mm-btn" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More About Us', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+		</div>
+		<div class="mm-split-media mm-about-media reveal">
+			<!-- Photo by Vitaly Gariev via Unsplash, used under the Unsplash License. -->
+			<img src="<?php echo esc_url( $uri . '/assets/images/about-team-portrait.jpg' ); ?>" alt="<?php esc_attr_e( 'Business consultants collaborating around a meeting table', 'mmbuss' ); ?>" loading="lazy">
 		</div>
 	</div>
 </section>
-
-
-<div class="mm-wrap">
-		<div class="mm-hero-foot">
-			<div class="mm-hero-stats">
-				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Core service pillars', 'mmbuss' ); ?></span></div>
-				<div class="mm-hero-stat"><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
-				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
-			</div>
-		</div>
-
-		<div class="mm-hero-media reveal">
-			<img src="<?php echo esc_url( $uri . '/assets/images/about-banner.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind team at work', 'mmbuss' ); ?>" loading="lazy">
-			<p class="mm-hero-media-tag"><?php esc_html_e( 'Trusted by organizations across', 'mmbuss' ); ?> <b><?php esc_html_e( '6 industries', 'mmbuss' ); ?></b></p>
-		</div>
-	</div>
 
 <section class="mm-logos">
 	<div class="mm-wrap">

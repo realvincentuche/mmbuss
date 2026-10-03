@@ -504,6 +504,29 @@ a { color: var(--mm-navy-2); }
 }
 .mm-split-media { position: relative; }
 .mm-split-media > img { border-radius: 26px; box-shadow: var(--mm-shadow); width: 100%; }
+@media (min-width: 1081px) {
+	.mm-about-copy { grid-column: 2; grid-row: 1; }
+	.mm-about-media { grid-column: 1; grid-row: 1; }
+}
+.mm-about-intro { max-width: 58ch; color: var(--mm-muted); font-size: 1.08rem; }
+.mm-about-principles {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 22px;
+	margin: 32px 0;
+	padding: 0;
+}
+.mm-about-principles li { border-top: 1px solid var(--mm-line); padding-top: 17px; }
+.mm-about-principles strong { display: block; color: var(--mm-navy); font-family: var(--mm-display); font-size: 1.05rem; line-height: 1.2; }
+.mm-about-principles span { display: block; margin-top: 8px; color: var(--mm-muted); font-size: .94rem; line-height: 1.5; }
+@media (max-width: 860px) {
+	.mm-section-tight.mm-about-section { padding-top: 84px; }
+}
+@media (max-width: 640px) {
+	.mm-about-principles { grid-template-columns: 1fr; gap: 18px; margin: 26px 0 30px; }
+	.mm-about-intro { font-size: 1rem; }
+}
 .mm-badge {
 	position: absolute;
 	right: 22px;
@@ -518,9 +541,6 @@ a { color: var(--mm-navy-2); }
 }
 .mm-badge .mm-stars { color: var(--mm-gold-2); letter-spacing: 2px; font-size: 0.9rem; }
 .mm-badge small { font-size: 0.85rem; display: block; margin-top: 4px; }
-.mm-split-numbers { display: flex; gap: 44px; margin: 30px 0; flex-wrap: wrap; }
-.mm-split-numbers strong { font-family: var(--mm-display); font-size: 2.1rem; color: var(--mm-navy); display: block; line-height: 1; }
-.mm-split-numbers span { font-size: 0.9rem; color: var(--mm-muted); }
 .mm-checks { list-style: none; margin: 0 0 30px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
 .mm-checks li { padding-left: 34px; position: relative; font-weight: 600; font-size: 0.98rem; }
 .mm-checks li::before {
@@ -1044,8 +1064,6 @@ html { scroll-padding-top: 92px; }
 .mm-card-list li { line-height: 1.5; }
 .mm-split { gap: clamp(42px, 8vw, 60px); }
 .mm-split-media > img { border-radius: var(--mm-radius-lg); box-shadow: none; }
-.mm-split-numbers { gap: clamp(22px, 4vw, 56px); }
-.mm-split-numbers strong { font-variant-numeric: tabular-nums; }
 .mm-marquee-tilt { transform: rotate(-1.5deg) scale(1.02); }
 .mm-panel-dark { border-radius: var(--mm-radius-lg); padding: clamp(48px, 7vw, 88px); }
 .mm-steps { gap: 0; }
