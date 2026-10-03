@@ -67,7 +67,8 @@ $slides = array(
 <section class="mm-section-tight">
 	<div class="mm-wrap mm-split">
 		<div class="mm-split-media reveal">
-			<img src="<?php echo esc_url( $uri . '/assets/images/about-section.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind consultants at work', 'mmbuss' ); ?>" loading="lazy">
+			<!-- Photo by Vitaly Gariev via Unsplash, used under the Unsplash License. -->
+			<img src="<?php echo esc_url( $uri . '/assets/images/about-team-portrait.jpg' ); ?>" alt="<?php esc_attr_e( 'Business consultants collaborating around a meeting table', 'mmbuss' ); ?>" loading="lazy">
 			<div class="mm-badge"><span class="mm-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small><?php esc_html_e( 'Practical solutions. Measurable impact. Unwavering integrity.', 'mmbuss' ); ?></small></div>
 		</div>
 		<div class="reveal">
