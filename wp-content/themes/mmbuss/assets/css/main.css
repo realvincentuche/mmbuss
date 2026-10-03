@@ -1381,7 +1381,7 @@ html { scroll-padding-top: 92px; }
 .mm-header .mm-nav-cta:hover {
 	background: var(--mm-gold-2);
 	border-color: var(--mm-gold-2);
-	color: #fff;
+	color: #0B0B10;
 }
 .mm-slider-dot { min-width: 24px; }
 .mm-slider-dot.active { min-width: 42px; }
