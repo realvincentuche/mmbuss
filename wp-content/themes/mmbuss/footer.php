@@ -22,7 +22,7 @@
 			<h2 class="mm-cta-title"><?php esc_html_e( "Let's Build Something Structured", 'mmbuss' ); ?></h2>
 			<p class="mm-cta-text"><?php esc_html_e( "Whether you're launching a new venture, restructuring an existing one, or scaling into new markets, Mastermind Business Systems LLC brings the strategic insight and operational discipline to help you get there.", 'mmbuss' ); ?></p>
 			<div class="mm-cta-actions">
-				<a class="mm-btn mm-btn-gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Conversation', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+				<a class="mm-btn mm-btn-gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Start a Conversation', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 				<a class="mm-btn mm-btn-ghost-light" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Explore Services', 'mmbuss' ); ?></a>
 			</div>
 		</div>

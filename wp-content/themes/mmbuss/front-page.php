@@ -18,7 +18,7 @@ $slides = array(
 		'cta2'  => array( 'Explore Services', home_url( '/services/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
-		'title' => 'Smart <span class="hl">Systems.</span><br><span class="mm-outline">Clear Strategy.</span>',
+		'title' => 'Smart <span class="hl">Systems.</span><br>Clear <span class="mm-outline">Strategy.</span>',
 		'text'  => 'We partner with businesses across industries and borders to design smarter structures, sharpen strategy, and build operational systems that scale.',
 		'img'   => $uri . '/assets/images/home-slide-strategy-team.jpg',
 		'cta1'  => array( 'How We Work', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
@@ -26,7 +26,7 @@ $slides = array(
 	),
 	array(
 		'badge' => 'From ambition to results',
-		'title' => '<span class="mm-outline">Clear Plans.</span><br><span class="hl">Lasting Results.</span>',
+		'title' => 'Clear <span class="mm-outline">Plans.</span><br><span class="hl">Lasting Results.</span>',
 		'text'  => 'From startups seeking direction to established enterprises pursuing transformation, we deliver the expertise, discipline, and insight needed to turn ambition into measurable results.',
 		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
 		'cta1'  => array( 'Why Mastermind', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
@@ -50,7 +50,7 @@ $slides = array(
 				<h2 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h2>
 				<p class="mm-slide-text"><?php echo esc_html( $s['text'] ); ?></p>
 				<p class="mm-slide-actions">
-					<a class="<?php echo esc_attr( $s['cta1'][2] ); ?>" href="<?php echo esc_url( $s['cta1'][1] ); ?>"><?php echo esc_html( $s['cta1'][0] ); ?> <span aria-hidden="true">&rarr;</span></a>
+					<a class="<?php echo esc_attr( $s['cta1'][2] ); ?>" href="<?php echo esc_url( $s['cta1'][1] ); ?>"><?php echo esc_html( $s['cta1'][0] ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 					<a class="<?php echo esc_attr( $s['cta2'][2] ); ?>" href="<?php echo esc_url( $s['cta2'][1] ); ?>"><?php echo esc_html( $s['cta2'][0] ); ?></a>
 				</p>
 			</div>
@@ -112,7 +112,7 @@ $slides = array(
 			</div>
 			<div class="mm-head-side">
 				<p class="mm-section-lead"><?php esc_html_e( 'Four disciplines, one accountable partner. Every engagement is built around outcomes you can measure.', 'mmbuss' ); ?></p>
-				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'All Services', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'All Services', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 			</div>
 		</div>
 		<div class="mm-grid-4">
@@ -121,28 +121,28 @@ $slides = array(
 				<h3><?php esc_html_e( 'Business Management', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Structuring, governance, and performance systems that professionalize how you run.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'Governance', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Performance', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Leadership', 'mmbuss' ); ?></span></div>
-				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/business-management/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/business-management/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 			</article>
 			<article class="mm-svc reveal">
 				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true">&#9673;</span><span class="mm-svc-num">/ 02</span></div>
 				<h3><?php esc_html_e( 'Consulting', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Growth planning, market entry, feasibility, and executive-level advisory.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'Strategy', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Expansion', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Advisory', 'mmbuss' ); ?></span></div>
-				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/consulting/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/consulting/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 			</article>
 			<article class="mm-svc reveal">
 				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true">&#9881;</span><span class="mm-svc-num">/ 03</span></div>
 				<h3><?php esc_html_e( 'Operational Solutions', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Audits, re-engineering, SOPs, and automation guidance that cut waste.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'SOPs', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Automation', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Efficiency', 'mmbuss' ); ?></span></div>
-				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/operational-solutions/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/operational-solutions/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 			</article>
 			<article class="mm-svc reveal">
 				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true">&#9746;</span><span class="mm-svc-num">/ 04</span></div>
 				<h3><?php esc_html_e( 'Supply of Goods and Services', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Sourcing, procurement, fulfillment, and trade logistics you can rely on.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'Sourcing', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Fulfillment', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Trade', 'mmbuss' ); ?></span></div>
-				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/supply-of-goods-and-services/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/supply-of-goods-and-services/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 			</article>
 		</div>
 	</div>
@@ -169,7 +169,7 @@ $slides = array(
 				<div><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
 				<div><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
 			</div>
-			<a class="mm-btn" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More About Us', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+			<a class="mm-btn" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More About Us', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 		</div>
 	</div>
 </section>
@@ -192,7 +192,7 @@ $slides = array(
 			</div>
 			<div class="mm-head-side">
 				<p class="mm-section-lead"><?php esc_html_e( 'Fresh perspective and proven frameworks for every engagement.', 'mmbuss' ); ?></p>
-				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/industries/' ) ); ?>"><?php esc_html_e( 'All Industries', 'mmbuss' ); ?> <span aria-hidden="true">&rarr;</span></a>
+				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/industries/' ) ); ?>"><?php esc_html_e( 'All Industries', 'mmbuss' ); ?> <span class="mm-arrow-icon" aria-hidden="true"></span></a>
 			</div>
 		</div>
 		<div class="mm-grid-3">

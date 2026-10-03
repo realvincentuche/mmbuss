@@ -32,6 +32,14 @@
 *::before,
 *::after { box-sizing: border-box; }
 
+@font-face {
+	font-family: "Phosphor";
+	src: url("../fonts/Phosphor.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -280,6 +288,17 @@ a { color: var(--mm-navy-2); }
 	gap: 8px;
 }
 .mm-text-link:hover { color: var(--mm-gold); }
+.mm-arrow-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	font-family: "Phosphor";
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+}
+.mm-arrow-icon::before { content: "\e06c"; }
 
 /* ---------- Kickers, highlights ---------- */
 .mm-kicker {
@@ -1220,8 +1239,8 @@ html { scroll-padding-top: 92px; }
 	background-position: center 44%;
 }
 .mm-slide-content {
-	padding-top: clamp(98px, 8vw, 116px);
-	padding-bottom: clamp(48px, 5vw, 66px);
+	padding-top: clamp(108px, 8.5vw, 126px);
+	padding-bottom: clamp(60px, 6vw, 78px);
 }
 
 @media (max-width: 860px) {
@@ -1238,7 +1257,7 @@ html { scroll-padding-top: 92px; }
 		min-height: min(620px, calc(100svh - 12px));
 		background-position: 62% center;
 	}
-	.mm-slide-content { padding: 174px 20px 30px; }
+	.mm-slide-content { padding: 174px 20px 42px; }
 }
 
 /* Full-width, transparent default header; light surface after scrolling. */
@@ -1275,6 +1294,12 @@ html { scroll-padding-top: 92px; }
 	box-shadow: none;
 }
 .mm-header .mm-nav-cta:hover { background: var(--mm-gold); border-color: var(--mm-gold); color: #0B0B10; }
+.mm-btn .mm-arrow-icon,
+.mm-nav-cta .mm-arrow-icon {
+	font-size: 1.55rem;
+	font-weight: normal;
+	-webkit-text-stroke: 0;
+}
 .mm-btn span[aria-hidden="true"],
 .mm-nav-cta span[aria-hidden="true"] {
  font-size: 1.9rem;
@@ -1328,7 +1353,7 @@ html { scroll-padding-top: 92px; }
 		background: linear-gradient(0deg, rgba(3,6,11,.96) 0%, rgba(3,6,11,.9) 48%, rgba(3,6,11,.48) 76%, rgba(3,6,11,.16) 100%);
 	}
 	.mm-slide { min-height: min(540px, calc(100svh - 12px)); }
-	.mm-slide-content { padding-top: 148px; padding-bottom: 22px; }
+	.mm-slide-content { padding-top: 148px; padding-bottom: 34px; }
 }
 
 .mm-slide-title .hl {
