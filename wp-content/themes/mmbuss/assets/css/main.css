@@ -1220,7 +1220,7 @@ html { scroll-padding-top: 92px; }
 	background-position: center 44%;
 }
 .mm-slide-content {
-	padding-top: clamp(108px, 8.5vw, 126px);
+	padding-top: clamp(108px, 9.8vw, 150px);
 	padding-bottom: clamp(60px, 6vw, 78px);
 }
 
