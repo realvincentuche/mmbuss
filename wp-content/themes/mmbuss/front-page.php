@@ -83,28 +83,17 @@ $slides = array(
 	</div>
 </section>
 
-<section class="mm-logos">
-	<div class="mm-wrap">
-		<p class="mm-logos-label"><?php esc_html_e( 'Built for the realities of', 'mmbuss' ); ?></p>
-		<div class="mm-logos-marquee" aria-label="Industries served">
-			<div class="mm-logos-track">
-				<div class="mm-logos-row">
-					<span>Startups <i aria-hidden="true">&#10022;</i></span>
-					<span>Corporate <i aria-hidden="true">&#10022;</i></span>
-					<span>Logistics <i aria-hidden="true">&#10022;</i></span>
-					<span>Real Estate <i aria-hidden="true">&#10022;</i></span>
-					<span>Finance <i aria-hidden="true">&#10022;</i></span>
-					<span>Nonprofit <i aria-hidden="true">&#10022;</i></span>
-				</div>
-				<div class="mm-logos-row" aria-hidden="true">
-					<span>Startups <i>&#10022;</i></span>
-					<span>Corporate <i>&#10022;</i></span>
-					<span>Logistics <i>&#10022;</i></span>
-					<span>Real Estate <i>&#10022;</i></span>
-					<span>Finance <i>&#10022;</i></span>
-					<span>Nonprofit <i>&#10022;</i></span>
-				</div>
-			</div>
+<section class="mm-proof" aria-labelledby="mm-proof-title">
+	<div class="mm-wrap mm-proof-layout">
+		<div class="mm-proof-intro reveal">
+			<p class="mm-proof-label"><?php esc_html_e( 'What The Work Produces', 'mmbuss' ); ?></p>
+			<h2 id="mm-proof-title"><?php esc_html_e( 'From direction', 'mmbuss' ); ?> <span><?php esc_html_e( 'to delivery.', 'mmbuss' ); ?></span></h2>
+			<p><?php esc_html_e( 'The scope is practical: clearer decisions, operating systems, and supply support your team can use.', 'mmbuss' ); ?></p>
+		</div>
+		<div class="mm-proof-outputs">
+			<div class="mm-proof-output reveal"><h3><?php esc_html_e( 'Decisions', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Feasibility studies, strategic priorities, and workable roadmaps.', 'mmbuss' ); ?></p></div>
+			<div class="mm-proof-output reveal"><h3><?php esc_html_e( 'Systems', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Governance, standard procedures, and performance routines.', 'mmbuss' ); ?></p></div>
+			<div class="mm-proof-output reveal"><h3><?php esc_html_e( 'Supply', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Sourcing, procurement, distribution, and fulfillment support.', 'mmbuss' ); ?></p></div>
 		</div>
 	</div>
 </section>
