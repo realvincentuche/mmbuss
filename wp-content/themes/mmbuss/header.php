@@ -12,10 +12,7 @@
 <a class="mm-skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'mmbuss' ); ?></a>
 
 <div class="mm-preloader" id="mmPreloader" aria-hidden="true">
-	<div class="mm-preloader-inner">
-		<span class="mm-preloader-logo">Mastermind<span class="mm-dot">.</span></span>
-		<span class="mm-preloader-bar"><span></span></span>
-	</div>
+	<span class="mm-preloader-spinner" aria-hidden="true"></span>
 </div>
 
 <header class="mm-header" id="mmHeader">

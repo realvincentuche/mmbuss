@@ -26,7 +26,7 @@ $slides = array(
 	),
 	array(
 		'badge' => 'From ambition to results',
-		'title' => 'Plans Into <span class="mm-outline">Progress.</span><br><span class="hl">Results That Last.</span>',
+		'title' => '<span class="mm-outline">Clear Plans.</span><br><span class="hl">Lasting Results.</span>',
 		'text'  => 'From startups seeking direction to established enterprises pursuing transformation, we deliver the expertise, discipline, and insight needed to turn ambition into measurable results.',
 		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
 		'cta1'  => array( 'Why Mastermind', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),

@@ -1,5 +1,5 @@
 /* ============================================================
-   Mastermind Business Systems LLC — classic theme stylesheet
+   Mastermind Business Systems LLC â€” classic theme stylesheet
    Light agency system (Marrky-nuance, original code):
    cream canvas, deep navy ink, gold accent, pill kickers,
    highlight swashes, tilted marquee, dark rounded panels.
@@ -71,7 +71,7 @@ a { color: var(--mm-navy-2); }
 
 .mm-main { display: block; overflow: clip; }
 
-/* ---------- Preloader (original) ---------- */
+/* ---------- Circular page loader ---------- */
 .mm-preloader {
 	position: fixed;
 	inset: 0;
@@ -80,38 +80,19 @@ a { color: var(--mm-navy-2); }
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: opacity 0.45s ease, visibility 0.45s ease;
+	transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 .mm-preloader.done { opacity: 0; visibility: hidden; pointer-events: none; }
-.mm-preloader-inner { text-align: center; }
-.mm-preloader-logo {
-	font-family: var(--mm-display);
-	font-weight: 800;
-	font-size: 2rem;
-	color: #fff;
-	letter-spacing: -0.02em;
-	display: block;
-	margin-bottom: 16px;
-}
 .mm-dot { color: var(--mm-gold-2); }
-.mm-preloader-bar {
-	display: block;
-	width: 210px;
-	height: 3px;
-	background: rgba(255, 255, 255, 0.16);
-	border-radius: 99px;
-	margin: 0 auto;
-	overflow: hidden;
+.mm-preloader-spinner {
+	width: 64px;
+	height: 64px;
+	border: 6px solid rgba(255,255,255,.2);
+	border-top-color: var(--mm-gold-2);
+	border-radius: 50%;
+	animation: mm-spinner .8s linear infinite;
 }
-.mm-preloader-bar span {
-	display: block;
-	height: 100%;
-	width: 40%;
-	background: var(--mm-gold-2);
-	border-radius: 99px;
-	animation: mm-load 1s ease-in-out infinite alternate;
-}
-@keyframes mm-load { from { transform: translateX(-60%); } to { transform: translateX(280%); } }
+@keyframes mm-spinner { to { transform: rotate(360deg); } }
 
 /* ---------- Sticky header (single bar, no topbar) ---------- */
 .mm-header {
@@ -124,8 +105,8 @@ a { color: var(--mm-navy-2); }
 	transition: box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 .mm-header.is-sticky {
-	background: rgba(246, 244, 238, 0.97);
-	border-bottom-color: var(--mm-line);
+	background: var(--mm-navy-3);
+	border-bottom-color: transparent;
 	box-shadow: 0 10px 30px rgba(10, 26, 51, 0.08);
 }
 .mm-header-inner {
@@ -373,7 +354,7 @@ a { color: var(--mm-navy-2); }
 	overflow: hidden;
 }
 .mm-slide.active { opacity: 1; visibility: visible; }
-/* Cream legibility overlay — keeps navy display type readable over photos */
+/* Cream legibility overlay â€” keeps navy display type readable over photos */
 .mm-slide::before {
 	content: "";
 	position: absolute;
@@ -581,7 +562,7 @@ a { color: var(--mm-navy-2); }
 .mm-checks { list-style: none; margin: 0 0 30px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
 .mm-checks li { padding-left: 34px; position: relative; font-weight: 600; font-size: 0.98rem; }
 .mm-checks li::before {
-	content: "✓";
+	content: "âœ“";
 	position: absolute;
 	left: 0; top: 1px;
 	width: 23px; height: 23px;
@@ -653,7 +634,7 @@ a { color: var(--mm-navy-2); }
 	font-size: 0.95rem;
 }
 .mm-card-list li::before {
-	content: "›";
+	content: "â€º";
 	position: absolute;
 	left: 8px;
 	color: var(--mm-gold);
@@ -1208,7 +1189,7 @@ html { scroll-padding-top: 92px; }
 
 @media (prefers-reduced-motion: reduce) {
 	html { scroll-behavior: auto; }
-	.mm-logos-track, .mm-marquee-track, .mm-marquee, .mm-preloader-bar span { animation: none !important; }
+	.mm-logos-track, .mm-marquee-track, .mm-marquee, .mm-preloader-spinner { animation: none !important; }
 	.mm-slide, .reveal, .mm-card-media img, .mm-btn, .mm-slider-dot { transition: none !important; }
 }
 
@@ -1227,8 +1208,8 @@ html { scroll-padding-top: 92px; }
 	-webkit-backdrop-filter: none;
 }
 .mm-header.is-sticky {
-	background: rgba(250,249,245,.97);
-	border-color: rgba(228,225,214,.95);
+	background: var(--mm-navy-3);
+	border-color: transparent;
 	box-shadow: 0 14px 38px rgba(10,26,51,.15);
 }
 .mm-header-inner { min-height: 72px; }
@@ -1294,7 +1275,13 @@ html { scroll-padding-top: 92px; }
 	box-shadow: none;
 }
 .mm-header .mm-nav-cta:hover { background: var(--mm-gold); border-color: var(--mm-gold); color: #0B0B10; }
-.mm-header .mm-nav-cta span[aria-hidden="true"] { font-size: 1.65rem; line-height: .72; font-weight: 400; }
+.mm-btn span[aria-hidden="true"],
+.mm-nav-cta span[aria-hidden="true"] {
+ font-size: 1.9rem;
+ font-weight: 800;
+ line-height: .65;
+ -webkit-text-stroke: .5px currentColor;
+}
 .mm-header .mm-burger { border-color: rgba(255,255,255,.28); }
 .mm-header .mm-burger span { background: #fff; }
 .mm-header .mm-burger:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.55); }
@@ -1306,21 +1293,20 @@ html { scroll-padding-top: 92px; }
 	width: 100%;
 	transform: none;
 	border-radius: 0;
-	background: rgba(232,231,226,.97);
+	background: var(--mm-navy-3);
 	border: 0;
 	box-shadow: 0 12px 32px rgba(10,14,20,.1);
 }
-.mm-header.is-sticky .mm-brand { color: #101116; }
-.mm-header.is-sticky .mm-dot { color: #91bd00; }
-.mm-header.is-sticky .mm-nav a { color: #17181d; }
+.mm-header.is-sticky .mm-brand,
+.mm-header.is-sticky .mm-nav a { color: rgba(255,255,255,.96); }
+.mm-header.is-sticky .mm-dot { color: var(--mm-gold-2); }
 .mm-header.is-sticky .mm-nav a:hover,
 .mm-header.is-sticky .mm-nav .current-menu-item > a,
 .mm-header.is-sticky .mm-nav .current_page_item > a,
-.mm-header.is-sticky .mm-nav .current-menu-ancestor > a { background: rgba(10,12,16,.08); }
-.mm-header.is-sticky .mm-burger { border-color: rgba(10,12,16,.25); }
-.mm-header.is-sticky .mm-burger span { background: #17181d; }
-.mm-header.is-sticky .mm-burger:hover { background: rgba(10,12,16,.08); border-color: rgba(10,12,16,.4); }
-
+.mm-header.is-sticky .mm-nav .current-menu-ancestor > a { background: rgba(255,255,255,.11); }
+.mm-header.is-sticky .mm-burger { border-color: rgba(255,255,255,.28); }
+.mm-header.is-sticky .mm-burger span { background: #fff; }
+.mm-header.is-sticky .mm-burger:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.55); }
 @media (max-width: 860px) {
 	.mm-header .mm-nav-cta { display: none; }
 }
