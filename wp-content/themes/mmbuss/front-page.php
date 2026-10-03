@@ -61,7 +61,7 @@ $slides = array(
 	</div>
 	</div>
 
-	
+
 </section>
 
 <section class="mm-section-tight">
@@ -90,7 +90,8 @@ $slides = array(
 	</div>
 </section>
 
-	<div class="mm-wrap">
+
+<div class="mm-wrap">
 		<div class="mm-hero-foot">
 			<div class="mm-hero-stats">
 				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Core service pillars', 'mmbuss' ); ?></span></div>
