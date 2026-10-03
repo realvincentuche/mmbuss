@@ -35,17 +35,50 @@
 	var panel = document.getElementById('mmOffcanvas');
 	var overlay = document.getElementById('mmOffcanvasOverlay');
 	var closeBtn = document.getElementById('mmOffcanvasClose');
+	var main = document.getElementById('content');
+	var menuOpen = false;
+	var previousFocus = null;
 	function setMenu(open) {
+		if (!panel || !burger || menuOpen === open) { return; }
+		menuOpen = open;
 		if (panel) { panel.classList.toggle('open', open); }
 		if (overlay) { overlay.classList.toggle('open', open); }
 		if (burger) { burger.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+		if (burger) { burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); }
+		panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+		panel.inert = !open;
+		if (overlay) { overlay.inert = !open; }
+		if (main) { main.inert = open; }
 		document.body.style.overflow = open ? 'hidden' : '';
+		if (open) {
+			previousFocus = document.activeElement;
+			if (closeBtn) { closeBtn.focus(); }
+		} else if (previousFocus && previousFocus.focus) {
+			previousFocus.focus();
+		}
 	}
 	if (burger) { burger.addEventListener('click', function () { setMenu(true); }); }
 	if (closeBtn) { closeBtn.addEventListener('click', function () { setMenu(false); }); }
 	if (overlay) { overlay.addEventListener('click', function () { setMenu(false); }); }
 	document.addEventListener('keydown', function (e) {
-		if (e.key === 'Escape') { setMenu(false); }
+		if (!menuOpen) { return; }
+		if (e.key === 'Escape') {
+			e.preventDefault();
+			setMenu(false);
+		}
+		if (e.key === 'Tab' && panel) {
+			var focusable = panel.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+			if (!focusable.length) { return; }
+			var first = focusable[0];
+			var last = focusable[focusable.length - 1];
+			if (e.shiftKey && document.activeElement === first) {
+				e.preventDefault();
+				last.focus();
+			} else if (!e.shiftKey && document.activeElement === last) {
+				e.preventDefault();
+				first.focus();
+			}
+		}
 	});
 
 	// Hero slider.
@@ -53,15 +86,15 @@
 	if (slider) {
 		var slides = Array.prototype.slice.call(slider.querySelectorAll('.mm-slide'));
 		var dotsWrap = slider.querySelector('.mm-slider-dots');
-		var prev = slider.querySelector('[data-slide="prev"]');
-		var next = slider.querySelector('[data-slide="next"]');
 		var current = 0;
 		var timer = null;
+		var paused = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 		slides.forEach(function (_, i) {
 			var d = document.createElement('button');
 			d.className = 'mm-slider-dot' + (i === 0 ? ' active' : '');
 			d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+			d.setAttribute('aria-current', i === 0 ? 'true' : 'false');
 			d.addEventListener('click', function () { go(i); restart(); });
 			dotsWrap.appendChild(d);
 		});
@@ -69,17 +102,34 @@
 
 		function go(i) {
 			slides[current].classList.remove('active');
+			slides[current].setAttribute('aria-hidden', 'true');
+			slides[current].inert = true;
 			dots[current].classList.remove('active');
+			dots[current].setAttribute('aria-current', 'false');
 			current = (i + slides.length) % slides.length;
 			slides[current].classList.add('active');
+			slides[current].setAttribute('aria-hidden', 'false');
+			slides[current].inert = false;
 			dots[current].classList.add('active');
+			dots[current].setAttribute('aria-current', 'true');
 		}
 		function restart() {
 			if (timer) { clearInterval(timer); }
-			timer = setInterval(function () { go(current + 1); }, 6500);
+			timer = null;
+			if (!paused) {
+				timer = setInterval(function () { go(current + 1); }, 8000);
+			}
 		}
-		if (prev) { prev.addEventListener('click', function () { go(current - 1); restart(); }); }
-		if (next) { next.addEventListener('click', function () { go(current + 1); restart(); }); }
+		slider.addEventListener('mouseenter', function () {
+			if (timer) { clearInterval(timer); timer = null; }
+		});
+		slider.addEventListener('mouseleave', restart);
+		slider.addEventListener('focusin', function () {
+			if (timer) { clearInterval(timer); timer = null; }
+		});
+		slider.addEventListener('focusout', function (e) {
+			if (!slider.contains(e.relatedTarget)) { restart(); }
+		});
 		restart();
 	}
 

@@ -9,6 +9,8 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<a class="mm-skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'mmbuss' ); ?></a>
+
 <div class="mm-preloader" id="mmPreloader" aria-hidden="true">
 	<div class="mm-preloader-inner">
 		<span class="mm-preloader-logo">Mastermind<span class="mm-dot">.</span></span>
@@ -39,8 +41,8 @@
 	</div>
 </header>
 
-<div class="mm-offcanvas-overlay" id="mmOffcanvasOverlay"></div>
-<aside class="mm-offcanvas" id="mmOffcanvas" aria-label="<?php esc_attr_e( 'Site menu', 'mmbuss' ); ?>">
+<div class="mm-offcanvas-overlay" id="mmOffcanvasOverlay" aria-hidden="true" inert></div>
+<aside class="mm-offcanvas" id="mmOffcanvas" role="dialog" aria-modal="true" aria-hidden="true" inert aria-label="<?php esc_attr_e( 'Site menu', 'mmbuss' ); ?>">
 	<button class="mm-offcanvas-close" id="mmOffcanvasClose" aria-label="<?php esc_attr_e( 'Close menu', 'mmbuss' ); ?>">&times;</button>
 	<a class="mm-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Mastermind<span class="mm-dot">.</span></a>
 	<nav aria-label="<?php esc_attr_e( 'Offcanvas', 'mmbuss' ); ?>">

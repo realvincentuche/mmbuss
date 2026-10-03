@@ -12,37 +12,25 @@ $uri = get_template_directory_uri();
 $slides = array(
 	array(
 		'badge' => 'Business Management — Consulting — Operational Solutions',
-		'title' => 'Engineering <span class="mm-outline">Excellence.</span><br>Empowering <span class="hl">Growth.</span>',
+		'title' => 'Better <span class="mm-outline">Business.</span><br><span class="hl">Built to Grow.</span>',
 		'text'  => 'Mastermind Business Systems LLC is a global business management and consulting firm dedicated to transforming how organizations operate, compete, and grow.',
-		'img'   => $uri . '/assets/images/hero-1.jpg',
-		'chip1' => 'Strategy',
-		'chip2' => 'Operations',
-		'chip3' => 'Supply',
-		'float' => true,
+		'img'   => $uri . '/assets/images/home-slide-business-district.jpg',
 		'cta1'  => array( 'Start a Conversation', home_url( '/contact/' ), 'mm-btn mm-btn-gold' ),
 		'cta2'  => array( 'Explore Services', home_url( '/services/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
 		'badge' => 'Strategy that executes',
-		'title' => 'Smarter <span class="hl">Structures.</span><br>Sharper <span class="mm-outline">Strategy.</span>',
+		'title' => 'Smart <span class="hl">Systems.</span><br><span class="mm-outline">Clear Strategy.</span>',
 		'text'  => 'We partner with businesses across industries and borders to design smarter structures, sharpen strategy, and build operational systems that scale.',
-		'img'   => $uri . '/assets/images/hero-2.jpg',
-		'chip1' => 'Diagnose',
-		'chip2' => 'Design',
-		'chip3' => 'Deploy',
-		'float' => false,
+		'img'   => $uri . '/assets/images/home-slide-strategy-team.jpg',
 		'cta1'  => array( 'How We Work', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
 		'cta2'  => array( 'Our Services', home_url( '/services/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
 		'badge' => 'From ambition to results',
-		'title' => 'Turning Ambition Into <span class="hl">Measurable Results.</span>',
+		'title' => 'From Plans to <span class="mm-outline">Progress.</span><br><span class="hl">Results That Last.</span>',
 		'text'  => 'From startups seeking direction to established enterprises pursuing transformation, we deliver the expertise, discipline, and insight needed to turn ambition into measurable results.',
-		'img'   => $uri . '/assets/images/hero-3.jpg',
-		'chip1' => 'Startups',
-		'chip2' => 'Corporate',
-		'chip3' => 'Institutions',
-		'float' => false,
+		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
 		'cta1'  => array( 'Why Mastermind', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
 		'cta2'  => array( 'Industries We Serve', home_url( '/industries/' ), 'mm-btn mm-btn-outline' ),
 	),
@@ -50,45 +38,32 @@ $slides = array(
 		'badge' => 'Operations, supply and scale',
 		'title' => 'Operations That <span class="mm-outline">Scale</span> <span class="hl">With You.</span>',
 		'text'  => 'Operations audits, process re-engineering, SOP development, and supply of goods and services — built for sustainable growth in competitive markets.',
-		'img'   => $uri . '/assets/images/hero-4.jpg',
-		'chip1' => 'SOPs',
-		'chip2' => 'Logistics',
-		'chip3' => 'Fulfillment',
-		'float' => false,
+		'img'   => $uri . '/assets/images/home-slide-logistics.jpg',
 		'cta1'  => array( 'Operational Solutions', home_url( '/services/operational-solutions/' ), 'mm-btn mm-btn-gold' ),
 		'cta2'  => array( 'Supply Services', home_url( '/services/supply-of-goods-and-services/' ), 'mm-btn mm-btn-outline' ),
 	),
 );
 ?>
 
-<section class="mm-hero" id="mmSlider" aria-label="<?php esc_attr_e( 'Highlights', 'mmbuss' ); ?>">
+<section class="mm-hero" id="mmSlider" role="region" aria-roledescription="carousel" aria-label="<?php esc_attr_e( 'Highlights', 'mmbuss' ); ?>">
 	<div class="mm-slides">
 		<?php foreach ( $slides as $i => $s ) : ?>
-		<div class="mm-slide<?php echo 0 === $i ? ' active' : ''; ?>" style="background-image:url('<?php echo esc_url( $s['img'] ); ?>')">
+		<div class="mm-slide<?php echo 0 === $i ? ' active' : ''; ?>" role="group" aria-roledescription="slide" aria-label="<?php echo esc_attr( sprintf( __( '%1$d of %2$d', 'mmbuss' ), $i + 1, count( $slides ) ) ); ?>" aria-hidden="<?php echo 0 === $i ? 'false' : 'true'; ?>"<?php echo 0 === $i ? '' : ' inert'; ?> style="background-image:url('<?php echo esc_url( $s['img'] ); ?>')">
 			<div class="mm-wrap mm-slide-content">
 				<p class="mm-slide-badge"><?php echo esc_html( $s['badge'] ); ?></p>
-				<h1 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h1>
+				<h2 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h2>
 				<p class="mm-slide-text"><?php echo esc_html( $s['text'] ); ?></p>
 				<p class="mm-slide-actions">
 					<a class="<?php echo esc_attr( $s['cta1'][2] ); ?>" href="<?php echo esc_url( $s['cta1'][1] ); ?>"><?php echo esc_html( $s['cta1'][0] ); ?> <span aria-hidden="true">&rarr;</span></a>
 					<a class="<?php echo esc_attr( $s['cta2'][2] ); ?>" href="<?php echo esc_url( $s['cta2'][1] ); ?>"><?php echo esc_html( $s['cta2'][0] ); ?></a>
 				</p>
 			</div>
-			<span class="mm-chip mm-chip-gold mm-chip-1"><?php echo esc_html( $s['chip1'] ); ?></span>
-			<span class="mm-chip mm-chip-2"><?php echo esc_html( $s['chip2'] ); ?></span>
-			<span class="mm-chip mm-chip-dark mm-chip-3"><?php echo esc_html( $s['chip3'] ); ?></span>
-			<span class="mm-chip-star" aria-hidden="true">&#10022;</span>
-			<?php if ( $s['float'] ) : ?>
-			<div class="mm-float-card" aria-hidden="true">
-				<small>Structured Growth <b>&#8599; +24.8%</b></small>
-				<strong>$128k</strong>
-				<div class="mm-float-bar">
-					<i style="height:30%"></i><i style="height:45%"></i><i style="height:38%"></i><i style="height:60%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:100%"></i>
-				</div>
-			</div>
-			<?php endif; ?>
 		</div>
 		<?php endforeach; ?>
+	</div>
+
+	<div class="mm-slider-controls">
+		<div class="mm-slider-dots" role="group" aria-label="<?php esc_attr_e( 'Choose a slide', 'mmbuss' ); ?>"></div>
 	</div>
 
 	<div class="mm-wrap">
@@ -97,11 +72,6 @@ $slides = array(
 				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Core service pillars', 'mmbuss' ); ?></span></div>
 				<div class="mm-hero-stat"><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
 				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
-			</div>
-			<div class="mm-slider-controls">
-				<div class="mm-slider-dots" role="tablist" aria-label="<?php esc_attr_e( 'Slides', 'mmbuss' ); ?>"></div>
-				<button class="mm-slider-arrow" data-slide="prev" aria-label="<?php esc_attr_e( 'Previous slide', 'mmbuss' ); ?>">&larr;</button>
-				<button class="mm-slider-arrow" data-slide="next" aria-label="<?php esc_attr_e( 'Next slide', 'mmbuss' ); ?>">&rarr;</button>
 			</div>
 		</div>
 
@@ -114,14 +84,26 @@ $slides = array(
 
 <section class="mm-logos">
 	<div class="mm-wrap">
-		<p class="mm-logos-label"><?php esc_html_e( 'Structured for teams at', 'mmbuss' ); ?></p>
-		<div class="mm-logos-row" aria-hidden="true">
-			<span>Startups <i>&#10022;</i></span>
-			<span>Corporate <i>&#10022;</i></span>
-			<span>Logistics <i>&#10022;</i></span>
-			<span>Real Estate <i>&#10022;</i></span>
-			<span>Finance <i>&#10022;</i></span>
-			<span>Nonprofit <i>&#10022;</i></span>
+		<p class="mm-logos-label"><?php esc_html_e( 'Built for the realities of', 'mmbuss' ); ?></p>
+		<div class="mm-logos-marquee" aria-label="Industries served">
+			<div class="mm-logos-track">
+				<div class="mm-logos-row">
+					<span>Startups <i aria-hidden="true">&#10022;</i></span>
+					<span>Corporate <i aria-hidden="true">&#10022;</i></span>
+					<span>Logistics <i aria-hidden="true">&#10022;</i></span>
+					<span>Real Estate <i aria-hidden="true">&#10022;</i></span>
+					<span>Finance <i aria-hidden="true">&#10022;</i></span>
+					<span>Nonprofit <i aria-hidden="true">&#10022;</i></span>
+				</div>
+				<div class="mm-logos-row" aria-hidden="true">
+					<span>Startups <i>&#10022;</i></span>
+					<span>Corporate <i>&#10022;</i></span>
+					<span>Logistics <i>&#10022;</i></span>
+					<span>Real Estate <i>&#10022;</i></span>
+					<span>Finance <i>&#10022;</i></span>
+					<span>Nonprofit <i>&#10022;</i></span>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

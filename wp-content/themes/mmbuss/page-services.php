@@ -35,9 +35,7 @@ get_template_part(
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Organizational structuring and governance', 'mmbuss' ); ?></li>
 						<li><?php esc_html_e( 'Performance management systems', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Business process design and documentation', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Change management and transformation support', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Leadership and management advisory', 'mmbuss' ); ?></li>
+						<li><?php esc_html_e( 'Process design, change, and leadership advisory', 'mmbuss' ); ?></li>
 					</ul>
 					<p style="margin-top:14px;"><a class="mm-card-link" href="<?php echo esc_url( home_url( '/services/business-management/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?></a></p>
 				</div>
@@ -50,9 +48,7 @@ get_template_part(
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Business strategy and growth planning', 'mmbuss' ); ?></li>
 						<li><?php esc_html_e( 'Market entry and expansion advisory', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Feasibility studies and business case development', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Risk assessment and mitigation planning', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Corporate advisory for founders and executive teams', 'mmbuss' ); ?></li>
+						<li><?php esc_html_e( 'Feasibility, risk, and executive advisory', 'mmbuss' ); ?></li>
 					</ul>
 					<p style="margin-top:14px;"><a class="mm-card-link" href="<?php echo esc_url( home_url( '/services/consulting/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?></a></p>
 				</div>
@@ -65,9 +61,7 @@ get_template_part(
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Operations audits and process re-engineering', 'mmbuss' ); ?></li>
 						<li><?php esc_html_e( 'Supply chain and logistics optimization', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Standard Operating Procedure (SOP) development', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Systems and workflow automation guidance', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Cost efficiency and resource optimization', 'mmbuss' ); ?></li>
+						<li><?php esc_html_e( 'SOPs, workflow automation, and cost efficiency', 'mmbuss' ); ?></li>
 					</ul>
 					<p style="margin-top:14px;"><a class="mm-card-link" href="<?php echo esc_url( home_url( '/services/operational-solutions/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?></a></p>
 				</div>
@@ -80,9 +74,7 @@ get_template_part(
 					<ul class="mm-card-list">
 						<li><?php esc_html_e( 'Procurement and sourcing of goods, materials, and equipment', 'mmbuss' ); ?></li>
 						<li><?php esc_html_e( 'Supply and distribution of goods to corporate, government, and institutional clients', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Vendor sourcing, vetting, and contract management', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Service delivery and fulfillment under supply agreements and contracts', 'mmbuss' ); ?></li>
-						<li><?php esc_html_e( 'Import/export facilitation and trade logistics support', 'mmbuss' ); ?></li>
+						<li><?php esc_html_e( 'Vendor management, fulfillment, and trade logistics', 'mmbuss' ); ?></li>
 					</ul>
 					<p style="margin-top:14px;"><a class="mm-card-link" href="<?php echo esc_url( home_url( '/services/supply-of-goods-and-services/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?></a></p>
 				</div>

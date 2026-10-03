@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'MMBUSS_VERSION', '0.2.0' );
+define( 'MMBUSS_VERSION', '0.3.2' );
 
 /**
  * Theme setup: menus, title tag, thumbnails, HTML5, feed links.
