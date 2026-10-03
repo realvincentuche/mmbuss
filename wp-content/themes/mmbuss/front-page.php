@@ -61,20 +61,7 @@ $slides = array(
 	</div>
 	</div>
 
-	<div class="mm-wrap">
-		<div class="mm-hero-foot">
-			<div class="mm-hero-stats">
-				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Core service pillars', 'mmbuss' ); ?></span></div>
-				<div class="mm-hero-stat"><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
-				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
-			</div>
-		</div>
-
-		<div class="mm-hero-media reveal">
-			<img src="<?php echo esc_url( $uri . '/assets/images/about-banner.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind team at work', 'mmbuss' ); ?>" loading="lazy">
-			<p class="mm-hero-media-tag"><?php esc_html_e( 'Trusted by organizations across', 'mmbuss' ); ?> <b><?php esc_html_e( '6 industries', 'mmbuss' ); ?></b></p>
-		</div>
-	</div>
+	
 </section>
 
 <section class="mm-section-tight">
@@ -102,6 +89,21 @@ $slides = array(
 		</div>
 	</div>
 </section>
+
+	<div class="mm-wrap">
+		<div class="mm-hero-foot">
+			<div class="mm-hero-stats">
+				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Core service pillars', 'mmbuss' ); ?></span></div>
+				<div class="mm-hero-stat"><strong><span data-count="6">6</span></strong><span><?php esc_html_e( 'Industries served', 'mmbuss' ); ?></span></div>
+				<div class="mm-hero-stat"><strong><span data-count="4">4</span></strong><span><?php esc_html_e( 'Step proven approach', 'mmbuss' ); ?></span></div>
+			</div>
+		</div>
+
+		<div class="mm-hero-media reveal">
+			<img src="<?php echo esc_url( $uri . '/assets/images/about-banner.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind team at work', 'mmbuss' ); ?>" loading="lazy">
+			<p class="mm-hero-media-tag"><?php esc_html_e( 'Trusted by organizations across', 'mmbuss' ); ?> <b><?php esc_html_e( '6 industries', 'mmbuss' ); ?></b></p>
+		</div>
+	</div>
 
 <section class="mm-logos">
 	<div class="mm-wrap">
