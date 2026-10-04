@@ -20,7 +20,7 @@ get_template_part(
 
 $industries = array(
 	array(
-		'img'   => $uri . '/assets/images/hero-2.jpg',
+		'img'   => $uri . '/assets/images/industry-startups.jpg',
 		'badge' => 'Startups',
 		'num'   => '/ 01',
 		'icon'  => 'ph-rocket',
@@ -28,7 +28,7 @@ $industries = array(
 		'text'  => 'Direction, structure, and strategy for ventures finding their footing and seeking sustainable growth.',
 	),
 	array(
-		'img'   => $uri . '/assets/images/hero-1.jpg',
+		'img'   => $uri . '/assets/images/industry-corporate.jpg',
 		'badge' => 'Corporate',
 		'num'   => '/ 02',
 		'icon'  => 'ph-buildings',
@@ -36,7 +36,7 @@ $industries = array(
 		'text'  => 'Governance, performance systems, and transformation support for established organizations and institutions.',
 	),
 	array(
-		'img'   => $uri . '/assets/images/hero-4.jpg',
+		'img'   => $uri . '/assets/images/industry-logistics.jpg',
 		'badge' => 'Logistics',
 		'num'   => '/ 03',
 		'icon'  => 'ph-truck',
@@ -44,7 +44,7 @@ $industries = array(
 		'text'  => 'Optimization across sourcing, movement, fulfillment, and trade logistics for operators and distributors.',
 	),
 	array(
-		'img'   => $uri . '/assets/images/home-slide-business-district.jpg',
+		'img'   => $uri . '/assets/images/industry-realestate.jpg',
 		'badge' => 'Real Estate',
 		'num'   => '/ 04',
 		'icon'  => 'ph-house',
@@ -52,7 +52,7 @@ $industries = array(
 		'text'  => 'Structured advisory for developers, operators, and infrastructure stakeholders managing complex portfolios.',
 	),
 	array(
-		'img'   => $uri . '/assets/images/home-slide-strategy-team.jpg',
+		'img'   => $uri . '/assets/images/industry-financial.jpg',
 		'badge' => 'Financial',
 		'num'   => '/ 05',
 		'icon'  => 'ph-bank',
@@ -60,7 +60,7 @@ $industries = array(
 		'text'  => 'Operational discipline and strategic clarity for firms where trust and precision decide everything.',
 	),
 	array(
-		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
+		'img'   => $uri . '/assets/images/industry-nonprofit.jpg',
 		'badge' => 'Nonprofit',
 		'num'   => '/ 06',
 		'icon'  => 'ph-heart',
