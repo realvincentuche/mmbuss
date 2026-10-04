@@ -24,8 +24,9 @@ get_template_part(
 		<div class="reveal">
 			<p class="mm-kicker"><?php esc_html_e( 'Who We Are', 'mmbuss' ); ?></p>
 			<h2 class="mm-section-title"><?php esc_html_e( 'International expertise,', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'practical solutions', 'mmbuss' ); ?></span></h2>
-			<p><?php esc_html_e( 'Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled.', 'mmbuss' ); ?></p>
+			<p class="mm-section-lead"><?php esc_html_e( 'Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled.', 'mmbuss' ); ?></p>
 			<p><?php esc_html_e( 'We work at the intersection of strategy and execution — helping business owners, executives, and institutions solve complex operational challenges, professionalize their management systems, and position themselves for sustainable growth in competitive markets.', 'mmbuss' ); ?></p>
+			<p><a class="mm-btn mm-btn-gold" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Explore Our Services', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
 		</div>
 		<div class="mm-split-media reveal">
 			<img src="<?php echo esc_url( $uri . '/assets/images/about-section.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind strategy session', 'mmbuss' ); ?>" loading="lazy">
@@ -67,7 +68,10 @@ get_template_part(
 	<div class="mm-panel-dark">
 		<div class="reveal">
 			<p class="mm-kicker mm-kicker-dark"><?php esc_html_e( 'Our Approach', 'mmbuss' ); ?></p>
-			<h2 class="mm-section-title" style="color:#fff;"><?php esc_html_e( 'Diagnose. Design. Deploy. Sustain.', 'mmbuss' ); ?></h2>
+			<div class="mm-section-head-split">
+				<h2 class="mm-section-title" style="color:#fff;"><?php esc_html_e( 'Diagnose. Design. Deploy. Sustain.', 'mmbuss' ); ?></h2>
+				<p class="mm-section-lead mm-head-side" style="color:#b9c2d1;"><?php esc_html_e( 'A proven operating rhythm — so you always know what we are doing, why, and what it returned.', 'mmbuss' ); ?></p>
+			</div>
 		</div>
 		<div class="mm-steps">
 			<div class="mm-step reveal"><div class="mm-step-top"><span class="mm-step-num">01</span><span class="mm-step-goto" aria-hidden="true">&#8599;</span></div><h3><?php esc_html_e( 'Diagnose', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We assess your current operations, structure, and strategy to identify gaps and opportunities.', 'mmbuss' ); ?></p></div>
