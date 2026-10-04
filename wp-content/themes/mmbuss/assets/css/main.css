@@ -1052,6 +1052,12 @@ a { color: var(--mm-navy-2); }
 .mm-form-note .wpcf7-form input[type="submit"]:hover { transform: translateY(-2px); box-shadow: var(--mm-shadow); background: var(--mm-gold); border-color: var(--mm-gold); }
 .mm-form-note .wpcf7-not-valid-tip { font-size: 0.82rem; color: #b3261e; margin-top: 4px; }
 .mm-form-note .wpcf7-response-output { border-radius: 12px; font-size: 0.92rem; margin: 18px 0 0; }
+.mm-form-note .wpcf7-form .mm-form-sec { font-family: var(--mm-display); font-weight: 800; font-size: 1.1rem; color: var(--mm-navy); margin: 26px 0 4px; }
+.mm-form-note .wpcf7-form .mm-form-sec:first-child { margin-top: 0; }
+.mm-form-note .wpcf7-form input[type="checkbox"],
+.mm-form-note .wpcf7-form input[type="radio"] { width: 18px; height: 18px; accent-color: var(--mm-gold); margin-right: 8px; vertical-align: -3px; }
+.mm-form-note .wpcf7-form .wpcf7-acceptance .wpcf7-list-item { display: block; margin: 0 0 12px; }
+.mm-form-note .wpcf7-form .wpcf7-checkbox .wpcf7-list-item { display: inline-block; margin: 0 18px 8px 0; font-weight: 400; }
 
 /* Blog */
 .mm-blog-list { display: grid; }
