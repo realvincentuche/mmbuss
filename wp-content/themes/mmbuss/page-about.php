@@ -69,7 +69,7 @@ get_template_part(
 		<div class="reveal">
 			<p class="mm-kicker mm-kicker-dark"><?php esc_html_e( 'Our Approach', 'mmbuss' ); ?></p>
 			<div class="mm-section-head-split">
-				<h2 class="mm-section-title" style="color:#fff;"><?php esc_html_e( 'Diagnose. Design. Deploy. Sustain.', 'mmbuss' ); ?></h2>
+				<h2 class="mm-section-title" style="color:#fff;"><?php esc_html_e( 'Diagnose. Design. Deploy.', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'Sustain.', 'mmbuss' ); ?></span></h2>
 				<p class="mm-section-lead mm-head-side" style="color:#b9c2d1;"><?php esc_html_e( 'A proven operating rhythm — so you always know what we are doing, why, and what it returned.', 'mmbuss' ); ?></p>
 			</div>
 		</div>

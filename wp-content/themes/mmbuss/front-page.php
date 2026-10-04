@@ -25,7 +25,6 @@ $slides = array(
 		'cta2'  => array( 'Our Services', home_url( '/services/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
-		'badge' => 'From ambition to results',
 		'title' => 'Clear Plans.<br><span class="hl">Real Results.</span>',
 		'text'  => 'From startups seeking direction to established enterprises pursuing transformation, we deliver the expertise, discipline, and insight needed to turn ambition into measurable results.',
 		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
@@ -78,7 +77,7 @@ $slides = array(
 				<li><strong><?php esc_html_e( 'Strategy that reaches execution', 'mmbuss' ); ?></strong><span><?php esc_html_e( 'We help put plans into the systems and routines teams use every day.', 'mmbuss' ); ?></span></li>
 				<li><strong><?php esc_html_e( 'Advice and delivery together', 'mmbuss' ); ?></strong><span><?php esc_html_e( 'Consulting, operations, and sourcing connect in one engagement.', 'mmbuss' ); ?></span></li>
 			</ul>
-			<a class="mm-btn" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More About Us', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+			<a class="mm-btn mm-btn-gold" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'More About Us', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
 		</div>
 		<div class="mm-split-media mm-about-media reveal">
 			<!-- Photo by Vitaly Gariev via Unsplash, used under the Unsplash License. -->
@@ -91,7 +90,7 @@ $slides = array(
 	<div class="mm-wrap mm-proof-layout">
 		<div class="mm-proof-intro reveal">
 			<p class="mm-kicker mm-kicker-dark"><?php esc_html_e( 'What The Work Produces', 'mmbuss' ); ?></p>
-			<h2 id="mm-proof-title"><?php esc_html_e( 'From direction', 'mmbuss' ); ?> <span><?php esc_html_e( 'to delivery.', 'mmbuss' ); ?></span></h2>
+			<h2 id="mm-proof-title"><?php esc_html_e( 'From direction', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'to delivery.', 'mmbuss' ); ?></span></h2>
 			<p><?php esc_html_e( 'The scope is practical: clearer decisions, operating systems, and supply support your team can use.', 'mmbuss' ); ?></p>
 		</div>
 		<div class="mm-proof-outputs">
@@ -212,7 +211,7 @@ $slides = array(
 		<div class="reveal">
 			<p class="mm-kicker mm-kicker-dark"><?php esc_html_e( 'Our Approach', 'mmbuss' ); ?></p>
 			<div class="mm-section-head-split">
-				<h2 class="mm-section-title" style="color:#fff;"><?php esc_html_e( 'From diagnosis to sustained results in four steps', 'mmbuss' ); ?></h2>
+				<h2 class="mm-section-title" style="color:#fff;"><?php esc_html_e( 'From diagnosis to', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'sustained results', 'mmbuss' ); ?></span> <?php esc_html_e( 'in four steps', 'mmbuss' ); ?></h2>
 				<p class="mm-section-lead mm-head-side" style="color:#b9c2d1;"><?php esc_html_e( 'A proven operating rhythm — so you always know what we are doing, why, and what it returned.', 'mmbuss' ); ?></p>
 			</div>
 		</div>
@@ -251,7 +250,7 @@ $slides = array(
 			<h2 class="mm-section-title"><?php esc_html_e( 'Questions before', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'we start', 'mmbuss' ); ?></span></h2>
 			<p class="mm-section-lead"><?php esc_html_e( 'The things every executive asks us on the first call — answered upfront, no sales fluff.', 'mmbuss' ); ?></p>
 			<div class="mm-faq-side-card">
-				<span class="mm-faq-side-icon" aria-hidden="true">&#10078;</span>
+				<span class="mm-faq-side-icon" aria-hidden="true"><i class="ph ph-chats-circle"></i></span>
 				<div>
 					<p><?php esc_html_e( 'Still not sure? Ask us directly', 'mmbuss' ); ?></p>
 					<a href="mailto:<?php echo esc_attr( mmbuss_contact( 'email' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'email' ) ); ?></a>

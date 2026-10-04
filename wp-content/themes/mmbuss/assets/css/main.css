@@ -396,7 +396,7 @@ a { color: var(--mm-navy-2); }
 	inset: 0;
 	z-index: 1;
 	background:
-		linear-gradient(90deg, rgba(3,6,11,.78) 0%, rgba(3,6,11,.66) 43%, rgba(3,6,11,.34) 76%, rgba(3,6,11,.22) 100%),
+		linear-gradient(90deg, rgba(3,6,11,.78) 0%, rgba(3,6,11,.60) 43%, rgba(3,6,11,.24) 76%, rgba(3,6,11,.12) 100%),
 		linear-gradient(0deg, rgba(3,6,11,.24), transparent 60%);
 }
 .mm-slide-content {
@@ -471,10 +471,11 @@ a { color: var(--mm-navy-2); }
 
 /* ---------- Concrete work outputs ---------- */
 .mm-proof { position: relative; background: var(--mm-navy-3) url('../images/proof-bg.jpg') center/cover no-repeat; color: #fff; padding: clamp(78px, 8vw, 118px) 0; overflow: hidden; }
-.mm-proof::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,18,35,.95) 0%, rgba(7,18,35,.88) 50%, rgba(7,18,35,.72) 100%); }
+.mm-proof::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,18,35,.82) 0%, rgba(7,18,35,.66) 50%, rgba(7,18,35,.48) 100%); }
 .mm-proof-layout { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(48px, 8vw, 120px); align-items: center; }
 .mm-proof h2 { max-width: 9ch; margin: 0 0 28px; color: #fff; font-size: clamp(3.6rem, 5.8vw, 6.3rem); line-height: .96; letter-spacing: -.06em; text-wrap: balance; }
 .mm-proof h2 span { display: block; color: var(--mm-gold-2); }
+.mm-proof h2 .hl { color: #fff; }
 .mm-proof-intro > p:last-child { max-width: 34rem; margin: 0; color: #c3cad5; font-size: 1.05rem; line-height: 1.65; }
 .mm-proof-output { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1fr); gap: 24px; align-items: baseline; padding: 30px 0; border-top: 1px solid rgba(255,255,255,.22); }
 .mm-proof-output:last-child { border-bottom: 1px solid rgba(255,255,255,.22); }
@@ -691,7 +692,7 @@ a { color: var(--mm-navy-2); }
 	margin: 0 18px;
 	overflow: hidden;
 }
-.mm-panel-dark::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, rgba(7,18,35,.93) 0%, rgba(7,18,35,.88) 60%, rgba(7,18,35,.82) 100%); }
+.mm-panel-dark::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, rgba(7,18,35,.82) 0%, rgba(7,18,35,.68) 60%, rgba(7,18,35,.55) 100%); }
 .mm-panel-dark > * { position: relative; z-index: 1; }
 .mm-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 48px; }
 .mm-step {
