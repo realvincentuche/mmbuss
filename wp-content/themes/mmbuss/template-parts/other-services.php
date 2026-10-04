@@ -19,7 +19,7 @@ $all = array(
 		'slug'  => 'business-management',
 		'num'   => '/ 01',
 		'icon'  => 'ph-buildings',
-		'img'   => $uri . '/assets/images/hero-2.jpg',
+		'img'   => $uri . '/assets/images/service-business-management.jpg',
 		'title' => 'Business Management',
 		'text'  => 'Structuring, governance, and performance systems that professionalize how you run.',
 	),

@@ -32,7 +32,7 @@ get_template_part(
 		</div>
 		<div class="mm-grid-2">
 			<article class="mm-card reveal">
-				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-2.jpg' ); ?>" alt="<?php esc_attr_e( 'Business management', 'mmbuss' ); ?>" loading="lazy"></div>
+				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/service-business-management.jpg' ); ?>" alt="<?php esc_attr_e( 'Business management', 'mmbuss' ); ?>" loading="lazy"></div>
 				<div class="mm-card-body">
 					<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-buildings"></i></span><span class="mm-svc-num">/ 01</span></div>
 					<h3><?php esc_html_e( 'Business Management', 'mmbuss' ); ?></h3>

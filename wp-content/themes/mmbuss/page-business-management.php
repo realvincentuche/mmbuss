@@ -14,7 +14,7 @@ get_template_part(
 	array(
 		'title' => 'Business Management',
 		'sub'   => 'Organizational structuring, governance, and performance systems that professionalize how you run.',
-		'img'   => $uri . '/assets/images/hero-2.jpg',
+		'img'   => $uri . '/assets/images/service-business-management-banner.jpg',
 	)
 );
 ?>
