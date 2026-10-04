@@ -23,7 +23,7 @@ get_template_part(
 	<div class="mm-wrap mm-split">
 		<div class="reveal">
 			<p class="mm-kicker"><?php esc_html_e( 'Who We Are', 'mmbuss' ); ?></p>
-			<h2 class="mm-section-title"><?php esc_html_e( 'International expertise, practical solutions', 'mmbuss' ); ?></h2>
+			<h2 class="mm-section-title"><?php esc_html_e( 'International expertise,', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'practical solutions', 'mmbuss' ); ?></span></h2>
 			<p><?php esc_html_e( 'Mastermind Business Systems LLC is an international business management and consulting firm built on one core belief: every organization has untapped potential waiting to be structured, streamlined, and scaled.', 'mmbuss' ); ?></p>
 			<p><?php esc_html_e( 'We work at the intersection of strategy and execution — helping business owners, executives, and institutions solve complex operational challenges, professionalize their management systems, and position themselves for sustainable growth in competitive markets.', 'mmbuss' ); ?></p>
 		</div>
@@ -38,14 +38,14 @@ get_template_part(
 		<div class="mm-grid-2">
 			<article class="mm-card reveal">
 				<div class="mm-card-body">
-					<span class="mm-svc-num"><?php esc_html_e( 'MISSION', 'mmbuss' ); ?></span>
+					<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-compass"></i></span><span class="mm-svc-num"><?php esc_html_e( 'MISSION', 'mmbuss' ); ?></span></div>
 					<h3><?php esc_html_e( 'Strategic clarity for global competition', 'mmbuss' ); ?></h3>
 					<p><?php esc_html_e( 'To equip businesses with the strategic clarity, operational frameworks, and management expertise required to compete confidently on a global scale.', 'mmbuss' ); ?></p>
 				</div>
 			</article>
 			<article class="mm-card reveal">
 				<div class="mm-card-body">
-					<span class="mm-svc-num"><?php esc_html_e( 'VISION', 'mmbuss' ); ?></span>
+					<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-eye"></i></span><span class="mm-svc-num"><?php esc_html_e( 'VISION', 'mmbuss' ); ?></span></div>
 					<h3><?php esc_html_e( 'A trusted global name', 'mmbuss' ); ?></h3>
 					<p><?php esc_html_e( 'To be a trusted global name in business management and consulting — recognized for practical solutions, measurable impact, and unwavering integrity.', 'mmbuss' ); ?></p>
 				</div>
@@ -72,8 +72,8 @@ get_template_part(
 <section class="mm-section">
 	<div class="mm-wrap">
 		<div class="reveal">
-			<p class="mm-kicker"><?php esc_html_e( 'Why Mastermind Business Systems LLC', 'mmbuss' ); ?></p>
-			<h2 class="mm-section-title"><?php esc_html_e( 'Built for organizations that outgrow average', 'mmbuss' ); ?></h2>
+			<p class="mm-kicker"><?php esc_html_e( 'Why Mastermind', 'mmbuss' ); ?></p>
+			<h2 class="mm-section-title"><?php esc_html_e( 'Built for organizations that outgrow', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'average', 'mmbuss' ); ?></span></h2>
 		</div>
 		<div class="mm-grid-2">
 			<article class="mm-card reveal">
