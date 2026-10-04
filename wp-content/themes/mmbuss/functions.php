@@ -112,6 +112,22 @@ function mmbuss_menu_fallback() {
 }
 
 /**
+ * Fallback footer menu (keeps bottom bar populated before a menu exists).
+ */
+function mmbuss_footer_fallback() {
+	$items = array(
+		home_url( '/' )          => __( 'Home', 'mmbuss' ),
+		home_url( '/services/' ) => __( 'Services', 'mmbuss' ),
+		home_url( '/contact/' )  => __( 'Contact', 'mmbuss' ),
+	);
+	echo '<ul class="menu">';
+	foreach ( $items as $url => $label ) {
+		echo '<li><a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a></li>';
+	}
+	echo '</ul>';
+}
+
+/**
  * Seed v1 pages on theme activation so local == live on first activate.
  * Never overwrites existing pages.
  */
