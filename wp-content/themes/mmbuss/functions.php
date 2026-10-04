@@ -103,18 +103,64 @@ function mmbuss_menu_fallback() {
 		home_url( '/services/operational-solutions/' )        => __( 'Operational Solutions', 'mmbuss' ),
 		home_url( '/services/supply-of-goods-and-services/' ) => __( 'Supply of Goods and Services', 'mmbuss' ),
 	);
-	echo '<ul class="menu">';
-	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html__( 'Home', 'mmbuss' ) . '</a></li>';
-	echo '<li><a href="' . esc_url( home_url( '/about/' ) ) . '">' . esc_html__( 'About', 'mmbuss' ) . '</a></li>';
-	echo '<li class="menu-item-has-children"><a href="' . esc_url( home_url( '/services/' ) ) . '" aria-haspopup="true" aria-expanded="false">' . esc_html__( 'Services', 'mmbuss' ) . '</a>';
-	echo '<ul class="sub-menu">';
-	foreach ( $services as $url => $label ) {
-		echo '<li><a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a></li>';
+	// Current path for active-state marking (fallback has no WP menu classes).
+	$current_path = '/';
+	if ( isset( $_SERVER['REQUEST_URI'] ) ) {
+		$parsed       = wp_parse_url( esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ), PHP_URL_PATH );
+		$current_path = $parsed ? untrailingslashit( $parsed ) : '/';
+		$current_path = $current_path ? $current_path : '/';
 	}
-	echo '</ul></li>';
-	echo '<li><a href="' . esc_url( home_url( '/industries/' ) ) . '">' . esc_html__( 'Industries', 'mmbuss' ) . '</a></li>';
-	echo '<li><a href="' . esc_url( home_url( '/contact/' ) ) . '">' . esc_html__( 'Contact', 'mmbuss' ) . '</a></li>';
+	$active_sub = false;
+	foreach ( $services as $url => $label ) {
+		$sub_path = untrailingslashit( wp_parse_url( $url, PHP_URL_PATH ) );
+		if ( $sub_path && 0 === strpos( trailingslashit( $current_path ), trailingslashit( $sub_path ) ) ) {
+			$active_sub = $url;
+			break;
+		}
+	}
+	$top = array(
+		home_url( '/' )          => __( 'Home', 'mmbuss' ),
+		home_url( '/about/' )    => __( 'About', 'mmbuss' ),
+		home_url( '/industries/' ) => __( 'Industries', 'mmbuss' ),
+		home_url( '/contact/' )  => __( 'Contact', 'mmbuss' ),
+	);
+	echo '<ul class="menu">';
+	foreach ( $top as $url => $label ) {
+		$item_path  = untrailingslashit( wp_parse_url( $url, PHP_URL_PATH ) );
+		$item_path  = $item_path ? $item_path : '/';
+		if ( '/' === $item_path ) {
+			$is_current = ( '/' === $current_path );
+		} else {
+			$is_current = ( 0 === strpos( trailingslashit( $current_path ), trailingslashit( $item_path ) ) );
+		}
+		$cls  = $is_current ? ' class="current-menu-item"' : '';
+		$aria = $is_current ? ' aria-current="page"' : '';
+		echo '<li' . $cls . '><a href="' . esc_url( $url ) . '"' . $aria . '>' . esc_html( $label ) . '</a></li>';
+		if ( home_url( '/about/' ) === $url ) {
+			echo mmbuss_fallback_services_item( $services, $active_sub, $current_path ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
+		}
+	}
 	echo '</ul>';
+}
+
+/**
+ * Services dropdown item for the fallback menu, with active states.
+ */
+function mmbuss_fallback_services_item( $services, $active_sub, $current_path ) {
+	$svc_path    = untrailingslashit( wp_parse_url( home_url( '/services/' ), PHP_URL_PATH ) );
+	$under_svc   = ( 0 === strpos( trailingslashit( $current_path ), trailingslashit( $svc_path ) ) );
+	$is_parent   = ( $under_svc && ! $active_sub );
+	$is_ancestor = (bool) $active_sub;
+	$li_cls      = ' class="menu-item-has-children' . ( $is_parent ? ' current-menu-item' : '' ) . ( $is_ancestor ? ' current-menu-ancestor' : '' ) . '"';
+	$aria        = $is_parent ? ' aria-current="page"' : '';
+	$out         = '<li' . $li_cls . '><a href="' . esc_url( home_url( '/services/' ) ) . '" aria-haspopup="true" aria-expanded="false"' . $aria . '>' . esc_html__( 'Services', 'mmbuss' ) . '</a>';
+	$out        .= '<ul class="sub-menu">';
+	foreach ( $services as $url => $label ) {
+		$is_sub = ( $url === $active_sub );
+		$out   .= '<li' . ( $is_sub ? ' class="current-menu-item"' : '' ) . '><a href="' . esc_url( $url ) . '"' . ( $is_sub ? ' aria-current="page"' : '' ) . '>' . esc_html( $label ) . '</a></li>';
+	}
+	$out .= '</ul></li>';
+	return $out;
 }
 
 /**

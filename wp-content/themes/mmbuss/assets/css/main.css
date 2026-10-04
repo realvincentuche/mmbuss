@@ -352,6 +352,8 @@ a { color: var(--mm-navy-2); }
 	padding: 13px 0;
 }
 .mm-offcanvas nav a:hover { color: var(--mm-gold-2); }
+.mm-offcanvas nav .current-menu-item > a,
+.mm-offcanvas nav .current-menu-ancestor > a { color: var(--mm-gold-2); }
 /* Offcanvas submenu: always expanded, gold-ruled indent */
 .mm-offcanvas .sub-menu {
 	list-style: none;
