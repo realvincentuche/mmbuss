@@ -838,7 +838,7 @@ a { color: var(--mm-navy-2); }
 .mm-banner-bg::after {
 	content: "";
 	position: absolute; inset: 0;
-	background: linear-gradient(100deg, rgba(10,26,51,.82) 0%, rgba(16,41,79,.5) 52%, rgba(201,162,39,.28) 130%);
+	background: linear-gradient(100deg, rgba(10,26,51,.68) 0%, rgba(16,41,79,.38) 52%, rgba(201,162,39,.2) 130%);
 }
 .mm-banner-inner { position: relative; z-index: 2; padding: clamp(100px, 12vw, 164px) 0 clamp(82px, 9vw, 120px); color: #fff; }
 .mm-crumbs { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #9fb0c8; margin: 0 0 20px; }
@@ -1030,7 +1030,7 @@ a { color: var(--mm-navy-2); }
 	.mm-cta-actions .mm-btn { justify-content: center; }
 	.mm-cta-dial { display: none; }
 	.mm-split-media { margin-bottom: 26px; }
-	.mm-banner-inner { padding: 94px 0 74px; }
+	.mm-banner-inner { padding: 94px 20px 74px; }
 	.mm-banner-title { font-size: clamp(2.8rem, 12vw, 4.5rem); }
 	.mm-banner-sub { font-size: 1rem; }
 	.mm-footer-grid { grid-template-columns: 1fr; gap: 36px; }
