@@ -45,7 +45,7 @@
 <div class="mm-offcanvas-overlay" id="mmOffcanvasOverlay" aria-hidden="true" inert></div>
 <aside class="mm-offcanvas" id="mmOffcanvas" role="dialog" aria-modal="true" aria-hidden="true" inert aria-label="<?php esc_attr_e( 'Site menu', 'mmbuss' ); ?>">
 	<button class="mm-offcanvas-close" id="mmOffcanvasClose" aria-label="<?php esc_attr_e( 'Close menu', 'mmbuss' ); ?>">&times;</button>
-	<a class="mm-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-mark-white.svg' ); ?>" alt="<?php esc_attr_e( 'Mastermind', 'mmbuss' ); ?>"></a>
+	<a class="mm-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-mark-white.svg' ); ?>" alt="<?php esc_attr_e( 'Mastermind', 'mmbuss' ); ?>"><span class="mm-brand-text">Mastermind<span class="mm-dot">.</span></span></a>
 	<nav aria-label="<?php esc_attr_e( 'Offcanvas', 'mmbuss' ); ?>">
 		<?php
 		wp_nav_menu(
