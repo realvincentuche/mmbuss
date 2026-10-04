@@ -171,28 +171,4 @@
 	} else {
 		revealEls.forEach(function (el) { el.classList.add('in'); });
 	}
-
-	// Animated counters.
-	var counters = document.querySelectorAll('[data-count]');
-	if ('IntersectionObserver' in window && counters.length) {
-		var cio = new IntersectionObserver(function (entries) {
-			entries.forEach(function (en) {
-				if (!en.isIntersecting) { return; }
-				var el = en.target;
-				cio.unobserve(el);
-				var target = parseFloat(el.getAttribute('data-count'));
-				var suffix = el.getAttribute('data-suffix') || '';
-				var start = null;
-				var dur = 1400;
-				function tick(ts) {
-					if (!start) { start = ts; }
-					var p = Math.min((ts - start) / dur, 1);
-					el.textContent = Math.round(target * p) + suffix;
-					if (p < 1) { requestAnimationFrame(tick); }
-				}
-				requestAnimationFrame(tick);
-			});
-		}, { threshold: 0.4 });
-		counters.forEach(function (el) { cio.observe(el); });
-	}
 }());
