@@ -622,7 +622,7 @@ a { color: var(--mm-navy-2); }
 	animation: mm-scroll 24s linear infinite;
 	font-family: var(--mm-display);
 	font-weight: 800;
-	font-size: 1.02rem;
+	font-size: 1.35rem;
 	letter-spacing: 0.04em;
 	color: var(--mm-navy-3);
 }
