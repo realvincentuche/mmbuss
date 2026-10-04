@@ -190,6 +190,7 @@ a { color: var(--mm-navy-2); }
 .mm-header .mm-nav .menu-item-has-children > a { padding-right: 28px; }
 .mm-header .mm-nav .menu-item-has-children > a::after {
 	content: "";
+	display: block;
 	position: absolute;
 	right: 13px;
 	top: 50%;
