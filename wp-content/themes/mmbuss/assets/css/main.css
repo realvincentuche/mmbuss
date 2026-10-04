@@ -361,28 +361,6 @@ a { color: var(--mm-navy-2); }
 	margin: 0 0 34px;
 }
 .mm-slide-actions { display: flex; flex-wrap: wrap; margin: 0; }
-
-/* Floating chips + stat card sit over the bg photo, right side */
-.mm-chip {
-	position: absolute;
-	z-index: 2;
-	display: inline-flex;
-	align-items: center;
-	gap: 8px;
-	background: #fff;
-	border-radius: 999px;
-	padding: 11px 22px;
-	font-weight: 700;
-	font-size: 0.9rem;
-	color: var(--mm-navy);
-	box-shadow: var(--mm-shadow-card);
-	border: 1px solid var(--mm-line);
-}
-.mm-chip-gold { background: var(--mm-gold); border-color: var(--mm-gold); color: var(--mm-navy-3); }
-.mm-chip-dark { background: var(--mm-navy-3); border-color: var(--mm-navy-3); color: #fff; }
-.mm-chip-1 { top: 130px; right: 22%; }
-.mm-chip-2 { top: 44%; right: 28%; }
-.mm-chip-3 { bottom: 170px; right: 15%; }
 .mm-slider-controls { display: flex; align-items: center; }
 .mm-slider-dots { display: flex; }
 .mm-slider-dot {
@@ -886,9 +864,6 @@ a { color: var(--mm-navy-2); }
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
 	.mm-slide { min-height: 80vh; }
-	.mm-chip-1 { right: 6%; top: 110px; }
-	.mm-chip-2 { right: 10%; }
-	.mm-chip-3 { right: 6%; }
 	.mm-grid-4 { grid-template-columns: repeat(2, 1fr); }
 	.mm-steps { grid-template-columns: repeat(2, 1fr); }
 	.mm-section-head-split { grid-template-columns: 1fr; }
@@ -910,8 +885,6 @@ a { color: var(--mm-navy-2); }
 	.mm-wrap { padding-left: 20px; padding-right: 20px; }
 	.mm-slide { align-items: flex-end; }
 	.mm-slide-title { font-size: clamp(2.5rem, 12vw, 3.2rem); }
-	.mm-chip-1 { top: 92px; right: 16px; }
-	.mm-chip-2 { display: none; }
 	.mm-grid-4, .mm-grid-3, .mm-grid-2 { grid-template-columns: 1fr; }
 	.mm-steps { grid-template-columns: 1fr; }
 	.mm-checks { grid-template-columns: 1fr; }
