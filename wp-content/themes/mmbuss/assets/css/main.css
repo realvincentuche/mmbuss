@@ -578,7 +578,7 @@ a { color: var(--mm-navy-2); }
 .mm-about-principles li { border-top: 1px solid var(--mm-line); padding-top: 17px; }
 .mm-about-principles strong { display: block; color: var(--mm-navy); font-family: var(--mm-display); font-size: 1.05rem; line-height: 1.2; }
 .mm-about-principles span { display: block; margin-top: 8px; color: var(--mm-muted); font-size: .94rem; line-height: 1.5; }
-.mm-checks { list-style: none; margin: 0 0 30px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
+.mm-checks { list-style: none; margin: 28px 0 30px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
 .mm-checks li { padding-left: 34px; position: relative; font-weight: 600; font-size: 0.98rem; }
 .mm-checks li::before {
 	content: "✓";

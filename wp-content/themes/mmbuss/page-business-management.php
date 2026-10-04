@@ -34,7 +34,7 @@ get_template_part(
 			<p><a class="mm-btn mm-btn-gold" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Request This Service', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
 		</div>
 		<div class="mm-split-media reveal">
-			<img src="<?php echo esc_url( $uri . '/assets/images/home-slide-strategy-team.jpg' ); ?>" alt="<?php esc_attr_e( 'Business management advisory', 'mmbuss' ); ?>" loading="lazy">
+			<img src="<?php echo esc_url( $uri . '/assets/images/hero-3.jpg' ); ?>" alt="<?php esc_attr_e( 'Business management advisory', 'mmbuss' ); ?>" loading="lazy">
 		</div>
 	</div>
 </section>
