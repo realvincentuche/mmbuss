@@ -11,14 +11,14 @@ get_header();
 $uri = get_template_directory_uri();
 $slides = array(
 	array(
-		'title' => 'Better <span class="mm-outline">Business.</span><br><span class="hl">Built to Grow.</span>',
+		'title' => 'Better Business.<br><span class="hl">Built to Grow.</span>',
 		'text'  => 'Mastermind Business Systems LLC is a global business management and consulting firm dedicated to transforming how organizations operate, compete, and grow.',
 		'img'   => $uri . '/assets/images/home-slide-business-district.jpg',
 		'cta1'  => array( 'Start a Conversation', home_url( '/contact/' ), 'mm-btn mm-btn-gold' ),
 		'cta2'  => array( 'Explore Services', home_url( '/services/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
-		'title' => 'Smart <span class="mm-outline">Systems.</span><br>Clear <span class="hl">Strategy.</span>',
+		'title' => 'Smart Systems.<br>Clear <span class="hl">Strategy.</span>',
 		'text'  => 'We partner with businesses across industries and borders to design smarter structures, sharpen strategy, and build operational systems that scale.',
 		'img'   => $uri . '/assets/images/home-slide-strategy-team.jpg',
 		'cta1'  => array( 'How We Work', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
@@ -26,14 +26,14 @@ $slides = array(
 	),
 	array(
 		'badge' => 'From ambition to results',
-		'title' => 'Clear <span class="mm-outline">Plans.</span><br><span class="hl">Lasting Results.</span>',
+		'title' => 'Clear Plans.<br><span class="hl">Lasting Results.</span>',
 		'text'  => 'From startups seeking direction to established enterprises pursuing transformation, we deliver the expertise, discipline, and insight needed to turn ambition into measurable results.',
 		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
 		'cta1'  => array( 'Why Mastermind', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
 		'cta2'  => array( 'Industries We Serve', home_url( '/industries/' ), 'mm-btn mm-btn-outline' ),
 	),
 	array(
-		'title' => 'Operations That <span class="mm-outline">Scale</span> <span class="hl">With You.</span>',
+		'title' => 'Operations That Scale <span class="hl">With You.</span>',
 		'text'  => 'Operations audits, process re-engineering, SOP development, and supply of goods and services — built for sustainable growth in competitive markets.',
 		'img'   => $uri . '/assets/images/home-slide-logistics.jpg',
 		'cta1'  => array( 'Operational Solutions', home_url( '/services/operational-solutions/' ), 'mm-btn mm-btn-gold' ),

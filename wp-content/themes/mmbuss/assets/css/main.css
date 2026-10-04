@@ -366,16 +366,6 @@ a { color: var(--mm-navy-2); }
 }
 .hl-dark::after { background: var(--mm-gold); }
 
-/* Outlined display word */
-.mm-outline {
-	color: transparent;
-	-webkit-text-stroke: 2px var(--mm-navy);
-}
-.mm-outline-light {
-	color: transparent;
-	-webkit-text-stroke: 2px #fff;
-}
-
 /* ---------- Hero slider (full-bleed bg images) ---------- */
 .mm-hero { position: relative; padding: 0; }
 .mm-slides {
@@ -426,7 +416,6 @@ a { color: var(--mm-navy-2); }
 	text-wrap: balance;
 	color: #fff;
 }
-.mm-slide-title .mm-outline { color: #fff; -webkit-text-stroke: 0; }
 .mm-slide-title .hl {
 	display: inline-flex;
 	align-items: center;
