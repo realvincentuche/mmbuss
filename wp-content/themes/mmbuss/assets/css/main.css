@@ -867,8 +867,14 @@ a { color: var(--mm-navy-2); }
 .mm-contact-card { background: var(--mm-navy); color: #e8eef7; border-radius: var(--mm-radius-lg); padding: clamp(30px, 4vw, 48px); }
 .mm-contact-card h3 { color: #fff; font-size: 1.5rem; }
 .mm-contact-card a { color: var(--mm-gold-2); }
+.mm-contact-card .mm-svc-top { margin-bottom: 24px; align-items: center; }
+.mm-contact-card .mm-svc-icon { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.22); color: var(--mm-gold-2); }
+.mm-contact-card .mm-svc-num { color: var(--mm-gold-2); }
+.mm-contact-card .mm-card-cta { margin: 26px 0 0; border-top: 0; padding-top: 0; }
+.mm-form-note .mm-svc-top { margin-bottom: 22px; align-items: center; }
 .mm-contact-rows { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 16px; }
-.mm-contact-rows li { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 14px; }
+.mm-contact-rows li { display: flex; gap: 14px; align-items: flex-start; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 14px; }
+.mm-contact-rows li > i { flex: 0 0 auto; width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(255,255,255,.22); display: flex; align-items: center; justify-content: center; color: var(--mm-gold-2); font-size: 1rem; }
 .mm-contact-rows strong { display: block; font-size: 0.76rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mm-gold-2); margin-bottom: 4px; }
 .mm-form-note { background: #fff; border: 1px solid var(--mm-line); border-radius: var(--mm-radius); padding: clamp(12px, 3vw, 34px); }
 .mm-form-note h3 { margin-top: 0; font-size: 1.5rem; }
