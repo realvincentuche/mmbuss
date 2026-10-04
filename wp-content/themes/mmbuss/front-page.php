@@ -47,7 +47,11 @@ $slides = array(
 		<?php foreach ( $slides as $i => $s ) : ?>
 		<div class="mm-slide<?php echo 0 === $i ? ' active' : ''; ?>" role="group" aria-roledescription="slide" aria-label="<?php echo esc_attr( sprintf( __( '%1$d of %2$d', 'mmbuss' ), $i + 1, count( $slides ) ) ); ?>" aria-hidden="<?php echo 0 === $i ? 'false' : 'true'; ?>"<?php echo 0 === $i ? '' : ' inert'; ?> style="background-image:url('<?php echo esc_url( $s['img'] ); ?>')">
 			<div class="mm-wrap mm-slide-content">
+				<?php if ( 0 === $i ) : ?>
+				<h1 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h1>
+				<?php else : ?>
 				<h2 class="mm-slide-title"><?php echo wp_kses( $s['title'], array( 'br' => array(), 'span' => array( 'class' => array() ) ) ); ?></h2>
+				<?php endif; ?>
 				<p class="mm-slide-text"><?php echo esc_html( $s['text'] ); ?></p>
 				<p class="mm-slide-actions">
 					<a class="<?php echo esc_attr( $s['cta1'][2] ); ?>" href="<?php echo esc_url( $s['cta1'][1] ); ?>"><?php echo esc_html( $s['cta1'][0] ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
