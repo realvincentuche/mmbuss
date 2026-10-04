@@ -97,17 +97,23 @@ function mmbuss_contact( $key = '' ) {
  * Fallback primary menu (keeps local == live identical before menus exist).
  */
 function mmbuss_menu_fallback() {
-	$items = array(
-		home_url( '/' )                    => __( 'Home', 'mmbuss' ),
-		home_url( '/about/' )              => __( 'About', 'mmbuss' ),
-		home_url( '/services/' )           => __( 'Services', 'mmbuss' ),
-		home_url( '/industries/' )         => __( 'Industries', 'mmbuss' ),
-		home_url( '/contact/' )            => __( 'Contact', 'mmbuss' ),
+	$services = array(
+		home_url( '/services/business-management/' )          => __( 'Business Management', 'mmbuss' ),
+		home_url( '/services/consulting/' )                   => __( 'Consulting', 'mmbuss' ),
+		home_url( '/services/operational-solutions/' )        => __( 'Operational Solutions', 'mmbuss' ),
+		home_url( '/services/supply-of-goods-and-services/' ) => __( 'Supply of Goods and Services', 'mmbuss' ),
 	);
 	echo '<ul class="menu">';
-	foreach ( $items as $url => $label ) {
+	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html__( 'Home', 'mmbuss' ) . '</a></li>';
+	echo '<li><a href="' . esc_url( home_url( '/about/' ) ) . '">' . esc_html__( 'About', 'mmbuss' ) . '</a></li>';
+	echo '<li class="menu-item-has-children"><a href="' . esc_url( home_url( '/services/' ) ) . '" aria-haspopup="true" aria-expanded="false">' . esc_html__( 'Services', 'mmbuss' ) . '</a>';
+	echo '<ul class="sub-menu">';
+	foreach ( $services as $url => $label ) {
 		echo '<li><a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a></li>';
 	}
+	echo '</ul></li>';
+	echo '<li><a href="' . esc_url( home_url( '/industries/' ) ) . '">' . esc_html__( 'Industries', 'mmbuss' ) . '</a></li>';
+	echo '<li><a href="' . esc_url( home_url( '/contact/' ) ) . '">' . esc_html__( 'Contact', 'mmbuss' ) . '</a></li>';
 	echo '</ul>';
 }
 

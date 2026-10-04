@@ -81,6 +81,37 @@
 		}
 	});
 
+	// Dropdown touch: first tap opens, second follows the parent link.
+	var dropParents = document.querySelectorAll('#mmNav .menu-item-has-children > a');
+	var touchMenu = window.matchMedia && window.matchMedia('(hover: none)').matches;
+	dropParents.forEach(function (link) {
+		link.addEventListener('click', function (e) {
+			var li = link.parentElement;
+			if (touchMenu && !li.classList.contains('open')) {
+				e.preventDefault();
+				closeDrops(li);
+				li.classList.add('open');
+				link.setAttribute('aria-expanded', 'true');
+			}
+		});
+	});
+	function closeDrops(except) {
+		document.querySelectorAll('#mmNav .menu-item-has-children.open').forEach(function (o) {
+			if (o !== except) {
+				o.classList.remove('open');
+				var oa = o.querySelector(':scope > a');
+				if (oa) { oa.setAttribute('aria-expanded', 'false'); }
+			}
+		});
+	}
+	document.addEventListener('click', function (e) {
+		var nav = document.getElementById('mmNav');
+		if (!nav || !nav.contains(e.target)) { closeDrops(null); }
+	});
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape') { closeDrops(null); }
+	});
+
 	// Hero slider.
 	var slider = document.getElementById('mmSlider');
 	if (slider) {
