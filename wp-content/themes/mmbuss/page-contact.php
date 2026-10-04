@@ -16,6 +16,7 @@ get_template_part(
 		'title' => 'Contact Us',
 		'sub'   => "Tell us where you are headed — we will bring the structure to get you there.",
 		'img'   => $uri . '/assets/images/contact-banner.jpg',
+		'pos'   => 'center 18%',
 	)
 );
 ?>
@@ -43,7 +44,6 @@ get_template_part(
 				<li><i class="ph ph-globe" aria-hidden="true"></i><div><strong><?php esc_html_e( 'Web', 'mmbuss' ); ?></strong><a href="<?php echo esc_url( 'https://' . mmbuss_contact( 'web' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'web' ) ); ?></a></div></li>
 				<li><i class="ph ph-map-pin" aria-hidden="true"></i><div><strong><?php esc_html_e( 'Office', 'mmbuss' ); ?></strong><?php echo esc_html( mmbuss_contact( 'office' ) ); ?></div></li>
 			</ul>
-			<p class="mm-card-cta"><a class="mm-btn mm-btn-gold" href="<?php echo esc_url( home_url( '/contact/#mm-contact-form' ) ); ?>"><?php esc_html_e( 'Send Us a Message', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
 		</div>
 		<div class="mm-form-note reveal" id="mm-contact-form">
 			<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-envelope"></i></span><span class="mm-svc-num"><?php esc_html_e( 'Write To Us', 'mmbuss' ); ?></span></div>

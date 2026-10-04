@@ -879,6 +879,51 @@ a { color: var(--mm-navy-2); }
 .mm-form-note { background: #fff; border: 1px solid var(--mm-line); border-radius: var(--mm-radius); padding: clamp(12px, 3vw, 34px); }
 .mm-form-note h3 { margin-top: 0; font-size: 1.5rem; }
 
+/* Contact Form 7 — matches theme system */
+.mm-form-note .wpcf7 { margin-top: 24px; }
+.mm-form-note .wpcf7 p { margin: 0 0 16px; }
+.mm-form-note .wpcf7 label { display: block; font-weight: 700; font-size: 0.85rem; color: var(--mm-navy); margin-bottom: 6px; }
+.mm-form-note .wpcf7-text,
+.mm-form-note .wpcf7-email,
+.mm-form-note .wpcf7-tel,
+.mm-form-note .wpcf7-select,
+.mm-form-note .wpcf7-textarea {
+	width: 100%;
+	max-width: 100%;
+	font: inherit;
+	font-size: 0.98rem;
+	color: var(--mm-ink);
+	background: var(--mm-bg);
+	border: 1px solid var(--mm-line);
+	border-radius: 12px;
+	padding: 13px 16px;
+	box-sizing: border-box;
+}
+.mm-form-note .wpcf7-textarea { min-height: 140px; resize: vertical; }
+.mm-form-note .wpcf7-text:focus,
+.mm-form-note .wpcf7-email:focus,
+.mm-form-note .wpcf7-tel:focus,
+.mm-form-note .wpcf7-select:focus,
+.mm-form-note .wpcf7-textarea:focus { outline: 3px solid var(--mm-gold); outline-offset: 2px; border-color: var(--mm-gold); background: #fff; }
+.mm-form-note .wpcf7-submit {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-family: var(--mm-display);
+	font-weight: 700;
+	font-size: 1rem;
+	padding: 16px 30px;
+	border-radius: 999px;
+	border: 1.5px solid var(--mm-gold-2);
+	background: var(--mm-gold-2);
+	color: #0B0B10;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.mm-form-note .wpcf7-submit:hover { transform: translateY(-2px); box-shadow: var(--mm-shadow); background: var(--mm-gold); border-color: var(--mm-gold); }
+.mm-form-note .wpcf7-not-valid-tip { font-size: 0.82rem; color: #b3261e; margin-top: 4px; }
+.mm-form-note .wpcf7-response-output { border-radius: 12px; font-size: 0.92rem; margin: 18px 0 0; }
+
 /* Blog */
 .mm-blog-list { display: grid; }
 .mm-post { border-top: 1px solid var(--mm-line); padding: 28px 0; }
