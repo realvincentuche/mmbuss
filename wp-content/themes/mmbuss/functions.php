@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'MMBUSS_VERSION', '0.3.6' );
 
 /**
- * Theme setup: menus, title tag, thumbnails, HTML5, feed links.
+ * Theme setup: menus, title tag, thumbnails, HTML5, feed links, custom logo.
  */
 function mmbuss_setup() {
 	add_theme_support( 'title-tag' );
@@ -27,6 +27,16 @@ function mmbuss_setup() {
 		array(
 			'primary' => __( 'Primary Menu', 'mmbuss' ),
 			'footer'  => __( 'Footer Menu', 'mmbuss' ),
+		)
+	);
+
+	add_theme_support(
+		'custom-logo',
+		array(
+			'height'      => 64,
+			'width'       => 200,
+			'flex-height' => true,
+			'flex-width'  => true,
 		)
 	);
 }

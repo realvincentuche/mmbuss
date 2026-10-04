@@ -142,6 +142,9 @@ a { color: var(--mm-navy-2); }
 	min-height: 72px;
 }
 .mm-brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
 	font-family: var(--mm-display);
 	font-weight: 800;
 	font-size: 1.8rem;
@@ -149,6 +152,7 @@ a { color: var(--mm-navy-2); }
 	color: #fff;
 	text-decoration: none;
 }
+.mm-brand img { height: 42px; width: auto; display: block; }
 .mm-header .mm-dot { color: var(--mm-gold-2); }
 .mm-header.is-sticky .mm-brand { color: rgba(255,255,255,.96); }
 .mm-header.is-sticky .mm-dot { color: var(--mm-gold-2); }
@@ -1056,6 +1060,7 @@ a { color: var(--mm-navy-2); }
 .mm-footer a:hover { color: var(--mm-gold-2); }
 .mm-footer-tag { color: var(--mm-gold-2); font-weight: 600; }
 .mm-footer-brand { color: #fff; }
+.mm-footer-brand img { max-height: 64px; width: auto; }
 .mm-footer-about { margin-top: 16px; }
 .mm-footer-contact li { display: flex; gap: 10px; align-items: flex-start; }
 .mm-footer-contact li > i { flex: 0 0 auto; color: var(--mm-gold-2); font-size: 1rem; margin-top: 4px; }
@@ -1157,6 +1162,7 @@ a { color: var(--mm-navy-2); }
 	.mm-wrap { padding-left: 20px; padding-right: 20px; }
 	.mm-header-inner { min-height: 60px; }
 	.mm-brand { font-size: 1.55rem; }
+	.mm-brand img { height: 34px; }
 	.mm-hero { padding: 0; }
 	.mm-slides { border-radius: 0; }
 	.mm-slide { align-items: flex-end; min-height: min(540px, calc(100svh - 12px)); background-position: 62% center; }

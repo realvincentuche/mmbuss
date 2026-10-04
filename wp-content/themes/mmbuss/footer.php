@@ -26,7 +26,7 @@
 <footer class="mm-footer">
 	<div class="mm-wrap mm-footer-grid">
 		<div class="mm-footer-col">
-			<a class="mm-brand mm-footer-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Mastermind<span class="mm-dot">.</span></a>
+			<a class="mm-brand mm-footer-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-full-white.png' ); ?>" alt="<?php esc_attr_e( 'Mastermind Business Systems LLC', 'mmbuss' ); ?>"></a>
 			<p class="mm-footer-about"><?php esc_html_e( 'A global business management and consulting firm dedicated to transforming how organizations operate, compete, and grow.', 'mmbuss' ); ?></p>
 			<p class="mm-footer-tag"><?php echo esc_html( mmbuss_contact( 'tagline' ) ); ?></p>
 		</div>
