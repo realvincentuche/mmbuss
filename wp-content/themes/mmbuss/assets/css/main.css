@@ -661,6 +661,7 @@ a { color: var(--mm-navy-2); }
 	color: var(--mm-gold);
 	font-weight: 800;
 }
+.mm-card-cta { margin: 14px 0 0; }
 
 /* Industries carousel: 3 visible, one-step scroll, auto-loop */
 .mm-ind-carousel { position: relative; }
