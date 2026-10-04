@@ -16,7 +16,7 @@ get_template_part(
 		'title' => 'Contact Us',
 		'sub'   => "Tell us where you are headed — we will bring the structure to get you there.",
 		'img'   => $uri . '/assets/images/contact-banner.jpg',
-		'pos'   => 'center 18%',
+		'pos'   => 'center 28%',
 	)
 );
 ?>
