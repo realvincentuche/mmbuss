@@ -252,5 +252,45 @@ function mmbuss_seed_on_activate() {
 		update_option( 'show_on_front', 'page' );
 		update_option( 'page_on_front', $ids['home'] );
 	}
+
+	flush_rewrite_rules();
 }
 add_action( 'after_switch_theme', 'mmbuss_seed_on_activate' );
+
+/**
+ * One-click page setup for servers where the theme was deployed via FTP
+ * (activation hook never fired, so pages/menus may be missing).
+ */
+function mmbuss_setup_notice() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		return;
+	}
+	$missing = array();
+	foreach ( array( 'home', 'about', 'services', 'industries', 'contact' ) as $slug ) {
+		if ( ! get_page_by_path( $slug ) ) {
+			$missing[] = $slug;
+		}
+	}
+	if ( ! $missing ) {
+		return;
+	}
+	$url = wp_nonce_url( admin_url( 'admin-post.php?action=mmbuss_setup_pages' ), 'mmbuss_setup_pages' );
+	echo '<div class="notice notice-warning"><p>';
+	echo esc_html__( 'MMBuss theme: missing pages (', 'mmbuss' ) . esc_html( implode( ', ', $missing ) ) . esc_html__( '). ', 'mmbuss' );
+	echo '<a href="' . esc_url( $url ) . '">' . esc_html__( 'Create pages now', 'mmbuss' ) . '</a>';
+	echo '</p></div>';
+}
+add_action( 'admin_notices', 'mmbuss_setup_notice' );
+
+/**
+ * Admin-post handler: run the seeder on demand, then flush permalinks.
+ */
+function mmbuss_setup_pages_handler() {
+	if ( ! current_user_can( 'manage_options' ) || ! check_admin_referer( 'mmbuss_setup_pages' ) ) {
+		wp_die( esc_html__( 'Not allowed.', 'mmbuss' ) );
+	}
+	mmbuss_seed_on_activate();
+	wp_safe_redirect( admin_url( 'edit.php?post_type=page' ) );
+	exit;
+}
+add_action( 'admin_post_mmbuss_setup_pages', 'mmbuss_setup_pages_handler' );
