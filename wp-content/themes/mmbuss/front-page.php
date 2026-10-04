@@ -82,7 +82,7 @@ $slides = array(
 		</div>
 		<div class="mm-split-media mm-about-media reveal">
 			<!-- Photo by Vitaly Gariev via Unsplash, used under the Unsplash License. -->
-			<img src="<?php echo esc_url( $uri . '/assets/images/about-team-portrait.jpg' ); ?>" alt="<?php esc_attr_e( 'Business consultants collaborating around a meeting table', 'mmbuss' ); ?>" loading="lazy">
+			<img src="<?php echo esc_url( $uri . '/assets/images/about-section.jpg' ); ?>" alt="<?php esc_attr_e( 'Business consultants collaborating around a meeting table', 'mmbuss' ); ?>" loading="lazy">
 		</div>
 	</div>
 </section>
