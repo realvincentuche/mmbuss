@@ -90,7 +90,7 @@ $slides = array(
 <section class="mm-proof" aria-labelledby="mm-proof-title">
 	<div class="mm-wrap mm-proof-layout">
 		<div class="mm-proof-intro reveal">
-			<p class="mm-proof-label"><?php esc_html_e( 'What The Work Produces', 'mmbuss' ); ?></p>
+			<p class="mm-kicker mm-kicker-dark"><?php esc_html_e( 'What The Work Produces', 'mmbuss' ); ?></p>
 			<h2 id="mm-proof-title"><?php esc_html_e( 'From direction', 'mmbuss' ); ?> <span><?php esc_html_e( 'to delivery.', 'mmbuss' ); ?></span></h2>
 			<p><?php esc_html_e( 'The scope is practical: clearer decisions, operating systems, and supply support your team can use.', 'mmbuss' ); ?></p>
 		</div>
