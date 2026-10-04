@@ -36,10 +36,10 @@
 			<p style="margin-top:16px;"><?php esc_html_e( 'A global business management and consulting firm dedicated to transforming how organizations operate, compete, and grow.', 'mmbuss' ); ?></p>
 			<p class="mm-footer-tag"><?php echo esc_html( mmbuss_contact( 'tagline' ) ); ?></p>
 			<div class="mm-footer-social" aria-label="<?php esc_attr_e( 'Social links', 'mmbuss' ); ?>">
-				<a href="#" aria-label="LinkedIn">in</a>
-				<a href="#" aria-label="X">x</a>
-				<a href="#" aria-label="Facebook">f</a>
-				<a href="#" aria-label="Instagram">ig</a>
+				<a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+				<a href="#" aria-label="X"><i class="ph ph-x-logo" aria-hidden="true"></i></a>
+				<a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+				<a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div class="mm-footer-col">
