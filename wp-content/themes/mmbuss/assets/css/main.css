@@ -681,7 +681,7 @@ a { color: var(--mm-navy-2); }
 .mm-ind-viewport { overflow: hidden; }
 .mm-ind-track { display: flex; gap: 22px; transition: transform .55s cubic-bezier(.22,.61,.36,1); }
 .mm-ind-slide { flex: 0 0 calc((100% - 44px) / 3); min-width: 0; }
-.mm-ind-nav { display: flex; gap: 10px; margin-top: 24px; }
+.mm-ind-nav { display: flex; gap: 10px; margin-top: 24px; justify-content: center; }
 .mm-ind-arrow {
 	width: 48px; height: 48px;
 	border-radius: 50%;
