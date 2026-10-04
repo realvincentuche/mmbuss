@@ -373,6 +373,8 @@ a { color: var(--mm-navy-2); }
 .mm-offcanvas-contact { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 22px; font-size: 0.95rem; }
 .mm-offcanvas-contact p { margin: 0 0 8px; }
 .mm-offcanvas-contact a { color: var(--mm-gold-2); text-decoration: none; }
+.mm-offcanvas-contact a.mm-btn,
+.mm-offcanvas-contact a.mm-btn:hover { color: #0B0B10; }
 .mm-offcanvas-label {
 	font-size: 0.75rem;
 	letter-spacing: 0.2em;
