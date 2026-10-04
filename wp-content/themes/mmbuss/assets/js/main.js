@@ -133,6 +133,41 @@
 		restart();
 	}
 
+	// Industries carousel: 3 visible desktop, one-step scroll, auto-loop.
+	var ind = document.getElementById('mmIndCarousel');
+	if (ind) {
+		var track = ind.querySelector('.mm-ind-track');
+		var cards = Array.prototype.slice.call(track.querySelectorAll('.mm-ind-slide'));
+		var idx = 0;
+		var indTimer = null;
+		var indPaused = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		function visible() {
+			return window.innerWidth <= 640 ? 1 : (window.innerWidth <= 1080 ? 2 : 3);
+		}
+		function maxIdx() { return cards.length - visible(); }
+		function step() {
+			var gap = 22;
+			var w = cards[0].getBoundingClientRect().width + gap;
+			track.style.transform = 'translateX(' + (-idx * w) + 'px)';
+		}
+		function next() { idx = idx >= maxIdx() ? 0 : idx + 1; step(); }
+		function prev() { idx = idx <= 0 ? maxIdx() : idx - 1; step(); }
+		function auto() {
+			if (indTimer) { clearInterval(indTimer); }
+			indTimer = null;
+			if (!indPaused) { indTimer = setInterval(next, 4000); }
+		}
+		var btnPrev = ind.querySelector('[data-ind="prev"]');
+		var btnNext = ind.querySelector('[data-ind="next"]');
+		if (btnPrev) { btnPrev.addEventListener('click', function () { prev(); auto(); }); }
+		if (btnNext) { btnNext.addEventListener('click', function () { next(); auto(); }); }
+		ind.addEventListener('mouseenter', function () { if (indTimer) { clearInterval(indTimer); indTimer = null; } });
+		ind.addEventListener('mouseleave', auto);
+		window.addEventListener('resize', function () { idx = Math.min(idx, maxIdx()); step(); });
+		step();
+		auto();
+	}
+
 	// FAQ accordion.
 	document.querySelectorAll('.mm-faq-item').forEach(function (item) {
 		var q = item.querySelector('.mm-faq-q');

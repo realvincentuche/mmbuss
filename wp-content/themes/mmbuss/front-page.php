@@ -170,19 +170,39 @@ $slides = array(
 				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/industries/' ) ); ?>"><?php esc_html_e( 'All Industries', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
 			</div>
 		</div>
-		<div class="mm-grid-3">
-			<article class="mm-card reveal">
-				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-2.jpg' ); ?>" alt="<?php esc_attr_e( 'Startup team collaborating', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Startups', 'mmbuss' ); ?></span></div>
-				<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Emerging Enterprises', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Startups and Emerging Enterprises', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Direction, structure, and strategy for ventures finding their footing.', 'mmbuss' ); ?></p></div>
-			</article>
-			<article class="mm-card reveal">
-				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-1.jpg' ); ?>" alt="<?php esc_attr_e( 'Corporate headquarters', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Corporate', 'mmbuss' ); ?></span></div>
-				<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Institutions', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Corporate and Institutional Clients', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Governance and performance systems for established organizations.', 'mmbuss' ); ?></p></div>
-			</article>
-			<article class="mm-card reveal">
-				<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-4.jpg' ); ?>" alt="<?php esc_attr_e( 'Logistics operations', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Logistics', 'mmbuss' ); ?></span></div>
-				<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Trade & Supply Chain', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Trade, Logistics, and Supply Chain', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Optimization across sourcing, movement, and fulfillment.', 'mmbuss' ); ?></p></div>
-			</article>
+		<div class="mm-ind-carousel reveal" id="mmIndCarousel">
+			<div class="mm-ind-viewport">
+				<div class="mm-ind-track">
+					<article class="mm-card mm-ind-slide">
+						<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-2.jpg' ); ?>" alt="<?php esc_attr_e( 'Startup team collaborating', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Startups', 'mmbuss' ); ?></span></div>
+						<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Emerging Enterprises', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Startups and Emerging Enterprises', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Direction, structure, and strategy for ventures finding their footing.', 'mmbuss' ); ?></p></div>
+					</article>
+					<article class="mm-card mm-ind-slide">
+						<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-1.jpg' ); ?>" alt="<?php esc_attr_e( 'Corporate headquarters', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Corporate', 'mmbuss' ); ?></span></div>
+						<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Institutions', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Corporate and Institutional Clients', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Governance and performance systems for established organizations.', 'mmbuss' ); ?></p></div>
+					</article>
+					<article class="mm-card mm-ind-slide">
+						<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/hero-4.jpg' ); ?>" alt="<?php esc_attr_e( 'Logistics operations', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Logistics', 'mmbuss' ); ?></span></div>
+						<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Trade & Supply Chain', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Trade, Logistics, and Supply Chain', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Optimization across sourcing, movement, and fulfillment.', 'mmbuss' ); ?></p></div>
+					</article>
+					<article class="mm-card mm-ind-slide">
+						<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/industries-banner.jpg' ); ?>" alt="<?php esc_attr_e( 'Real estate and infrastructure', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Real Estate', 'mmbuss' ); ?></span></div>
+						<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Infrastructure', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Real Estate and Infrastructure', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Structured advisory for developers, operators, and infrastructure stakeholders.', 'mmbuss' ); ?></p></div>
+					</article>
+					<article class="mm-card mm-ind-slide">
+						<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/about-section.jpg' ); ?>" alt="<?php esc_attr_e( 'Financial and professional services team', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Financial', 'mmbuss' ); ?></span></div>
+						<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Professional Services', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Financial and Professional Services', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Operational discipline and strategic clarity for firms built on trust.', 'mmbuss' ); ?></p></div>
+					</article>
+					<article class="mm-card mm-ind-slide">
+						<div class="mm-card-media"><img src="<?php echo esc_url( $uri . '/assets/images/services-banner.jpg' ); ?>" alt="<?php esc_attr_e( 'Nonprofit and development work', 'mmbuss' ); ?>" loading="lazy"><span class="mm-card-badge"><?php esc_html_e( 'Nonprofit', 'mmbuss' ); ?></span></div>
+						<div class="mm-card-body"><p class="mm-card-meta"><?php esc_html_e( 'Development', 'mmbuss' ); ?></p><h3><?php esc_html_e( 'Nonprofit and Development Organizations', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Frameworks and oversight for mission-driven, measurable impact.', 'mmbuss' ); ?></p></div>
+					</article>
+				</div>
+			</div>
+			<div class="mm-ind-nav">
+				<button class="mm-ind-arrow" data-ind="prev" aria-label="<?php esc_attr_e( 'Previous industries', 'mmbuss' ); ?>">&larr;</button>
+				<button class="mm-ind-arrow" data-ind="next" aria-label="<?php esc_attr_e( 'Next industries', 'mmbuss' ); ?>">&rarr;</button>
+			</div>
 		</div>
 	</div>
 </section>
