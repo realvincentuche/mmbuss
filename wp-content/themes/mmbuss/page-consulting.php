@@ -48,6 +48,8 @@ get_template_part(
 	</div>
 </div>
 
+<?php get_template_part( 'template-parts/retainership', 'cta' ); ?>
+
 <?php get_template_part( 'template-parts/other', 'services', array( 'current' => 'consulting' ) ); ?>
 
 <?php get_template_part( 'template-parts/dynamic', 'content' ); ?>

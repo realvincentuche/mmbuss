@@ -200,6 +200,7 @@ function mmbuss_seed_on_activate() {
 		'services' => 'Our Services',
 		'industries' => 'Industries We Serve',
 		'contact'  => 'Contact Us',
+		'retainership-application' => 'Retainership Application',
 	);
 
 	$ids = array();
@@ -266,7 +267,7 @@ function mmbuss_setup_notice() {
 		return;
 	}
 	$missing = array();
-	foreach ( array( 'home', 'about', 'services', 'industries', 'contact' ) as $slug ) {
+	foreach ( array( 'home', 'about', 'services', 'industries', 'contact', 'retainership-application' ) as $slug ) {
 		if ( ! get_page_by_path( $slug ) ) {
 			$missing[] = $slug;
 		}

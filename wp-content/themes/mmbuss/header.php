@@ -64,6 +64,7 @@
 		<p><?php esc_html_e( 'Toll Free: ', 'mmbuss' ); ?><?php echo esc_html( mmbuss_contact( 'tollfree' ) ); ?></p>
 		<p><?php echo esc_html( mmbuss_contact( 'office' ) ); ?></p>
 		<p><a class="mm-btn mm-btn-gold mm-btn-sm" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Get a Proposal', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
+		<p class="mm-offcanvas-alt"><a href="<?php echo esc_url( home_url( '/retainership-application/' ) ); ?>"><?php esc_html_e( 'Investor Retainership Application', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
 	</div>
 </aside>
 

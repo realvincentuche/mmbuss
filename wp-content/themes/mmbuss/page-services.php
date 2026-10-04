@@ -87,6 +87,8 @@ get_template_part(
 	</div>
 </section>
 
+<?php get_template_part( 'template-parts/retainership', 'cta' ); ?>
+
 <div class="mm-marquee-tilt" aria-hidden="true">
 	<div class="mm-marquee">
 		<div class="mm-marquee-track">
