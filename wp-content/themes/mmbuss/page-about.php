@@ -19,7 +19,7 @@ get_template_part(
 );
 ?>
 
-<section class="mm-section">
+<section class="mm-section-tight">
 	<div class="mm-wrap mm-split">
 		<div class="reveal">
 			<p class="mm-kicker"><?php esc_html_e( 'Who We Are', 'mmbuss' ); ?></p>
