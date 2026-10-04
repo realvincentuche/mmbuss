@@ -116,28 +116,28 @@ $slides = array(
 		</div>
 		<div class="mm-grid-4">
 			<article class="mm-svc reveal">
-				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true">&#9783;</span><span class="mm-svc-num">/ 01</span></div>
+				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-buildings"></i></span><span class="mm-svc-num">/ 01</span></div>
 				<h3><?php esc_html_e( 'Business Management', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Structuring, governance, and performance systems that professionalize how you run.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'Governance', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Performance', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Leadership', 'mmbuss' ); ?></span></div>
 				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/business-management/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
 			</article>
 			<article class="mm-svc reveal">
-				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true">&#9673;</span><span class="mm-svc-num">/ 02</span></div>
+				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-chart-line-up"></i></span><span class="mm-svc-num">/ 02</span></div>
 				<h3><?php esc_html_e( 'Consulting', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Growth planning, market entry, feasibility, and executive-level advisory.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'Strategy', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Expansion', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Advisory', 'mmbuss' ); ?></span></div>
 				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/consulting/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
 			</article>
 			<article class="mm-svc reveal">
-				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true">&#9881;</span><span class="mm-svc-num">/ 03</span></div>
+				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-gear-six"></i></span><span class="mm-svc-num">/ 03</span></div>
 				<h3><?php esc_html_e( 'Operational Solutions', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Audits, re-engineering, SOPs, and automation guidance that cut waste.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'SOPs', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Automation', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Efficiency', 'mmbuss' ); ?></span></div>
 				<a class="mm-text-link" href="<?php echo esc_url( home_url( '/services/operational-solutions/' ) ); ?>"><?php esc_html_e( 'Learn More', 'mmbuss' ); ?> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
 			</article>
 			<article class="mm-svc reveal">
-				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true">&#9746;</span><span class="mm-svc-num">/ 04</span></div>
+				<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-factory"></i></span><span class="mm-svc-num">/ 04</span></div>
 				<h3><?php esc_html_e( 'Supply of Goods and Services', 'mmbuss' ); ?></h3>
 				<p><?php esc_html_e( 'Sourcing, procurement, fulfillment, and trade logistics you can rely on.', 'mmbuss' ); ?></p>
 				<div class="mm-tags"><span><?php esc_html_e( 'Sourcing', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Fulfillment', 'mmbuss' ); ?></span><span><?php esc_html_e( 'Trade', 'mmbuss' ); ?></span></div>
@@ -212,10 +212,10 @@ $slides = array(
 			<h2 class="mm-section-title"><?php esc_html_e( 'Built for organizations that outgrow', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'average', 'mmbuss' ); ?></span></h2>
 			<p class="mm-section-lead"><?php esc_html_e( 'We measure our success by your outcomes — stronger operations, clearer strategy, and sustainable growth.', 'mmbuss' ); ?></p>
 			<div class="mm-apart-list">
-				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true">&#9678;</span><div><h3><?php esc_html_e( 'Global Perspective, Local Precision', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Our approach blends international best practices with a sharp understanding of local market realities.', 'mmbuss' ); ?></p></div></div>
-				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true">&#9096;</span><div><h3><?php esc_html_e( 'Results-Driven Methodology', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We measure our success by your outcomes: stronger operations, clearer strategy, and sustainable growth.', 'mmbuss' ); ?></p></div></div>
-				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true">&#9783;</span><div><h3><?php esc_html_e( 'Cross-Industry Expertise', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Our team brings experience across diverse sectors, allowing us to bring fresh perspective and proven frameworks to every engagement.', 'mmbuss' ); ?></p></div></div>
-				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true">&#10022;</span><div><h3><?php esc_html_e( 'Partnership, Not Just Advisory', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We stay engaged beyond the recommendation stage, supporting execution and long-term sustainability.', 'mmbuss' ); ?></p></div></div>
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-globe"></i></span><div><h3><?php esc_html_e( 'Global Perspective, Local Precision', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Our approach blends international best practices with a sharp understanding of local market realities.', 'mmbuss' ); ?></p></div></div>
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-compass"></i></span><div><h3><?php esc_html_e( 'Results-Driven Methodology', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We measure our success by your outcomes: stronger operations, clearer strategy, and sustainable growth.', 'mmbuss' ); ?></p></div></div>
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-lightbulb"></i></span><div><h3><?php esc_html_e( 'Cross-Industry Expertise', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Our team brings experience across diverse sectors, allowing us to bring fresh perspective and proven frameworks to every engagement.', 'mmbuss' ); ?></p></div></div>
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-handshake"></i></span><div><h3><?php esc_html_e( 'Partnership, Not Just Advisory', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We stay engaged beyond the recommendation stage, supporting execution and long-term sustainability.', 'mmbuss' ); ?></p></div></div>
 			</div>
 		</div>
 		<div class="mm-split-media reveal">
