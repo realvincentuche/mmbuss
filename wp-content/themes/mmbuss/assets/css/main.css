@@ -834,11 +834,11 @@ a { color: var(--mm-navy-2); }
 
 /* Page banner (dark, breadcrumb) */
 .mm-banner { position: relative; background: var(--mm-navy-3); overflow: hidden; }
-.mm-banner-bg { position: absolute; inset: 0; background-size: cover; background-position: center 46%; opacity: 0.38; }
+.mm-banner-bg { position: absolute; inset: 0; background-size: cover; background-position: center 46%; opacity: 0.62; }
 .mm-banner-bg::after {
 	content: "";
 	position: absolute; inset: 0;
-	background: linear-gradient(90deg, rgba(7,18,35,.96) 0%, rgba(7,18,35,.78) 52%, rgba(7,18,35,.5) 100%);
+	background: linear-gradient(90deg, rgba(7,18,35,.88) 0%, rgba(7,18,35,.62) 52%, rgba(7,18,35,.32) 100%);
 }
 .mm-banner-inner { position: relative; z-index: 2; padding: clamp(100px, 12vw, 164px) 0 clamp(82px, 9vw, 120px); color: #fff; }
 .mm-crumbs { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #9fb0c8; margin: 0 0 20px; }
