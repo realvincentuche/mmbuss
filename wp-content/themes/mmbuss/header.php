@@ -4,6 +4,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+<?php if ( is_front_page() ) : ?>
+<link rel="preload" as="image" fetchpriority="high" href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/home-slide-business-district.jpg' ); ?>">
+<?php endif; ?>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
