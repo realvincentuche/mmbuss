@@ -26,7 +26,7 @@ $slides = array(
 	),
 	array(
 		'badge' => 'From ambition to results',
-		'title' => 'Clear Plans.<br><span class="hl">Lasting Results.</span>',
+		'title' => 'Clear Plans.<br><span class="hl">Real Results.</span>',
 		'text'  => 'From startups seeking direction to established enterprises pursuing transformation, we deliver the expertise, discipline, and insight needed to turn ambition into measurable results.',
 		'img'   => $uri . '/assets/images/home-slide-partnership.jpg',
 		'cta1'  => array( 'Why Mastermind', home_url( '/about/' ), 'mm-btn mm-btn-gold' ),
@@ -240,7 +240,6 @@ $slides = array(
 		</div>
 		<div class="mm-split-media reveal">
 			<img src="<?php echo esc_url( $uri . '/assets/images/why-us.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind partner meeting', 'mmbuss' ); ?>" loading="lazy">
-			<div class="mm-badge"><span class="mm-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small><?php esc_html_e( 'Structured Strategy. Sustainable Growth.', 'mmbuss' ); ?></small></div>
 		</div>
 	</div>
 </section>

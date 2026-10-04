@@ -10,12 +10,6 @@
 
 <section class="mm-section-tight">
 	<div class="mm-cta-panel reveal">
-		<div class="mm-cta-marquee" aria-hidden="true">
-			<div class="mm-marquee-track">
-				<span>Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i>&nbsp;</span>
-				<span>Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i> Let's talk <i>&#10022;</i>&nbsp;</span>
-			</div>
-		</div>
 		<div class="mm-cta-inner">
 			<span class="mm-cta-dial" aria-hidden="true">&#10022;</span>
 			<p class="mm-cta-kicker"><?php esc_html_e( 'Ready to grow?', 'mmbuss' ); ?></p>
