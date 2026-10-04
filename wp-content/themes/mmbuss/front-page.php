@@ -241,20 +241,20 @@ $slides = array(
 		</div>
 		<div class="reveal">
 			<div class="mm-faq-item open">
-				<button class="mm-faq-q"><?php esc_html_e( 'What does an engagement with Mastermind look like?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
-				<div class="mm-faq-a"><p><?php esc_html_e( 'We start by diagnosing your operations, structure, and strategy — then design tailored frameworks, support deployment, and sustain results with ongoing oversight.', 'mmbuss' ); ?></p></div>
+				<button class="mm-faq-q" aria-expanded="true" aria-controls="mm-faq-a1" id="mm-faq-q1"><?php esc_html_e( 'What does an engagement with Mastermind look like?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
+				<div class="mm-faq-a" id="mm-faq-a1" role="region" aria-labelledby="mm-faq-q1"><p><?php esc_html_e( 'We start by diagnosing your operations, structure, and strategy — then design tailored frameworks, support deployment, and sustain results with ongoing oversight.', 'mmbuss' ); ?></p></div>
 			</div>
 			<div class="mm-faq-item">
-				<button class="mm-faq-q"><?php esc_html_e( 'Do you work with startups or only established companies?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
-				<div class="mm-faq-a"><p><?php esc_html_e( 'Both. From startups seeking direction to established enterprises pursuing transformation, we tailor every engagement to where you are and where you are headed.', 'mmbuss' ); ?></p></div>
+				<button class="mm-faq-q" aria-expanded="false" aria-controls="mm-faq-a2" id="mm-faq-q2"><?php esc_html_e( 'Do you work with startups or only established companies?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
+				<div class="mm-faq-a" id="mm-faq-a2" role="region" aria-labelledby="mm-faq-q2"><p><?php esc_html_e( 'Both. From startups seeking direction to established enterprises pursuing transformation, we tailor every engagement to where you are and where you are headed.', 'mmbuss' ); ?></p></div>
 			</div>
 			<div class="mm-faq-item">
-				<button class="mm-faq-q"><?php esc_html_e( 'Can you supply goods as well as advisory services?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
-				<div class="mm-faq-a"><p><?php esc_html_e( 'Yes. We procure and source goods, materials, and equipment — and supply and distribute to corporate, government, and institutional clients, including import/export facilitation.', 'mmbuss' ); ?></p></div>
+				<button class="mm-faq-q" aria-expanded="false" aria-controls="mm-faq-a3" id="mm-faq-q3"><?php esc_html_e( 'Can you supply goods as well as advisory services?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
+				<div class="mm-faq-a" id="mm-faq-a3" role="region" aria-labelledby="mm-faq-q3"><p><?php esc_html_e( 'Yes. We procure and source goods, materials, and equipment — and supply and distribute to corporate, government, and institutional clients, including import/export facilitation.', 'mmbuss' ); ?></p></div>
 			</div>
 			<div class="mm-faq-item">
-				<button class="mm-faq-q"><?php esc_html_e( 'How do we start?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
-				<div class="mm-faq-a"><p><?php esc_html_e( 'Send a message through the contact page or email info@mmbuss.com with your company name, industry, and the challenge you want solved. We respond to every serious enquiry.', 'mmbuss' ); ?></p></div>
+				<button class="mm-faq-q" aria-expanded="false" aria-controls="mm-faq-a4" id="mm-faq-q4"><?php esc_html_e( 'How do we start?', 'mmbuss' ); ?><span class="mm-faq-icon" aria-hidden="true">+</span></button>
+				<div class="mm-faq-a" id="mm-faq-a4" role="region" aria-labelledby="mm-faq-q4"><p><?php esc_html_e( 'Send a message through the contact page or email info@mmbuss.com with your company name, industry, and the challenge you want solved. We respond to every serious enquiry.', 'mmbuss' ); ?></p></div>
 			</div>
 		</div>
 	</div>

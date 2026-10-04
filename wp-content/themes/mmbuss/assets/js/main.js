@@ -142,18 +142,30 @@
 			var open = item.classList.contains('open');
 			document.querySelectorAll('.mm-faq-item.open').forEach(function (other) {
 				other.classList.remove('open');
+				var oq = other.querySelector('.mm-faq-q');
 				var oa = other.querySelector('.mm-faq-a');
+				if (oq) { oq.setAttribute('aria-expanded', 'false'); }
 				if (oa) { oa.style.maxHeight = null; }
 			});
 			if (!open) {
 				item.classList.add('open');
+				q.setAttribute('aria-expanded', 'true');
 				a.style.maxHeight = a.scrollHeight + 'px';
+			} else {
+				q.setAttribute('aria-expanded', 'false');
 			}
 		});
 		// First item open by default.
 		if (item.classList.contains('open')) {
+			q.setAttribute('aria-expanded', 'true');
 			a.style.maxHeight = a.scrollHeight + 'px';
 		}
+	});
+	// Recalc open answer height after fonts/resize so text never clips.
+	window.addEventListener('resize', function () {
+		document.querySelectorAll('.mm-faq-item.open .mm-faq-a').forEach(function (oa) {
+			oa.style.maxHeight = oa.scrollHeight + 'px';
+		});
 	});
 
 	// Reveal on scroll.
