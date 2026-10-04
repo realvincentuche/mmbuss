@@ -1,7 +1,8 @@
 <?php
 /**
- * Contact Us — exact client copy. Form area renders the live CF7 shortcode
- * via the dynamic section when one is pasted in wp-admin.
+ * Contact Us — exact client copy. The live CF7 shortcode pasted in
+ * wp-admin renders inside the white message card (not the bottom
+ * dynamic strip used by other pages).
  *
  * @package MMBuss
  */
@@ -50,6 +51,11 @@ get_template_part(
 			<h3><?php esc_html_e( 'Send Us a Message', 'mmbuss' ); ?></h3>
 			<p><?php esc_html_e( 'Share a few details about your organization and what you want to achieve. We respond to every serious enquiry — usually within one business day.', 'mmbuss' ); ?></p>
 			<p><?php esc_html_e( 'Prefer email? Write directly to', 'mmbuss' ); ?> <a href="mailto:<?php echo esc_attr( mmbuss_contact( 'email' ) ); ?>"><?php echo esc_html( mmbuss_contact( 'email' ) ); ?></a> <?php esc_html_e( 'and include your company name, industry, and the challenge you want solved.', 'mmbuss' ); ?></p>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php if ( '' !== trim( get_the_content() ) ) : ?>
+					<?php the_content(); ?>
+				<?php endif; ?>
+			<?php endwhile; ?>
 		</div>
 	</div>
 </section>
@@ -62,8 +68,6 @@ get_template_part(
 		</div>
 	</div>
 </div>
-
-<?php get_template_part( 'template-parts/dynamic', 'content' ); ?>
 
 <?php
 get_footer();
