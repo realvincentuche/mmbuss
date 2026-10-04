@@ -945,18 +945,17 @@ html { scroll-padding-top: 92px; }
 .mm-section-title { max-width: 17ch; font-size: clamp(2.45rem, 5vw, 4.4rem); line-height: .99; letter-spacing: -.045em; text-wrap: balance; }
 .mm-section-lead { max-width: 35rem; line-height: 1.7; }
 .mm-kicker { letter-spacing: .12em; font-size: .7rem; padding: 8px 15px; margin-bottom: 24px; }
-.mm-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 34px; border-bottom: 1px solid var(--mm-line); }
+.mm-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; border-bottom: 0; }
 .mm-svc {
-	min-height: 300px;
-	padding: 30px 4px 28px;
-	border: 0;
-	border-top: 1px solid var(--mm-line);
-	border-radius: 0;
-	background: transparent;
+	min-height: 100%;
+	padding: 30px 26px 28px;
+	border: 1px solid var(--mm-line);
+	border-radius: var(--mm-radius);
+	background: #fff;
 	box-shadow: none;
 }
-.mm-svc::before { display: none; }
-.mm-svc:hover { transform: none; box-shadow: none; }
+.mm-svc::before { display: block; }
+.mm-svc:hover { transform: translateY(-6px); box-shadow: var(--mm-shadow-card); }
 .mm-svc-top { margin-bottom: 34px; align-items: center; }
 .mm-svc-icon { width: 46px; height: 46px; border-radius: 50%; font-size: 1.2rem; }
 .mm-svc-num { font-variant-numeric: tabular-nums; }
@@ -1026,7 +1025,7 @@ html { scroll-padding-top: 92px; }
 	.mm-section-tight { padding: 42px 0; }
 	.mm-section-title { font-size: clamp(2.25rem, 10vw, 3.2rem); }
 	.mm-grid-4 { grid-template-columns: 1fr; }
-	.mm-svc { min-height: 0; padding: 24px 0; }
+	.mm-svc { min-height: 0; padding: 26px 22px; }
 	.mm-svc-top { margin-bottom: 23px; }
 	.mm-svc h3 { font-size: 1.55rem; }
 	.mm-svc .mm-text-link { margin-top: 12px; }
