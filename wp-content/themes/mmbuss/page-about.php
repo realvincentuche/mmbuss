@@ -54,6 +54,15 @@ get_template_part(
 	</div>
 </section>
 
+<div class="mm-marquee-tilt" aria-hidden="true">
+	<div class="mm-marquee">
+		<div class="mm-marquee-track">
+			<span>Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i> Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i>&nbsp;</span>
+			<span>Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i> Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i>&nbsp;</span>
+		</div>
+	</div>
+</div>
+
 <section class="mm-section-tight">
 	<div class="mm-panel-dark">
 		<div class="reveal">
@@ -70,36 +79,20 @@ get_template_part(
 </section>
 
 <section class="mm-section">
-	<div class="mm-wrap">
+	<div class="mm-wrap mm-split">
 		<div class="reveal">
 			<p class="mm-kicker"><?php esc_html_e( 'Why Mastermind', 'mmbuss' ); ?></p>
 			<h2 class="mm-section-title"><?php esc_html_e( 'Built for organizations that outgrow', 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'average', 'mmbuss' ); ?></span></h2>
+			<p class="mm-section-lead"><?php esc_html_e( 'We measure our success by your outcomes — stronger operations, clearer strategy, and sustainable growth.', 'mmbuss' ); ?></p>
+			<div class="mm-apart-list">
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-globe"></i></span><div><h3><?php esc_html_e( 'Global Perspective, Local Precision', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Our approach blends international best practices with a sharp understanding of local market realities.', 'mmbuss' ); ?></p></div></div>
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-compass"></i></span><div><h3><?php esc_html_e( 'Results-Driven Methodology', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We measure our success by your outcomes: stronger operations, clearer strategy, and sustainable growth.', 'mmbuss' ); ?></p></div></div>
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-lightbulb"></i></span><div><h3><?php esc_html_e( 'Cross-Industry Expertise', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'Our team brings experience across diverse sectors, allowing us to bring fresh perspective and proven frameworks to every engagement.', 'mmbuss' ); ?></p></div></div>
+				<div class="mm-apart-row"><span class="mm-apart-icon" aria-hidden="true"><i class="ph ph-handshake"></i></span><div><h3><?php esc_html_e( 'Partnership, Not Just Advisory', 'mmbuss' ); ?></h3><p><?php esc_html_e( 'We stay engaged beyond the recommendation stage, supporting execution and long-term sustainability.', 'mmbuss' ); ?></p></div></div>
+			</div>
 		</div>
-		<div class="mm-grid-2">
-			<article class="mm-card reveal">
-				<div class="mm-card-body">
-					<h3><?php esc_html_e( 'Global Perspective, Local Precision', 'mmbuss' ); ?></h3>
-					<p><?php esc_html_e( 'Our approach blends international best practices with a sharp understanding of local market realities.', 'mmbuss' ); ?></p>
-				</div>
-			</article>
-			<article class="mm-card reveal">
-				<div class="mm-card-body">
-					<h3><?php esc_html_e( 'Results-Driven Methodology', 'mmbuss' ); ?></h3>
-					<p><?php esc_html_e( 'We measure our success by your outcomes: stronger operations, clearer strategy, and sustainable growth.', 'mmbuss' ); ?></p>
-				</div>
-			</article>
-			<article class="mm-card reveal">
-				<div class="mm-card-body">
-					<h3><?php esc_html_e( 'Cross-Industry Expertise', 'mmbuss' ); ?></h3>
-					<p><?php esc_html_e( 'Our team brings experience across diverse sectors, allowing us to bring fresh perspective and proven frameworks to every engagement.', 'mmbuss' ); ?></p>
-				</div>
-			</article>
-			<article class="mm-card reveal">
-				<div class="mm-card-body">
-					<h3><?php esc_html_e( 'Partnership, Not Just Advisory', 'mmbuss' ); ?></h3>
-					<p><?php esc_html_e( 'We stay engaged beyond the recommendation stage, supporting execution and long-term sustainability.', 'mmbuss' ); ?></p>
-				</div>
-			</article>
+		<div class="mm-split-media reveal">
+			<img src="<?php echo esc_url( $uri . '/assets/images/why-us.jpg' ); ?>" alt="<?php esc_attr_e( 'Mastermind partner meeting', 'mmbuss' ); ?>" loading="lazy">
 		</div>
 	</div>
 </section>
