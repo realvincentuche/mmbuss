@@ -67,7 +67,7 @@ get_template_part(
 </section>
 
 <section class="mm-section-tight">
-	<div class="mm-wrap">
+	<div class="mm-wrap mm-narrow">
 		<div class="mm-form-note reveal" id="mm-retainership-form">
 			<div class="mm-svc-top"><span class="mm-svc-icon" aria-hidden="true"><i class="ph ph-pen"></i></span><span class="mm-svc-num"><?php esc_html_e( 'Apply Now', 'mmbuss' ); ?></span></div>
 			<h3><?php esc_html_e( 'Application Form', 'mmbuss' ); ?></h3>
