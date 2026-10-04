@@ -945,7 +945,7 @@ html { scroll-padding-top: 92px; }
 .mm-section-title { max-width: 17ch; font-size: clamp(2.45rem, 5vw, 4.4rem); line-height: .99; letter-spacing: -.045em; text-wrap: balance; }
 .mm-section-lead { max-width: 35rem; line-height: 1.7; }
 .mm-kicker { letter-spacing: .12em; font-size: .7rem; padding: 8px 15px; margin-bottom: 24px; }
-.mm-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 34px; }
+.mm-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 34px; border-bottom: 1px solid var(--mm-line); }
 .mm-svc {
 	min-height: 300px;
 	padding: 30px 4px 28px;
