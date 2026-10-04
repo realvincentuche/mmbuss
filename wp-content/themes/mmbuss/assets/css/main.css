@@ -684,11 +684,10 @@ a { color: var(--mm-navy-2); }
 	color: #e9edf4;
 	margin: 0 18px;
 }
-.mm-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 48px; }
+.mm-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 48px; }
 .mm-step {
 	background: rgba(255, 255, 255, 0.045);
 	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-top: 1px solid rgba(255,255,255,.17);
 	border-radius: 20px;
 	padding: 25px 22px;
 	transition: border-color 0.25s ease, background 0.25s ease;
@@ -708,7 +707,6 @@ a { color: var(--mm-navy-2); }
 .mm-step-goto { color: rgba(255,255,255,0.35); font-size: 1.3rem; text-decoration: none; }
 .mm-step h3 { color: #fff; font-size: 1.28rem; margin: 0 0 10px; }
 .mm-step p { color: #b9c2d1; margin: 0; font-size: 0.95rem; }
-.mm-step:first-child, .mm-step:nth-child(2) { border-top: 0; }
 
 /* Apart rows (icon + divider) */
 .mm-apart-list { border-top: 1px solid var(--mm-line); margin-top: 8px; }
@@ -1016,9 +1014,8 @@ a { color: var(--mm-navy-2); }
 	.mm-svc-top { margin-bottom: 23px; }
 	.mm-svc h3 { font-size: 1.55rem; }
 	.mm-svc .mm-text-link { margin-top: 12px; }
-	.mm-steps { grid-template-columns: 1fr; }
-	.mm-step { padding: 22px 0; border-top: 1px solid rgba(255,255,255,.17); }
-	.mm-step:first-child { border-top: 0; }
+	.mm-steps { grid-template-columns: 1fr; gap: 16px; }
+	.mm-step { padding: 24px 22px; }
 	.mm-checks { grid-template-columns: 1fr; }
 	.mm-panel-dark { margin: 0 8px; padding: 42px 22px; border-radius: 20px; }
 	.mm-cta-panel { margin: 0 8px; padding: 46px 22px; border-radius: 20px; }
