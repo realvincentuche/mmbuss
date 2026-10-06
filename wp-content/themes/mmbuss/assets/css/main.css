@@ -456,24 +456,13 @@ a { color: var(--mm-navy-2); }
 }
 .mm-kicker-dark { background: transparent; border-color: rgba(255,255,255,0.25); color: var(--mm-gold-2); }
 
-/* Gold underline swash behind key word */
+/* Plain emphasis (gold underlines removed for corporate tone) */
 .hl {
-	position: relative;
-	white-space: nowrap;
-	z-index: 0;
+	position: static;
+	white-space: normal;
 }
-.hl::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: -0.08em;
-	width: 100%;
-	height: 4px;
-	background: var(--mm-gold-2);
-	z-index: -1;
-	border-radius: 0;
-}
-.hl-dark::after { background: var(--mm-gold); }
+.hl::after,
+.hl-dark::after { display: none; content: none; }
 
 /* ---------- Hero slider (full-bleed bg images) ---------- */
 .mm-hero { position: relative; padding: 0; }
