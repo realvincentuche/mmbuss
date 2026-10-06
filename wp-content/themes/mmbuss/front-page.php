@@ -148,14 +148,7 @@ $slides = array(
 
 
 
-<div class="mm-marquee-tilt" aria-hidden="true">
-	<div class="mm-marquee">
-		<div class="mm-marquee-track">
-			<span>Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i> Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i>&nbsp;</span>
-			<span>Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i> Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i>&nbsp;</span>
-		</div>
-	</div>
-</div>
+<hr class="mm-rule">
 
 <section class="mm-section">
 	<div class="mm-wrap">

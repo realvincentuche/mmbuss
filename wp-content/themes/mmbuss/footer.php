@@ -11,7 +11,6 @@
 <section class="mm-section-tight">
 	<div class="mm-cta-panel reveal">
 		<div class="mm-cta-inner">
-			<span class="mm-cta-dial" aria-hidden="true"><i class="ph ph-asterisk"></i></span>
 			<p class="mm-cta-kicker"><?php esc_html_e( 'Ready to grow?', 'mmbuss' ); ?></p>
 			<h2 class="mm-cta-title"><?php esc_html_e( "Let's Build Something", 'mmbuss' ); ?> <span class="hl"><?php esc_html_e( 'Structured', 'mmbuss' ); ?></span></h2>
 			<p class="mm-cta-text"><?php esc_html_e( "Whether you're launching a new venture, restructuring an existing one, or scaling into new markets, Mastermind Business Systems LLC brings the strategic insight and operational discipline to help you get there.", 'mmbuss' ); ?></p>

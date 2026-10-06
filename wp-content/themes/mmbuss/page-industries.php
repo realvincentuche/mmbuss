@@ -97,14 +97,7 @@ $industries = array(
 	</div>
 </section>
 
-<div class="mm-marquee-tilt" aria-hidden="true">
-	<div class="mm-marquee">
-		<div class="mm-marquee-track">
-			<span>Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i> Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i>&nbsp;</span>
-			<span>Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i> Strategy <i>&#10022;</i> Structure <i>&#10022;</i> Operations <i>&#10022;</i> Supply <i>&#10022;</i> Growth <i>&#10022;</i>&nbsp;</span>
-		</div>
-	</div>
-</div>
+<hr class="mm-rule">
 
 <?php get_template_part( 'template-parts/dynamic', 'content' ); ?>
 
