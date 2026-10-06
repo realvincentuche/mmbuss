@@ -523,7 +523,7 @@ a { color: var(--mm-navy-2); }
 .mm-slide-title {
 	margin: 0 0 22px;
 	max-width: 900px;
-	font-size: clamp(3.5rem, 7.3vw, 6.9rem);
+	font-size: clamp(2.6rem, 5.2vw, 4.5rem);
 	line-height: .98;
 	letter-spacing: -.055em;
 	text-wrap: balance;
@@ -536,7 +536,7 @@ a { color: var(--mm-navy-2); }
 	background-color: var(--mm-gold-2);
 	color: #0B0B10;
 	border-radius: 100px;
-	padding: 0 3.2rem;
+	padding: 0 1.6rem;
 	line-height: 1.12;
 	transform: rotate(-2deg);
 	white-space: nowrap;
@@ -1186,7 +1186,7 @@ a { color: var(--mm-navy-2); }
 }
 
 @media (min-width: 641px) and (max-width: 980px) {
-	.mm-slide-title .hl { padding-right: 1.6rem; padding-left: 1.6rem; }
+	.mm-slide-title .hl { padding-right: 1rem; padding-left: 1rem; }
 }
 
 @media (max-width: 860px) {
@@ -1208,8 +1208,8 @@ a { color: var(--mm-navy-2); }
 		background: linear-gradient(0deg, rgba(3,6,11,.96) 0%, rgba(3,6,11,.9) 48%, rgba(3,6,11,.48) 76%, rgba(3,6,11,.16) 100%);
 	}
 	.mm-slide-content { padding: 115px 20px 60px; }
-	.mm-slide-title { font-size: clamp(2.75rem, 12vw, 4rem); line-height: .98; margin-bottom: 16px; }
-	.mm-slide-title .hl { padding-right: .7rem; padding-left: .7rem; }
+	.mm-slide-title { font-size: clamp(2rem, 9vw, 2.9rem); line-height: .98; margin-bottom: 16px; }
+	.mm-slide-title .hl { padding-right: .6rem; padding-left: .6rem; }
 	.mm-slide-text { font-size: 1rem; line-height: 1.55; margin-bottom: 22px; }
 	.mm-slide-actions { gap: 9px; }
 	.mm-slide-actions .mm-btn { padding: 13px 18px; font-size: .9rem; }

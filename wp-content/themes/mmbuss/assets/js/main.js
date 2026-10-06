@@ -148,7 +148,7 @@
 			if (timer) { clearInterval(timer); }
 			timer = null;
 			if (!paused) {
-				timer = setInterval(function () { go(current + 1); }, 8000);
+				timer = setInterval(function () { go(current + 1); }, 11000);
 			}
 		}
 		slider.addEventListener('mouseenter', function () {
