@@ -21,7 +21,7 @@
 
 <header class="mm-header" id="mmHeader">
 	<div class="mm-wrap mm-header-inner">
-		<a class="mm-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Mastermind home', 'mmbuss' ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mmbuss-logo.png' ); ?>" alt="<?php esc_attr_e( 'Mastermind Business Systems LLC', 'mmbuss' ); ?>">
+		<a class="mm-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Mastermind home', 'mmbuss' ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mmbuss-logo.png' ); ?>" alt="<?php esc_attr_e( 'Mastermind Business Systems LLC', 'mmbuss' ); ?>"></a>
 		<nav class="mm-nav" id="mmNav" aria-label="<?php esc_attr_e( 'Primary', 'mmbuss' ); ?>">
 			<?php
 			wp_nav_menu(
