@@ -4,7 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="<?php bloginfo( 'description' ); ?>">
-<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/favicon.png' ); ?>">
+<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/favicon.png?ver=' . filemtime( get_template_directory() . '/assets/images/favicon.png' ) ); ?>">
 <?php if ( is_front_page() ) : ?>
 <link rel="preload" as="image" fetchpriority="high" href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/home-slide-business-district.jpg' ); ?>">
 <?php endif; ?>
